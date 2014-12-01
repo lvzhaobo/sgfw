@@ -4,47 +4,54 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .main_index a {color:#000000;font-weight:bold;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main_index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
-	    <div>
-		  <a href="register.php">
-		    <div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;margin:0 0 10px 0;">
-			  点击这里，进行注册
-		    </div>
+	  <div class="main index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
+	    <div style="width:192px;float:left;position:fixed;">
+		  <a href="#basic" name="#basic">
+		  <div style="width:100%;height:40px;background-color:#FF9900;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">介绍</span>
+		  </div>
 		  </a>
+		  <a href="#week1" name="#week1">
+		  <div style="width:100%;height:40px;background-color:#0099FF;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">第一周计划</span>
+		  </div>
+		  </a>
+		  <div style="width:100%;height:40px;background-color:#9900FF;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">第二周计划</span>
+		  </div>
+		  <div style="width:100%;height:40px;background-color:#FF0099;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">第三周计划</span>
+		  </div>
 		</div>
-	    <div style="width:192px;float:left;">
-		  <?php include 'src/project_index.php'?>
-		</div>
-		<div class="content" style="width:760px;float:left;">
-			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
-			  <div class="index_feature_intro_title">
+		<div class="content" style="width:760px;float:left;margin:0 0 0 200px;">
+		    <a href="register.php">
+			<div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;">
+			  点击这里，加入我们
+			</div>
+			</a>
+			<div id="basic" name="basic" class="index_feature_box al_left" style="margin:10px 60px;min-height:200px;">
+				<!--<div class="index_feature_intro_title" style="line-height:10px;">
 				  <div style="float:left;">
 				  <img src="p2.jpg" style="height:40px;" />
 				  </div>
 				  <div style="float:left;color:#108ac6;">
-				  <h1>网站开发介绍</h1>
+				  <h1>从大学开始</h1>
 				  </div>
 				  <div style="clear:float;clear:both;"></div>
-				  <ul style="line-height:28px;">
-				    <li>课程背景：互联网世界网站遍地都是、移动应用也在飞速发展，有人不屑于学习网站开发，但这是进入其他课程的基础。</li>
-					<li>学习内容：HTML、CSS、网站布局框架及类型分析、建立自己的个人网站</li>
-					<li>学习目标：掌握网页开发、网站开发基本步骤，能够快速按照需求完成网站原型开发。</li>
-					<li>使用工具：火狐（Firefox）或谷歌（Chrome）浏览器、Notepad++或Dreamware或其他编辑工具</li>
-					<li>学习方式：通过本网站注册，3-6位同学组成一个小组，我们会指定一位小组指导员，负责协调和解答问题。一共6-8周时间，每周完成一部分内容，每周小组成员至少面对面交流一次。前两周完成工具准备和个人简历的网页制作。再使用四周时间小组成员设计并开发一个静态网站。根据进度，最后讨论小组兴趣，协助持续开发。</li>
-				  </ul>
+				<p>也许你了解过Facebook的发展历程，也许你了解Linux系统的产生源于大学作业</p>
+				<p>我们大学生从不缺乏创造力和想象力，我们有激情和热情去做自己喜欢的事，我们也能成为像他们那样的人。</p>
 			  </div>
 			</div>
-			<div style="margin:40px 0;width:100%;height:28px;border:1px solid #CCCCCC;font-size:16px;text-align:middle;padding:5px;color:#FF0099;">
-			  以下为第一周任务预览，更多资料，请先注册。小组指导员会根据小组成员实际情况进行调整。
-			</div>
-			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
+			<div style="clear:float;clear:both;"></div>
+			<hr />-->
+			
+			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:10px 60px;min-height:200px;line-height:10px;">
 				<div class="index_feature_intro_title">
 				  <div style="float:left;">
 				  <img src="p2.jpg" style="height:40px;" />

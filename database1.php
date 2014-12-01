@@ -4,44 +4,56 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .main_index a {color:#000000;font-weight:bold;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main_index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
-	    <div>
-		  <a href="register.php">
-		    <div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;margin:0 0 10px 0;">
-			  点击这里，进行注册
-		    </div>
+	  <div class="main index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
+	    <div style="width:192px;float:left;position:fixed;">
+		  <a href="#basic" name="#basic">
+		  <div style="width:100%;height:40px;background-color:#FF9900;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">介绍</span>
+		  </div>
 		  </a>
+		  <a href="#week1" name="#week1">
+		  <div style="width:100%;height:40px;background-color:#0099FF;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">第一周计划</span>
+		  </div>
+		  </a>
+		  <div style="width:100%;height:40px;background-color:#9900FF;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">第二周计划</span>
+		  </div>
+		  <div style="width:100%;height:40px;background-color:#FF0099;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">第三周计划</span>
+		  </div>
 		</div>
-	    <div style="width:192px;float:left;">
-		  <?php include 'src/project_index.php'?>
-		</div>
-		<div class="content" style="width:760px;float:left;">
-			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
-			  <div class="index_feature_intro_title">
+		<div class="content" style="width:760px;float:left;margin:0 0 0 200px;">
+		    <a href="register.php">
+			<div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;">
+			  点击这里，加入我们
+			</div>
+			</a>
+			<div id="basic" name="basic" class="index_feature_box al_left" style="margin:10px 60px;min-height:200px;">
+				<div class="index_feature_intro_title" style="line-height:10px;">
 				  <div style="float:left;">
 				  <img src="p2.jpg" style="height:40px;" />
 				  </div>
 				  <div style="float:left;color:#108ac6;">
-				  <h1>数据库介绍</h1>
+				  <h1>课程介绍</h1>
 				  </div>
 				  <div style="clear:float;clear:both;"></div>
-				  <p>数据库在软件开发中是必不可少的一部分，数据库课程在大学中也是非常重要的，通过本课程的学习，你将掌握数据库基础知识及真实项目实践经验，对通过大学期末考试也是很有帮助的。</p>
+				<p>数据库在软件开发中是必不可少的一部分，数据库课程在大学中也是非常重要的，通过本课程的学习，你将掌握数据库基础知识及真实项目实践经验，对通过大学期末考试也是很有帮助的。</p>
 				<p>在大学通过上课，很难真正理解数据库的真实使用情况，通过实践，你能很容易的掌握数据库基本操作，较真实的理解数据库使用，不必再为书本上枯燥的理论知识烦心。</p>
 				<p>本课程中使用PHP语言作为网页语言（仅使用基本语法，对PHP有兴趣的同学可以再选择PHP的课程进行系统学习），MySQL数据库（将会接触到命令行访问、浏览器访问、桌面软件访问），重点学习数据库基础知识的使用和数据库实际操作。有疑问请加我们QQ群。</p>
 				<p>本课程中有宿舍学生信息管理、社团会员信息管理等实际项目，如你有感兴趣的项目，我们欢迎自行和同学组成小组进行开发。</p>
 			  </div>
 			</div>
-			<div style="margin:40px 0;width:100%;height:28px;border:1px solid #CCCCCC;font-size:16px;text-align:middle;padding:5px;color:#FF0099;">
-			  以下为第一周任务预览，更多资料，请先注册。小组指导员会根据小组成员实际情况进行调整。
-			</div>
-			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
+			<div style="clear:float;clear:both;"></div>
+			<hr />
+			
+			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:10px 60px;min-height:200px;line-height:10px;">
 				<div class="index_feature_intro_title">
 				  <div style="float:left;">
 				  <img src="p2.jpg" style="height:40px;" />
@@ -61,7 +73,7 @@
 			<div style="clear:float;clear:both;"></div>
 			<hr />
 			
-			<div class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
+			<div class="index_feature_box al_left" style="margin:10px 60px;min-height:200px;line-height:10px;">
 				<div class="index_feature_intro_title">
 				  <div style="float:left;">
 				  <img src="p2.jpg" style="height:40px;" />
@@ -80,7 +92,7 @@
 			<div style="clear:float;clear:both;"></div>
 			<hr />
 			
-			<div class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
+			<div class="index_feature_box al_left" style="margin:10px 60px;min-height:200px;line-height:10px;">
 				<div class="index_feature_intro_title">
 				  <div style="float:left;">
 				  <img src="p2.jpg" style="height:40px;" />

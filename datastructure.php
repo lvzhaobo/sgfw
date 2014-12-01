@@ -5,36 +5,10 @@
 	  p {text-indent:2em;line-height:1.6em;}
 	  a {color:#FFFFFF;text-decoration:none;}
 	</style>
+	<script src="account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
-    <div id="logo" style="height:620px;overflow:hidden;background:url('bg.jpg') no-repeat scroll 0 0 / 1400px auto rgba(0, 0, 0, 0);">
-	  <div style="margin:140px 0 0 280px;">
-	    <span style="font-size:56px;font-weight:bold;color:#FFFFFF;">时&nbsp;&nbsp;光&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />
-		<span style="color:#FFFFFF;font-size:24px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />
-		<span style="color:#FF6600;font-size:24px;">梦想之星 | I Dream, I Do, I Succeed!</span>
-	  </div>
-	  <div style="margin:80px 0 0 720px;font-size:16px;font-weight:bold;width:400px;">
-	    <span>向有兴趣的同学提供的一起免费学习计算机编程的平台，只要你有兴趣、想要学习这些内容，请加入我们。</span><br />
-		<span style="font-size:20px;color:#0099FF;">QQ群：376265741</span>
-	  </div>
-	  <div id="intro" name="intro" style="width:960px;margin:132px auto;font-size:32px;">
-	    <a href="#intro" name="#intro">
-	    <div style="width:320px;background-color:rgba(1515,99,00,0.25);height:60px;text-align:center;float:left;">
-		  介绍
-		</div>
-		</a>
-		<a href="#project" name="#project">
-		<div style="width:320px;background-color:rgba(00,99,1515,0.25);height:60px;text-align:center;float:left;">
-		  项目
-		</div>
-		</a>
-		<a href="">
-		<div style="width:320px;background-color:rgba(00,1211,1014,0.25);height:60px;text-align:center;float:left;">
-		  关于我们
-		</div>
-		</a>
-	  </div>
-	</div>
+    <?php include 'src/header.php'?>
 	<div>
 	  <div class="main index">
 		  <div class="content" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
