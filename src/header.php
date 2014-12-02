@@ -37,7 +37,7 @@ $header = <<<EOF
 		<div style="width:192px;background-color:rgba(150,00,99,0.25);height:60px;text-align:center;float:left;">
 		  团队
 		</div>
-		<a href="index.php#intro">
+		<a href="about.php">
 	    <div style="width:192px;background-color:rgba(1515,99,00,0.25);height:60px;text-align:center;float:left;">
 		  关于
 		</div>
