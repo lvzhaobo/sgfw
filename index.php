@@ -4,29 +4,40 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;font-size:14px;color:#000000;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .project_item {width:206px;height:128px;margin:0px 0 0px 10px;float:left;color:#FF6600;padding:10px;border:2px solid #FFFFFF;}
+	  .project_item {width:206px;height:128px;margin:5px 0px 0px 10px;float:left;color:#FF6600;padding:10px;border:2px solid #E2E2E2;}
 	  .project_item_title {margin:20px 0 0 20px;font-size:16px;font-weight:bold;}
 	  .project_item hr {color:#FFFFFF;height:1px;display:none;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
-    <div id="logo" style="height:620px;overflow:hidden;background:url('bg.jpg') no-repeat scroll 0 0 / 1400px auto rgba(0, 0, 0, 0);">
-	  <div style="margin:20px 60px 0 0;float:right;">
-	    <a href="login.php">登录</a>&nbsp;&nbsp;<a href="register.php">注册</a>
+  <?php $img = "bg".rand(1,5).".jpg";?>
+    <div id="logo" style="margin:0 auto;margin-top:0px;height:88px;overflow:hidden;background:url('".$img."') no-repeat scroll 0 0 / 1400px auto rgba(0, 0, 0, 0);">
+	  <div style="margin:20px 0 0 200px;float:left;width:480px;">
+	    <span style="font-size:28px;font-weight:bold;color:#FF9900;">时&nbsp;&nbsp;光&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />
+		<!--<span style="color:#0099FF;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
+		<span style="color:#0099FF;font-size:14px;">梦想之星 | I Dream, I Do, I Succeed!</span>
 	  </div>
+	  <div style="margin:14px 0 0 100px;float:left;width:280px;font-size:13px;text-align:right;line-height:22px;color:#0099FF;padding:0 10px;border-right:2px solid #FF9900;">
+		以新的模式辅助大学教育<br /><span style="color:#FF9900;">一个免费的学习平台</span><br />加速实现梦想的舞台
+	  </div>
+	  <div style="width:100px;margin:20px 60px 0 0;float:right;">
+	    <a href="login.php" style="color:#FF9900;">登录</a>&nbsp;&nbsp;<a href="register.php" style="color:#FF9900;">注册</a>
+	  </div>
+	</div>
+	<div style="height:0px;border:2px solid #FF9900;"></div>
+    <div id="logo" style="margin:0px;padding:0px;height:420px;overflow:hidden;background:url('<?php echo $img?>') no-repeat scroll 0 0 / 1400px auto rgba(0, 0, 0, 0);">
+	  
 	  <div style="clear:float;clear:both;"></div>
-	  <div style="margin:120px 0 0 280px;">
+	  <div style="margin:40px 0 0 280px;">
 	    <span style="font-size:56px;font-weight:bold;color:#FFFFFF;">时&nbsp;&nbsp;光&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />
 		<span style="color:#FFFFFF;font-size:24px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />
 		<span style="color:#FF6600;font-size:24px;">梦想之星 | I Dream, I Do, I Succeed!</span>
 	  </div>
-	  <div style="margin:60px 0 0 720px;font-size:16px;font-weight:bold;width:400px;">
+	  <div style="margin:0px 0 0 720px;font-size:16px;font-weight:bold;width:400px;color:#FFFFFF;">
 	    <span>向有兴趣的同学提供的一起免费学习计算机编程的平台，只要你有兴趣、想要学习这些内容，请加入我们。</span><br />
-		<span style="color:#99FF00;">对你期末考试也有帮助哦。</span><br />
-		<span style="font-size:20px;color:#FF6600;">QQ群：376265741（梦想之星）</span>
 	  </div>
-	  <div id="project" name="project" style="width:960px;margin:104px auto;font-size:32px;">
+	  <div id="project" name="project" style="width:960px;margin:140px auto;font-size:32px;">
 	    <a href="index.php">
 		<div style="width:192px;background-color:rgba(1515,00,00,0.25);height:60px;text-align:center;float:left;">
 		  首页
@@ -59,8 +70,6 @@
 			  <div style="margin:0 0 0 10px;">
 			    <span style="font-size:28px;font-weight:bold;">学习课程</span><br />
 				<div style="width:600px;float:left;">
-				  <span style="font-size:16px;font-weight:bold;color:#0099FF;">QQ群：376265741</span>
-				  <br />
 				  <span>每个项目有具体计划，对某个项目感兴趣请加入我们。所有项目均为公益性质（完全免费）。</span>
 				</div>
 				<div style="float:left;width:334px;">
@@ -129,6 +138,49 @@
 			  </div>
 			  <div style="clear:float;clear:both;"></div>
 			</div>
+			<!--
+			<div style="">
+			  <div style="width:160px;height:168px;float:left;border:2px solid #E2E2E2;padding:5px;background-color:#F5F5F5;margin:0 0 0 10px;">
+			    <div style="height:40px;border-bottom:2px solid #FF9900;font-size:24px;font-weight:bold;color:#FF9900;padding:0 20px;">
+				  1
+				</div>
+				<div style="">
+				
+				</div>
+			  </div>
+			  <div style="width:160px;height:168px;float:left;border:2px solid #E2E2E2;padding:5px;background-color:#F5F5F5;margin:0 0 0 10px;">
+			    <div style="height:40px;border-bottom:2px solid #FF9900;font-size:24px;font-weight:bold;color:#FF9900;padding:0 20px;">
+				  1
+				</div>
+				<div style="">
+				
+				</div>
+			  </div>
+			  <div style="width:160px;height:168px;float:left;border:2px solid #E2E2E2;padding:5px;background-color:#F5F5F5;margin:0 0 0 10px;">
+			    <div style="height:40px;border-bottom:2px solid #FF9900;font-size:24px;font-weight:bold;color:#FF9900;padding:0 20px;">
+				  1
+				</div>
+				<div style="">
+				
+				</div>
+			  </div>
+			  <div style="width:160px;height:168px;float:left;border:2px solid #E2E2E2;padding:5px;background-color:#F5F5F5;margin:0 0 0 10px;">
+			    <div style="height:40px;border-bottom:2px solid #FF9900;font-size:24px;font-weight:bold;color:#FF9900;padding:0 20px;">
+				  1
+				</div>
+				<div style="">
+				
+				</div>
+			  </div>
+			  <div style="width:160px;height:168px;float:left;border:2px solid #E2E2E2;padding:5px;background-color:#F5F5F5;margin:0 0 0 10px;">
+			    <div style="height:40px;border-bottom:2px solid #FF9900;font-size:24px;font-weight:bold;color:#FF9900;padding:0 20px;">
+				  1
+				</div>
+				<div style="">
+				
+				</div>
+			  </div>
+			</div>
 			
 			 <div id="intro" name="intro" style="width:960px;font-size:32px;">
 			   <a href="index.php">
@@ -157,6 +209,24 @@
 			</div>
 			<div style="clear:float;clear:both;"></div>
 			
+			<div style="">
+			  <div style="width:280px;height:60px;background-color:#C2DB7D;margin:0 0 0 400px;">
+			    1
+			  </div>
+			  <div style="width:280px;height:60px;background-color:#F7B882;margin:0 0 0 320px;">
+			    1
+			  </div>
+			  <div style="width:280px;height:60px;background-color:#CAB065;margin:0 0 0 240px;">
+			    1
+			  </div>
+			  <div style="width:280px;height:60px;background-color:#906C54;margin:0 0 0 160px;">
+			    1
+			  </div>
+			  <div style="width:280px;height:60px;background-color:#847B1C;margin:0 0 0 80px;">
+			    1
+			  </div>
+			</div>
+			-->
 			<div class="index_feature_box al_left" style="margin:40px 60px;min-height:280px;">
 			  <div class="index_feature_intro index_feature_safe" style="width:480px;float:left;">
 				<div class="index_feature_intro_title" style="color:#108ac6;line-height:10px;">
