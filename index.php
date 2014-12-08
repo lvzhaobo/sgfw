@@ -7,6 +7,7 @@
 	  .project_item {width:206px;height:128px;margin:5px 0px 0px 10px;float:left;color:#FF6600;padding:10px;border:2px solid #E2E2E2;}
 	  .project_item_title {margin:20px 0 0 20px;font-size:16px;font-weight:bold;}
 	  .project_item hr {color:#FFFFFF;height:1px;display:none;}
+	  .item_content {line-height:36px;margin:20px;float:left;width:520px;color:#FFFFFF;letter-spacing:2px;font-size:16px;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
@@ -227,6 +228,77 @@
 			  </div>
 			</div>
 			-->
+		  </div>
+		  <div>
+			<div style="min-height:365px;padding:0 0 0 280px;background-color:#44B8EA;">
+			  <div style="padding:60px 0;">
+			    <div style="font-weight:bold;font-size:22px;color:#FFFFFF;">
+			      学习计算机基础课程
+			    </div>
+			    <div class="item_content" style="">
+				  1.精心准备的多门计算机课程，按难易度和技术体系分类<br />
+				  2.入门首选，适合“零”基础或想快速掌握一门课程的同学<br />
+				  3.专人负责指导，以完成项目为指导，需求和兴趣驱动式学习<br />
+			    </div>
+			    <div style="float:left;margin:0 0 0 20px;">
+			      <img src="p3.jpg" />
+			    </div>
+			  </div>
+			</div>
+			
+			<div style="min-height:365px;padding:0 0 0 280px;background-color:#9FD772;">
+			  <div style="padding:60px 0;">
+			    <div style="font-weight:bold;font-size:22px;color:#FFFFFF;">
+			      兴趣项目扶持
+			    </div>
+			    <div class="item_content" style="">
+				  1.面向有想法、有技术基础的同学<br />
+				  2.免费提供服务器、项目分析及实现、项目宣传、资金资助等<br />
+				  3.只要你有想法，你负责叫上你的小伙伴，我负责其他<br />
+				  4.示例项目：校园论坛、学校周边团购、情侣空间等
+			    </div>
+			    <div style="float:left;margin:0 0 0 20px;">
+			      <img src="p5.jpg" />
+			    </div>
+			  </div>
+			</div>
+			
+			<div style="min-height:365px;padding:0 0 0 280px;background-color:#FFBB53;">
+			  <div style="padding:60px 0;">
+			    <div style="font-weight:bold;font-size:22px;color:#FFFFFF;">
+			      学习方法
+			    </div>
+			    <div class="item_content" style="">
+				  1.叫上你的小伙伴，3-6人组成一个小组，小组成员需明确分工<br />
+				  2.按照计划，小组成员每周完成一点任务，每周见面交流一次<br />
+				  3.在QQ群中讨论问题，我们的指导员负责指导和解答问题<br />
+				  4.经过6-8周时间完成小项目，总结学到的知识
+			    </div>
+			    <div style="float:left;margin:0 0 0 20px;">
+			      <img src="p3.jpg" />
+			    </div>
+			  </div>
+			</div>
+			
+			<div style="min-height:365px;padding:0 0 0 280px;background-color:#F98B66;">
+			  <div style="padding:60px 0;">
+			    <div style="font-weight:bold;font-size:22px;color:#FFFFFF;">
+			      新手流程
+			    </div>
+			    <div class="item_content" style="">
+				  1.先注册账号，寻找3-6人组成小组，讨论小组口号、目标、分工<br />
+				  2.领取每周任务并完成，每周交流一次，在QQ群中可寻求帮助<br />
+				  3.6-8周后完成项目，进行DEMO，并领取课程学习证书<br />
+				  4.项目和小组成员在网站上展示，接受合作企业的青睐<br />
+				  5.如有兴趣继续开发项目，或选择新的课程继续学习
+			    </div>
+			    <div style="float:left;margin:0 0 0 20px;">
+			      <img src="p3.jpg" />
+			    </div>
+			  </div>
+			</div>
+		  </div>
+		  <div style="width:960px;margin:0 auto;">
 			<div class="index_feature_box al_left" style="margin:40px 60px;min-height:280px;">
 			  <div class="index_feature_intro index_feature_safe" style="width:480px;float:left;">
 				<div class="index_feature_intro_title" style="color:#108ac6;line-height:10px;">
