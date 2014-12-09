@@ -9,7 +9,7 @@ else{
 }
 $header = <<<EOF
 	<div id="logo" style="margin-top:-28px;height:148px;overflow:hidden;background:url('bg.jpg') no-repeat scroll 0 0 / 1400px auto rgba(0, 0, 0, 0);">
-	  <div style="margin:4px 60px 0 0;float:right;">
+	  <div style="margin:4px 200px 0 0;float:right;font-weight:bold;">
 	    $str
 	  </div>
 	  <div style="clear:float;clear:both;"></div>
@@ -24,24 +24,25 @@ $header = <<<EOF
 		  首页
 		</div>
 		</a>
-		<a href="index.php#project">
+		<a href="study.php">
+		<div style="width:192px;background-color:rgba(00,1211,1014,0.25);height:60px;text-align:center;float:left;">
+		  课程
+		</div>
+		</a>
+		<a href="project.php">
 		<div style="width:192px;background-color:rgba(00,99,1515,0.25);height:60px;text-align:center;float:left;">
 		  项目
 		</div>
 		</a>
-		<a href="website.php">
-		<div style="width:192px;background-color:rgba(00,1211,1014,0.25);height:60px;text-align:center;float:left;">
-		  课程
-		</div>
 		<a href="team.php">
 		<div style="width:192px;background-color:rgba(150,00,99,0.25);height:60px;text-align:center;float:left;">
 		  团队
 		</div>
+		</a>
 		<a href="about.php">
 	    <div style="width:192px;background-color:rgba(1515,99,00,0.25);height:60px;text-align:center;float:left;">
 		  关于
 		</div>
-		</a>
 		</a>
 	  </div>
 	</div>

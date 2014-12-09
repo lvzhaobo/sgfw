@@ -70,7 +70,7 @@
 			<div style="color:#000000;">
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Burning</span><hr />
-				<p>2010年毕业于郑州大学，郑州大学“梦想之星英语社”创始人，热衷于帮助他人实现梦想，现任职于上海某网络安全公司。</p>
+				<p>2010年毕业于郑州大学，郑州大学“梦想之星”英语社创始人，热衷于帮助他人实现梦想，现任职于上海某网络安全公司。</p>
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Bella</span><hr />
