@@ -12,24 +12,19 @@
 	<div>
 	  <div class="main index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
 	    <div style="width:192px;float:left;position:fixed;">
-		  <a href="login.php">
-		  <div style="width:100%;height:40px;background-color:#FF9900;font-size:24px;">
-		    <span style="margin:0 0 0 20px;">登录</span>
-		  </div>
-		  </a>
-		  <a href="register.php">
-		  <div style="width:100%;height:40px;background-color:#0099FF;font-size:24px;">
-		    <span style="margin:0 0 0 20px;">注册</span>
-		  </div>
-		  </a>
 		  <a href="mySpace.php">
-		  <div style="width:100%;height:40px;background-color:#9900FF;font-size:24px;">
-		    <span style="margin:0 0 0 20px;">我的空间</span>
+		  <div style="width:100%;height:40px;background-color:#FF9900;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">基本信息</span>
 		  </div>
 		  </a>
-		  <a href="logout.php">
-		  <div style="width:100%;height:40px;background-color:#FF0099;font-size:24px;">
-		    <span style="margin:0 0 0 20px;">退出</span>
+		  <a href="myStudy.php">
+		  <div style="width:100%;height:40px;background-color:#0099FF;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">课程</span>
+		  </div>
+		  </a>
+		  <a href="myDiscuss.php">
+		  <div style="width:100%;height:40px;background-color:#9900FF;font-size:24px;">
+		    <span style="margin:0 0 0 20px;">学习讨论</span>
 		  </div>
 		  </a>
 		</div>

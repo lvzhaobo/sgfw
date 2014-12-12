@@ -2,7 +2,7 @@
 session_start();
 //var_dump($_SESSION);
 if(isset($_SESSION["user"])){
-	$str = "当前账户：<span style='color:#FF9900;font-weight:bold;'>".$_SESSION["user"]."</span>&nbsp;&nbsp;<a href='logout.php'>退出</a>";
+	$str = "当前账户：<a href='mySpace.php'><span style='color:#FF9900;font-weight:bold;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='logout.php'>退出</a>";
 }
 else{
 	$str = '<a href="login.php">登录</a>&nbsp;&nbsp;<a href="register.php">注册</a>';
