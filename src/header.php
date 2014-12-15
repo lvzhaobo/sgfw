@@ -14,9 +14,9 @@ $header = <<<EOF
 	  </div>
 	  <div style="clear:float;clear:both;"></div>
 	  <div style="margin:0px 0 0 280px;">
-	    <span style="font-size:28px;font-weight:bold;color:#FFFFFF;">时&nbsp;&nbsp;光&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />
+	    <span style="font-size:28px;font-weight:bold;color:#FFFFFF;">梦&nbsp;&nbsp;想&nbsp;&nbsp;之&nbsp;&nbsp;星</span><br />
 		<span style="color:#FFFFFF;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />
-		<span style="color:#FF6600;font-size:14px;">梦想之星 | I Dream, I Do, I Succeed!</span>
+		<span style="color:#FF6600;font-size:14px;">梦想科技 | I Dream, I Do, I Succeed!</span>
 	  </div>
 	  <div id="intro" name="intro" style="width:960px;margin:0px auto;font-size:32px;">
 	    <a href="index.php">
@@ -26,17 +26,17 @@ $header = <<<EOF
 		</a>
 		<a href="study.php">
 		<div style="width:192px;background-color:rgba(00,1211,1014,0.25);height:60px;text-align:center;float:left;">
-		  课程
+		  种子课程
 		</div>
 		</a>
 		<a href="project.php">
 		<div style="width:192px;background-color:rgba(00,99,1515,0.25);height:60px;text-align:center;float:left;">
-		  项目
+		  萌芽项目
 		</div>
 		</a>
 		<a href="team.php">
 		<div style="width:192px;background-color:rgba(150,00,99,0.25);height:60px;text-align:center;float:left;">
-		  团队
+		  梦想团队
 		</div>
 		</a>
 		<a href="about.php">
