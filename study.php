@@ -33,54 +33,54 @@
 			  <br />
 			  
 			  <a href="website.php">
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">HTML CSS</span><hr />
 				<p>开发静态网站，满足院系、社团、兴趣小组、中小企业官方网站的需求。</p>
 			  </div>
 			  </a>
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">PHP</span><hr />
 				<p>适合用于动态网站，例如论坛、交流网站，更方便开发静态网站。</p>
 			  </div>
 			  <a href="database.php">
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">数据库</span><hr />
 				<p>软件开发必不可少的一部分，通过本课程学习可以让你轻松应对期末数据库考试。</p>
 			  </div>
 			  </a>
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">ACM</span><hr />
 				<p>（敬请期待）不必羡慕ACMer，你也可以成为他们，从这里开始。</p>
 			  </div>
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">JavaScript</span><hr />
 				<p>在前端页面处理中的王者语言。</p>
 			  </div>
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">Java（JSP）</span><hr />
 				<p>高大上的综合性开发语言。</p>
 			  </div>
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">软件测试</span><hr />
 				<p>多方面、多角度掌握软件测试，你掌握的不仅是书本上的知识。</p>
 			  </div>
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">计算机网络</span><hr />
 				<p>（敬请期待）在实践中学习互联网互通互联的原理。</p>
 			  </div>
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">Linux服务器</span><hr />
 				<p>（敬请期待）在Linux系统中搭建各种服务，包括FTP服务器、Samba服务器、WEB服务器等。</p>
 			  </div>
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">云存储</span><hr />
 				<p>百度云、Dropbox、Google Drive等云存储服务商提供了丰富的API、SDK，赶紧加入云存储吧。</p>
 			  </div>
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">第三方开发</span><hr />
 				<p>百度、Google等公司有开发者平台，开发者可以在这些平台上方便快捷的开发、部署应用。</p>
 			  </div>
-			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">等你来发掘</span><hr />
 				<p>如果你有好的想法，能够帮助自己或别人请联系我们。</p>
 			  </div>
