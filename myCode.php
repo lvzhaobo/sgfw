@@ -13,7 +13,7 @@
 	  <div class="main index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
 	    <div style="width:192px;float:left;position:fixed;font-weight:bold;font-size:16px;">
 		  <a href="mySpace.php">
-		  <div style="width:100%;height:40px;color:#FF9900;">
+		  <div style="width:100%;height:40px;color:#000000;">
 		    <span style="margin:0 0 0 20px;">基本信息</span>
 		  </div>
 		  </a>
@@ -25,6 +25,11 @@
 		  <a href="myDiscuss.php">
 		  <div style="width:100%;height:40px;color:#000000;">
 		    <span style="margin:0 0 0 20px;">学习讨论</span>
+		  </div>
+		  </a>
+		  <a href="myCode.php">
+		  <div style="width:100%;height:40px;color:#FF9900;">
+		    <span style="margin:0 0 0 20px;">我的代码</span>
 		  </div>
 		  </a>
 		</div>
@@ -50,41 +55,7 @@
 		  ?>
 		  <fieldset>
 		  <legend>我的空间</legend>
-		  <form action="saveAccount.php" method="post">
-		    <table>
-			  <tr>
-			    <th width="100">用户名：</th>
-				<td><?php echo base64_decode($data["username"]);?></td>
-			  </tr>
-			  <tr>
-			    <th>QQ：</th>
-				<td><?php echo $data["qq"]?></td>
-			  </tr>
-			  <tr>
-			    <th>Email：</th>
-				<td><?php echo $data["email"]?></td>
-			  </tr>
-			  <tr>
-			    <th>学习课程：</th>
-				<td><?php $project = array("website"=>"网站设计",
-										"database"=>"数据库",
-										"php"=>"PHP");
-							echo $project[$data["project"]];
-					?></td>
-			  </tr>
-			  <tr>
-			    <th>分组：</th>
-				<td name="team">
-				  <?php 
-				    if(isset($data["team"]))
-						echo "小组".$data["team"];
-					else
-						echo "小组1";
-				  ?>
-				</td>
-			  </tr>
-			</table>
-		  </form>
+		  
 		  </fieldset>
 		</div>
 	</div>

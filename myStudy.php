@@ -100,6 +100,12 @@
 			<div style="color:#888888;">
 			  仅在本周任务基础上多显示一周任务。
 			</div>
+			<div style="border:1px solid #CCCCCC;height:40px;">
+			  <form action="src/upload.php" method="post" enctype="multipart/form-data">
+			    <input type="file" name="file"/>
+			    <button type="submit" style="margin:0 0 0 180px;font-weight:bold;width:60px;height:32px;background-color:#0099FF;border:2px solid #CCCCCC;">确定</button>
+			  </form>
+			</div>
 		  </fieldset>
 		</div>
 	</div>
@@ -114,6 +120,6 @@
 <script>
 <?php if(!empty($_GET["info"])){?>
 alert("<?php echo $_GET["info"]?>");
-window.location.href="register.php";
+window.location.href="myStudy.php";
 <?php }?>
 </script>
