@@ -15,13 +15,13 @@
     <?php include 'src/header.php'?>
 	<div>
 	  <div class="main_index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
-	    <div>
+	    <!--<div>
 		  <a href="register.php">
 		    <div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;margin:0 0 10px 0;">
 			  点击这里，进行注册
 		    </div>
 		  </a>
-		</div>
+		</div>-->
 	    <div style="width:192px;float:left;">
 		  <a href="about.php">
 		  <div style="width:100%;height:40px;color:#FF9900;">

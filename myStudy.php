@@ -5,26 +5,28 @@
 	  p {text-indent:2em;line-height:1.6em;}
 	  a {color:#FFFFFF;text-decoration:none;}
 	  .team a {color:#FF9900;text-decoration:none;margin:10px;}
+	  table {font-size:13px;}
+	  ul {margin:0 0 0 -20px;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main index" style="padding-top:30px;width:960px;margin:0px auto;font-size:14px;">
-	    <div style="width:192px;float:left;position:fixed;">
+	  <div class="main index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;min-height:400px;">
+	    <div style="width:192px;float:left;position:fixed;font-weight:bold;font-size:16px;">
 		  <a href="mySpace.php">
-		  <div style="width:100%;height:40px;background-color:#FF9900;font-size:24px;">
+		  <div style="width:100%;height:40px;color:#000000;">
 		    <span style="margin:0 0 0 20px;">基本信息</span>
 		  </div>
 		  </a>
 		  <a href="myStudy.php">
-		  <div style="width:100%;height:40px;background-color:#0099FF;font-size:24px;">
-		    <span style="margin:0 0 0 20px;">课程</span>
+		  <div style="width:100%;height:40px;color:#FF9900;">
+		    <span style="margin:0 0 0 20px;">我的课程</span>
 		  </div>
 		  </a>
 		  <a href="myDiscuss.php">
-		  <div style="width:100%;height:40px;background-color:#9900FF;font-size:24px;">
+		  <div style="width:100%;height:40px;color:#000000;">
 		    <span style="margin:0 0 0 20px;">学习讨论</span>
 		  </div>
 		  </a>
@@ -92,18 +94,42 @@
 		  <fieldset style="border:2px solid #0099FF;padding:10px;line-height:22px;">
 		    <legend>学习任务</legend>
 			<div>
-			  第一周：建立项目，了解HTML基本语法和标签、CSS样式，完成个人简历网页。
+			  <span style="font-weight:bold;">第一周：建立项目，了解HTML基本语法和标签、CSS样式，完成个人简历网页。</span><a href="study/website/week1.php">学习要求</a>
+			  <div>
+			    <table>
+				  <tr>
+				    <th width="100px;">学习内容：</th>
+					<td><ul>
+					  <li>Notepad++使用</li>
+					  <li>HTML元素（h1、table、a、hr、br、div等标签）</li>
+					  <li>CSS样式（font-size、font-weight、color、background-color、width、height等）</li>
+					  </ul></td>
+				  </tr>
+				</table>
+			  </div>
 			</div>
 			<div>
-			  第二周：学习文档，分析网站基本结构，完成个人网站（自己感兴趣的网站）原型初步设计。
+			  <span style="font-weight:bold;">第二周：学习文档，分析网站基本结构，完成个人网站（自己感兴趣的网站）原型初步设计。</span>
+			  <div>
+			    <table>
+				  <tr>
+				    <th width="100px;">学习内容：</th>
+					<td><ul>
+					  <li>经典网页结构、布局分析</li>
+					  <li>网站设计</li>
+					  <li>软件开发流程文档</li>
+					  </ul></td>
+				  </tr>
+				</table>
+			  </div>
 			</div>
 			<div style="color:#888888;">
 			  仅在本周任务基础上多显示一周任务。
 			</div>
 			<div style="border:1px solid #CCCCCC;height:40px;">
 			  <form action="src/upload.php" method="post" enctype="multipart/form-data">
-			    <input type="file" name="file"/>
-			    <button type="submit" style="margin:0 0 0 180px;font-weight:bold;width:60px;height:32px;background-color:#0099FF;border:2px solid #CCCCCC;">确定</button>
+			    <input type="file" name="file" style="width:140px;" />
+			    <button type="submit" style="margin:0 0 0 0px;font-weight:bold;width:60px;height:32px;background-color:#0099FF;border:2px solid #CCCCCC;">确定</button>
 			  </form>
 			</div>
 		  </fieldset>

@@ -18,13 +18,21 @@
 		    <div style="width:100%;margin:40px 0;min-height:480px;">
 			  <div style="margin:0 0 0 10px;">
 			    <span style="font-size:28px;font-weight:bold;">参与学校</span><br />
-				<span>每个项目有具体计划，对某个项目感兴趣请加入我们。可在完成一个项目后参与其他项目，所有项目均为公益性质（完全免费）。</span>
-			  </div>
-			  <a href="register.php">
-				<div style="margin:5px 0 5px 10px;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px 0;">
-				  点击这里，加入我们
+				<div style="width:600px;float:left;">
+				  <span>已经参与的学校/校区，如果没找到你的学校，请第一个注册并让你的学校/校区显示在这里吧。</span>
 				</div>
-			  </a>
+				<div style="float:left;width:334px;">
+				  <a href="register.php">
+				    <div style="margin:5px 0 5px 10px;background-color:#FFFFFF;font-size:22px;font-weight:bold;text-align:center;padding:5px 0;color:#0099FF;border:2px solid #FF9900;">
+				      点击这里，加入我们
+				    </div>
+			      </a>
+				</div>
+			  </div>
+			  <div style="clear:float;clear:both;"></div>
+			  <hr style="color:#CCCCCC;" />
+			  <br />
+			  
 			  <div>
 			  <div style="width:720px;float:left;">
 			  <!--<a href="website.php">
@@ -96,11 +104,23 @@
 			  </div>
 			</div>
 			<div style="clear:float;clear:both;"></div>
-			<div style="margin:20px 0 40px 0;">
+			<div style="margin:20px 0 40px 0px;">
 			  <div style="margin:0 0 0 10px;">
-			    <span style="font-size:28px;font-weight:bold;">梦想团队</span><br />
+			  <span style="font-size:28px;font-weight:bold;">梦想团队</span><br />
+			  <div style="width:600px;float:left;">
 				<span>想显示在此处？先注册页面，尽可能好的完成课程学习、项目开发，让更多的人认识你。</span>
 			  </div>
+			  <div style="float:left;width:334px;">
+				  <a href="register.php">
+				    <div style="margin:5px 0 5px 10px;background-color:#FFFFFF;font-size:22px;font-weight:bold;text-align:center;padding:5px 0;color:#0099FF;border:2px solid #FF9900;">
+				      点击这里，加入我们
+				    </div>
+			      </a>
+			  </div>
+			</div>
+				<div style="clear:float;clear:both;"></div>
+				<hr style="color:#CCCCCC;" />
+				<br />
 			  <?php
 				include 'db.php';
 				$result = mysql_query("select * from sgfw_user where id>=5 order by id desc");
