@@ -7,7 +7,7 @@
 	  .project_item {width:286px;min-height:220px;margin:5px 0px 0px 10px;float:left;padding:10px;border:2px solid #E2E2E2;color:#000000;}
 	  .project_item_title {margin:20px 0 0 0px;font-size:16px;font-weight:bold;color:#FF6600;line-height:28px;}
 	  .project_item hr {height:1px;display:none;}
-	  .label_part {background-color:#4EB9ED;padding:1px 2px;margin:0 2px;line-height:26px;}
+	  .label_part {background-color:#4EB9ED;padding:1px 2px;margin:0 2px;line-height:26px;font-weight:normal;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>

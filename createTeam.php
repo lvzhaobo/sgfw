@@ -4,7 +4,8 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  input,select {height:32px;border:2px solid #0099FF;font-weight:bold;font-size:14px;background-color:#F2F2F2;padding:4px;margin:2px;}
+	  input,select,textarea {height:32px;border:2px solid #0099FF;font-weight:bold;font-size:14px;background-color:#F2F2F2;padding:4px;margin:2px;}
+	  textarea {height:100px;width:280px;}
 	  th {text-align:right;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
@@ -37,65 +38,37 @@
 		</div>
 		<div class="content" style="width:760px;float:left;margin:0 0 0 200px;min-height:320px;">
 		  <fieldset>
-		  <legend>注册</legend>
-		  <form action="saveAccount.php" method="post">
+		  <legend>创建团队</legend>
+		  <form action="saveTeam.php" method="post">
 		    <table>
 			  <tr>
-			    <th width="100">用户名：</th>
-				<td><input name="account[username]"></td>
+			    <th width="100">团队名称：</th>
+				<td><input name="team[name]" /></td>
 			  </tr>
 			  <tr>
-			    <th>密码：</th>
-				<td><input name="account[password]" type="password"></td>
+			    <th>成员：</th>
+				<td><input name="team[member]" /></td>
 			  </tr>
 			  <tr>
-			    <th>确认密码：</th>
-				<td><input name="account[password_2]" type="password"></td>
+			    <th>口号：</th>
+				<td><input name="team[slogan]" /></td>
 			  </tr>
 			  <tr>
-			    <th>QQ：</th>
-				<td><input name="account[qq]"></td>
+			    <th>团队标签：</th>
+				<td><input name="team[label]" /></td>
 			  </tr>
 			  <tr>
-			    <th>Email：</th>
-				<td><input name="account[email]"></td>
+			    <th>主页：</th>
+				<td><input name="team[website]" /></td>
 			  </tr>
 			  <tr>
-			    <th>推荐人：</th>
-				<td><input name="account[recommender]" value="<?php echo (isset($_GET["r"])?base64_decode($_GET["r"]):"")?>"></td>
+			    <th>联系方式：</th>
+				<td><input name="team[connect]" /></td>
 			  </tr>
 			  <tr>
-			    <th>学校：</th>
-				<td><input name="account[college]"></td>
+			    <th>团队简介：</th>
+				<td><textarea name="team[introduction]"></textarea></td>
 			  </tr>
-			  <!--<tr>
-			    <th>学习课程：</th>
-				<td><select name="account[project]">
-				  <option value="website">网站设计</option>
-				  <option value="database">数据库</option>
-				  <option value="php">PHP</option>
-				  <option value="javascript">JavaScript</option>
-				  <option value="jsp">Java(JSP)</option>
-				  <option value="software_test">软件测试</option>
-				  
-				</select></td>
-			  </tr>
-			  <tr>
-			    <th>分组：</th>
-				<td>
-				  <select name="account[team]">
-				    <option value="1">小组1</option>
-				    <option value="2">小组2</option>
-					<option value="3">小组3</option>
-					<option value="4">小组4</option>
-					<option value="5">小组5</option>
-				    <option value="6">小组6</option>
-					<option value="7">小组7</option>
-					<option value="8">小组8</option>
-				  </select>
-				  <span>暂时分组，待注册结束后可微调，建议希望在一组的同学先选择同一个小组。</span>
-				</td>
-			  </tr>-->
 			  <tr>
 			    <th></th>
 				<td><button type="submit" style="margin:0 0 0 100px;font-weight:bold;width:60px;height:32px;background-color:#0099FF;border:2px solid #CCCCCC;">确定</button></td>
@@ -116,6 +89,6 @@
 <script>
 <?php if(!empty($_GET["info"])){?>
 alert("<?php echo $_GET["info"]?>");
-window.location.href="register.php";
+window.location.href="createTeam.php";
 <?php }?>
 </script>

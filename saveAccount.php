@@ -43,12 +43,13 @@
 	if((isset($row["id"]) && !empty($row["id"])) && empty($info))
 		$info = "用户名已被使用";
 	if(empty($info)){
-		$sql = "insert into sgfw_user (username,password,qq,email,project,team) values('".base64_encode($data["username"])."','".$data["password"]."','".$data["qq"]."','".$data["email"]."','".$data["project"]."','".$data["team"]."')";
+		$sql = "insert into sgfw_user (username,password,qq,email,recommender,college,create_time) values('".base64_encode($data["username"])."','".$data["password"]."','".$data["qq"]."','".$data["email"]."','".$data["recommender"]."','".$data["college"]."','".time()."')";
 		$result = mysql_query($sql,$conn);
-		if(!$result)
+		if(!$result){
 			$info = "注册失败";
-		//var_dump(mysql_error());
-		//die;
+			var_dump(mysql_error());
+			die;
+		}
 		session_start();
 		$_SESSION["user"] = $data["username"];
 		$_SESSION["code"] = md5($data["password"]);
@@ -58,7 +59,7 @@
 ?>
 <script>
 <?php if(empty($info)){?>
-window.location.href="mySpace.php";
+window.location.href="mySpace.php?info=注册成功";
 <?php }
 else{
 ?>

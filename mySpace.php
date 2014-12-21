@@ -38,14 +38,20 @@
 				$result = mysql_query("select * from sgfw_user where username='".base64_encode($_SESSION["user"])."'");
 				//var_dump(mysql_error());
 				$data = mysql_fetch_array($result);
+				
+				$result = mysql_query("select * from sgfw_team where member LIKE '%".$_SESSION["user"]."%'");
+				//var_dump(mysql_error());
+				$team = mysql_fetch_array($result);
+				//var_dump($team);
 			}
 			if(!isset($data["id"]) or empty($data["id"])){
 				echo "<script>alert('请先登录');window.location.href='login.php'</script>";
 			}
 			//var_dump($data);
 		  ?>
+		  <a href="createTeam.php">创建团队</a>&nbsp;&nbsp;<a href="createProject.php">创建项目</a>
 		  <fieldset>
-		  <legend>我的空间</legend>
+		  <legend>基本信息</legend>
 		  <form action="saveAccount.php" method="post">
 		    <table>
 			  <tr>
@@ -60,7 +66,7 @@
 			    <th>Email：</th>
 				<td><?php echo $data["email"]?></td>
 			  </tr>
-			  <tr>
+			  <!--<tr>
 			    <th>学习课程：</th>
 				<td><?php $project = array("website"=>"网站设计",
 										"database"=>"数据库",
@@ -78,9 +84,47 @@
 						echo "小组1";
 				  ?>
 				</td>
+			  </tr>-->
+			  <?php if(!empty($data["create_time"])){?>
+			  <tr>
+			    <th>注册时间：</th>
+				<td><?php echo date("Y年m月d日 H:i:s",$data["create_time"]+3600*7)?></td>
 			  </tr>
+			  <?php }?>
 			</table>
 		  </form>
+		  </fieldset>
+		  
+		  <fieldset>
+		  <legend>我的团队</legend>
+		    <table>
+			  <tr>
+			    <th width="100">团队名称：</th>
+				<td><?php echo base64_decode($team["name"]);?></td>
+			  </tr>
+			  <tr>
+			    <th>成员：</th>
+				<td><?php echo $team["member"]?></td>
+			  </tr>
+			  <tr>
+			    <th>口号：</th>
+				<td><?php echo $team["slogan"]?></td>
+			  </tr>
+			  <tr>
+			    <th>标签：</th>
+				<td><?php echo $team["label"]?></td>
+			  </tr>
+			  <tr>
+			    <th>主页：</th>
+				<td><?php echo $team["website"]?></td>
+			  </tr>
+			  <?php if(!empty($team["create_time"])){?>
+			  <tr>
+			    <th>注册时间：</th>
+				<td><?php echo date("Y年m月d日 H:i:s",$team["create_time"]+3600*7)?></td>
+			  </tr>
+			  <?php }?>
+			</table>
 		  </fieldset>
 		</div>
 	</div>
