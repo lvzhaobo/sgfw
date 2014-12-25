@@ -2,8 +2,12 @@
   <head>
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
     <style type="text/css">
-	  p {text-indent:2em;line-height:1.6em;}
+	  p {text-indent:2em;line-height:1.6em;color:#000000;}
 	  a {color:#FFFFFF;text-decoration:none;}
+	  .main_index a {color:#000000;font-weight:bold;}
+	  .project_item {width:206px;margin:0px 0 0px 10px;float:left;color:#FF6600;padding:10px;border:2px solid #FFFFFF;}
+	  .project_item_title {margin:20px 0 0 20px;font-size:16px;font-weight:bold;}
+	  .project_item hr {color:#FFFFFF;height:1px;display:none;}
 	  input {height:32px;border:2px solid #0099FF;font-weight:bold;font-size:14px;background-color:#F2F2F2;padding:4px;margin:2px;}
 	  th {text-align:right;}
 	</style>

@@ -2,24 +2,26 @@
 session_start();
 //var_dump($_SESSION);
 if(isset($_SESSION["user"])){
-	$str = "<a href='mySpace.php'><span style='color:#0099FF;font-weight:bold;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='logout.php' style='color:#CCCCCC;'>退出</a>";
+	$str = "<a href='mySpace.php'><span style='color:#666666;font-weight:bold;font-size:14px;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='logout.php' style='color:#999999;font-size:14px;'>退出</a>";
 }
 else{
-	$str = '<a href="login.php">登录</a>&nbsp;&nbsp;<a href="register.php">注册</a>';
+	$str = '<a href="login.php" style="color:#666666;font-size:14px;">登录</a>&nbsp;&nbsp;<a href="register.php" style="color:#666666;font-size:14px;">注册</a>';
 }
 
 $nav = array(
-			array('href'=>'index.php','label'=>'首页'),
-			array('href'=>'study.php','label'=>'种子课程'),
-			array('href'=>'project.php','label'=>'萌芽项目'),
-			array('href'=>'team.php','label'=>'梦想团队'),
-			array('href'=>'about.php','label'=>'关于')
+			array('href'=>'index.php','label'=>'首页','links'=>array('index.php')),
+			array('href'=>'study.php','label'=>'种子课程','links'=>array('study.php','website.php')),
+			array('href'=>'project.php','label'=>'萌芽项目','links'=>array('project.php')),
+			array('href'=>'team.php','label'=>'梦想团队','links'=>array('team.php')),
+			array('href'=>'about.php','label'=>'关于','links'=>array('about.php'))
 		);
+$current_page = $_SERVER["REQUEST_URI"];
+$current_page = preg_replace("/\/sgfw\//","",$current_page);
 $nav_str = "";
 foreach($nav as $key=>$nav_item){
 	$nav_str .='
 	  <a href="'.$nav_item["href"].'">
-		<div style="text-align:center;float:left;" class="nav_item'.(preg_match("/".$nav_item["href"]."/",$_SERVER["REQUEST_URI"])?" selected":"").'">
+		<div style="text-align:center;float:left;" class="nav_item'.(in_array($current_page,$nav[$key]["links"])?" selected":"").'">
 		  '.$nav_item["label"].'
 		</div>
 	  </a>
@@ -37,7 +39,7 @@ $header = <<<EOF
 	    $str
 	  </div>
 	  <div style="clear:float;clear:both;"></div>
-	  <div style="height:48px;border-bottom:2px solid #CCCCCC;">
+	  <div style="height:48px;border-bottom:2px solid #FF9900;">
 	  <div style="margin:-20px 0 0 200px;float:left;">
 	    <span style="font-size:28px;font-weight:bold;color:#FF9900;">梦&nbsp;&nbsp;想&nbsp;&nbsp;之&nbsp;&nbsp;星</span><br />
 		<!--<span style="color:#FF9900;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
