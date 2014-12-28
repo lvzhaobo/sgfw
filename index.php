@@ -171,8 +171,8 @@ else{
 			-->
 		  </div>
 		  <div>
-			<div style="min-height:365px;padding:0 0 0 280px;background-color:#44B8EA;">
-			  <div style="padding:60px 0;">
+			<div style="min-height:465px;padding:0 0 0 280px;background-color:#44B8EA;">
+			  <div style="padding:100px 0;">
 			    <div style="font-weight:bold;font-size:22px;color:#FFFFFF;">
 			      学习计算机基础课程
 			    </div>
@@ -182,14 +182,14 @@ else{
 				  3.专人负责指导，以完成项目为指导，需求和兴趣驱动式学习<br />
 				  4.只要认真参与，让你给自己或那个他/她做个网站“很随意”
 			    </div>
-			    <div style="float:left;margin:0 0 0 20px;">
+			    <!--<div style="float:left;margin:0 0 0 20px;">
 			      <img src="p3.jpg" />
-			    </div>
+			    </div>-->
 			  </div>
 			</div>
 			
-			<div style="min-height:365px;padding:0 0 0 280px;background-color:#9FD772;">
-			  <div style="padding:60px 0;">
+			<div style="min-height:465px;padding:0 0 0 280px;background-color:#9FD772;">
+			  <div style="padding:100px 0;">
 			    <div style="font-weight:bold;font-size:22px;color:#FFFFFF;">
 			      兴趣项目扶持
 			    </div>
@@ -199,14 +199,14 @@ else{
 				  3.只要你有想法，你负责叫上你的小伙伴，我负责其他<br />
 				  4.示例项目：校园论坛、学校周边团购、情侣空间等
 			    </div>
-			    <div style="float:left;margin:0 0 0 20px;">
+			    <!--<div style="float:left;margin:0 0 0 20px;">
 			      <img src="p5.jpg" />
-			    </div>
+			    </div>-->
 			  </div>
 			</div>
 			
-			<div style="min-height:365px;padding:0 0 0 280px;background-color:#FFBB53;">
-			  <div style="padding:60px 0;">
+			<div style="min-height:465px;padding:0 0 0 280px;background-color:#FFBB53;">
+			  <div style="padding:80px 0;">
 			    <div style="font-weight:bold;font-size:22px;color:#FFFFFF;">
 			      学习方法
 			    </div>
@@ -216,14 +216,14 @@ else{
 				  3.在QQ群中讨论问题，我们的指导员负责指导和解答问题<br />
 				  4.经过6-8周时间完成小项目，总结学到的知识
 			    </div>
-			    <div style="float:left;margin:0 0 0 20px;">
+			    <!--<div style="float:left;margin:0 0 0 20px;">
 			      <img src="p3.jpg" />
-			    </div>
+			    </div>-->
 			  </div>
 			</div>
 			
-			<div style="min-height:365px;padding:0 0 0 280px;background-color:#F98B66;">
-			  <div style="padding:60px 0;">
+			<div style="min-height:465px;padding:0 0 0 280px;background-color:#F98B66;">
+			  <div style="padding:80px 0;">
 			    <div style="font-weight:bold;font-size:22px;color:#FFFFFF;">
 			      新手流程
 			    </div>
@@ -234,13 +234,13 @@ else{
 				  4.项目和小组成员在网站上展示，接受合作企业的青睐<br />
 				  5.如有兴趣继续开发项目，或选择新的课程继续学习
 			    </div>
-			    <div style="float:left;margin:0 0 0 20px;">
+			    <!--<div style="float:left;margin:0 0 0 20px;">
 			      <img src="p3.jpg" />
-			    </div>
+			    </div>-->
 			  </div>
 			</div>
 		  </div>
-		  <div style="width:960px;margin:0 auto;">
+		  <!--<div style="width:960px;margin:0 auto;">
 			<div class="index_feature_box al_left" style="margin:40px 60px;min-height:280px;">
 			  <div class="index_feature_intro index_feature_safe" style="width:480px;float:left;">
 				<div class="index_feature_intro_title" style="color:#108ac6;line-height:10px;">
@@ -346,7 +346,7 @@ else{
 				<img src="p4.jpg" style="width:268px;"/>
 			  </div>
 			</div>
-			<div style="clear:float;clear:both;"></div>
+			<div style="clear:float;clear:both;"></div>-->
 			
 		  </div>
 		</div>

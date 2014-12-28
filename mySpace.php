@@ -2,6 +2,9 @@
   <head>
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
 	<script src="account.js" type="text/javascript"></script>
+	<style>
+	  #basic_info input {height:32px;border:2px solid #0099FF;font-weight:bold;font-size:14px;background-color:#F2F2F2;padding:4px;margin:2px;}
+	</style>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
@@ -48,25 +51,53 @@
 				echo "<script>alert('请先登录');window.location.href='login.php'</script>";
 			}
 			//var_dump($data);
+			$edit = isset($_GET["edit"]);
 		  ?>
-		  <a href="createTeam.php">创建团队</a>&nbsp;&nbsp;<a href="createProject.php">创建项目</a>
+		  <a href="createTeam.php">创建团队</a>&nbsp;&nbsp;<a href="createProject.php">创建项目</a>&nbsp;&nbsp;
+		  <?php if($edit){?>
+			<a href="mySpace.php">返回</a>
+		  <?php }
+			else{
+		  ?>
+			<a href="mySpace.php?edit=true">编辑</a>
+		  <?php }?>
 		  <fieldset>
 		  <legend>基本信息</legend>
-		  <form action="saveAccount.php" method="post">
-		    <table>
+		  <div id="basic_info" style="width:400px;float:left;">
+		  <form action="saveAccount.php?edit=true" method="post">
+		    <table style="line-height:28px;">
 			  <tr>
 			    <th width="100">用户名：</th>
 				<td><?php echo base64_decode($data["username"]);?></td>
 			  </tr>
 			  <tr>
 			    <th>QQ：</th>
-				<td><?php echo $data["qq"]?></td>
+				<td><?php 
+					if($edit){
+					?>
+					<input type="text" name="account['qq']" value="<?php echo $data['qq'];?>">
+					<?php
+					}
+					else{
+						echo $data["qq"];
+					}?>
+				</td>
 			  </tr>
 			  <tr>
 			    <th>Email：</th>
-				<td><?php echo $data["email"]?></td>
+				<td><?php 
+					if($edit){
+					?>
+					<input type="text" name="account['email']" value="<?php echo $data['email'];?>">
+					<?php
+					}
+					else{
+						echo $data["email"];
+					}?>
+				</td>
 			  </tr>
-			  <!--<tr>
+			  <?php if(!empty($data["project"])){?>
+			  <tr>
 			    <th>学习课程：</th>
 				<td><?php $project = array("website"=>"网站设计",
 										"database"=>"数据库",
@@ -74,7 +105,8 @@
 							echo $project[$data["project"]];
 					?></td>
 			  </tr>
-			  <tr>
+			  <?php }?>
+			  <!--<tr>
 			    <th>分组：</th>
 				<td name="team">
 				  <?php 
@@ -91,8 +123,22 @@
 				<td><?php echo date("Y年m月d日 H:i:s",$data["create_time"]+3600*7)?></td>
 			  </tr>
 			  <?php }?>
+			  <?php if($edit){?>
+			  <tr>
+			    <th></th>
+				<td><button type="submit" style="margin:0 0 0 180px;font-weight:bold;width:60px;height:32px;background-color:#0099FF;border:2px solid #CCCCCC;">确定</button></td>
+			  </tr>
+			  <?php }?>
 			</table>
 		  </form>
+		  </div>
+		  <div style="width:280px;float:left;">
+		    <img src="<?php echo $data["img"]?>" style="width:100px;"/>
+			<form action="saveAccount.php?action=upload" method="post" enctype="multipart/form-data">
+			  <input type="file" name="file" style="width:148px;float:left;" />
+			  <button type="submit" style="float:left;font-weight:bold;width:60px;height:32px;background-color:#0099FF;border:2px solid #CCCCCC;">确定</button>
+			</form>
+		  </div>
 		  </fieldset>
 		  
 		  <fieldset>

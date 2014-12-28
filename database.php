@@ -11,14 +11,14 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main_index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
-	    <div>
+	  <div class="main_index" style="padding-top:10px;width:960px;margin:0 auto;font-size:14px;">
+	    <!--<div>
 		  <a href="register.php">
 		    <div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;margin:0 0 10px 0;">
 			  点击这里，进行注册
 		    </div>
 		  </a>
-		</div>
+		</div>-->
 	    <div style="width:192px;float:left;">
 		  <?php include 'src/project_index.php'?>
 		</div>
@@ -30,6 +30,30 @@
 				  </div>
 				  <div style="float:left;color:#108ac6;">
 				  <h1>数据库介绍</h1>
+				  </div>
+				  <?php 
+					include 'db.php';
+					
+					$username = isset($_SESSION["user"])?$_SESSION["user"]:"";
+					if(!empty($username)){
+						$sql = "select * from sgfw_user where username='".base64_encode($username)."'";
+						$result = mysql_query($sql,$conn);
+						$row = mysql_fetch_array($result);
+					}
+				  ?>
+				  <div style="float:right;width:140px;">
+				  <a href="selectCourse.php?course=database">
+				    <div style="margin:5px 0 5px 10px;background-color:#FFFFFF;font-size:20px;font-weight:bold;text-align:center;padding:14px 0;color:#0099FF;border:2px solid #FF9900;">
+				      <span>
+					  <?php if(empty($username) || !isset($row["project"]) || $row["project"]!="database"){?>
+					  学习此课程
+					  <?php }
+					  else{?>
+					  已选择
+					  <?php }?>
+					  </span>
+				    </div>
+			      </a>
 				  </div>
 				  <div style="clear:float;clear:both;"></div>
 				  <p>数据库在软件开发中是必不可少的一部分，数据库课程在大学中也是非常重要的，通过本课程的学习，你将掌握数据库基础知识及真实项目实践经验，对通过大学期末考试也是很有帮助的。</p>

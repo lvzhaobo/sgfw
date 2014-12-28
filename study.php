@@ -15,22 +15,20 @@
 	<div>
 	  <div class="main_index" style="width:960px;margin:0 auto;font-size:14px;">
 	    <div style="width:100%;margin:40px 0 40px 0;min-height:600px;">
-			  <div style="margin:0 0 0 10px;">
-			    <span style="font-size:28px;font-weight:bold;">学习课程</span><br />
-				<div style="width:600px;float:left;">
-				  <span>每个项目有具体计划，对某个项目感兴趣请加入我们。所有项目均为公益性质（完全免费）。</span>
+			  <div style="margin:0 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
+			    <div style="float:left;width:600px;text-align:middle;padding:10px 0;">
+			      <span style="font-size:22px;font-weight:bold;">学习课程</span>
+				  <span>每个项目都有指导老师按照计划安排学习。所有项目均为公益性质（完全免费）。</span>
 				</div>
-				<div style="float:left;width:334px;">
+				<div style="float:right;width:334px;">
 				  <a href="register.php">
 				    <div style="margin:5px 0 5px 10px;background-color:#FFFFFF;font-size:22px;font-weight:bold;text-align:center;padding:5px 0;color:#0099FF;border:2px solid #FF9900;">
 				      点击这里，加入我们
 				    </div>
 			      </a>
 				</div>
+				<div style="clear:float;clear:both;"></div>
 			  </div>
-			  <div style="clear:float;clear:both;"></div>
-			  <hr style="color:#CCCCCC;" />
-			  <br />
 			  
 			  <a href="website.php">
 			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">

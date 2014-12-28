@@ -8,6 +8,7 @@
 	  .project_item {width:206px;margin:0px 0 0px 10px;float:left;color:#FF6600;padding:10px;border:2px solid #FFFFFF;}
 	  .project_item_title {margin:20px 0 0 20px;font-size:16px;font-weight:bold;}
 	  .project_item hr {color:#FFFFFF;height:1px;display:none;}
+	  .item:hover {color:#FF9900;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
@@ -22,27 +23,27 @@
 		    </div>
 		  </a>
 		</div>-->
-	    <div style="width:192px;float:left;">
+	    <div style="width:192px;float:left;font-size:16px;">
 		  <a href="about.php">
-		  <div style="width:100%;height:40px;color:#FF9900;">
+		  <div class="item" style="width:100%;height:40px;color:#FF9900;">
 		    <span style="margin:0 0 0 20px;">关于我们</span>
 		  </div>
 		  </a>
 		  <a href="about.php#team_core_member">
-		  <div style="width:100%;height:40px;">
+		  <div class="item" style="width:100%;height:40px;">
 		    <span style="margin:0 0 0 20px;">团队核心成员</span>
 		  </div>
 		  </a>
 		  <a href="about.php#reasons">
-		  <div style="width:100%;height:40px;">
+		  <div class="item" style="width:100%;height:40px;">
 		    <span style="margin:0 0 0 20px;">为什么这样做？</span>
 		  </div>
 		  </a>
-		  <a href="about.php#join_us">
+		  <!--<a href="about.php#join_us">
 		  <div style="width:100%;height:40px;">
 		    <span style="margin:0 0 0 20px;">加入我们</span>
 		  </div>
-		  </a>
+		  </a>-->
 		</div>
 		<div class="content" style="width:760px;float:left;">
 			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
@@ -76,18 +77,15 @@
 			<div style="color:#000000;">
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Burning</span><hr />
-				<p>2010年毕业于郑州大学，郑州大学“梦想之星”英语社创始人，热衷于帮助他人实现梦想，现任职于上海某网络安全公司。</p>
+				<p>2010年毕业于郑州大学，郑州大学“梦想之星”英语社创始人和第一任社长，热衷于帮助他人实现梦想。现任职于上海某网络安全公司。</p>
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Bella</span><hr />
 				<p>现任职于某国际知名检测公司。</p>
 			  </div>
-			  <div class="project_item">
-			    <span class="project_item_title" style="">Blanc</span><hr />
-				<p>擅长PHP、Python、C、C++、数据库、Linux系统、自动化等，现任职于上海某数据信息公司。</p>
-			  </div>
 			</div>
 			</div>
+			<div style="clear:float;clear:both;"></div>
 			<div id="reasons" name="reasons" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
 			  <div class="index_feature_intro_title">
 				  <div style="float:left;">
@@ -104,7 +102,7 @@
 				  </ul>
 			  </div>
 			</div>
-			<div id="join_us" name="join_us" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
+			<!--<div id="join_us" name="join_us" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
 			  <div class="index_feature_intro_title">
 				  <div style="float:left;">
 				  <img src="p2.jpg" style="height:40px;" />
@@ -130,7 +128,7 @@
 				  </ul>
 			  </div>
 			</div>
-			<div style="clear:float;clear:both;"></div>
+			<div style="clear:float;clear:both;"></div>-->
 			
 		  </div>
 		</div>

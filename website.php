@@ -11,14 +11,14 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main_index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
-	    <div>
+	  <div class="main_index" style="padding-top:10px;width:960px;margin:0 auto;font-size:14px;">
+	    <!--<div>
 		  <a href="register.php">
 		    <div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;margin:0 0 10px 0;">
 			  点击这里，进行注册
 		    </div>
 		  </a>
-		</div>
+		</div>-->
 	    <div style="width:192px;float:left;">
 		  <?php include 'src/project_index.php'?>
 		</div>
@@ -31,6 +31,31 @@
 				  <div style="float:left;color:#108ac6;">
 				  <h1>网站开发介绍</h1>
 				  </div>
+				  <?php 
+					include 'db.php';
+					
+					$username = isset($_SESSION["user"])?$_SESSION["user"]:"";
+					if(!empty($username)){
+						$sql = "select * from sgfw_user where username='".base64_encode($username)."'";
+						$result = mysql_query($sql,$conn);
+						$row = mysql_fetch_array($result);
+					}
+				  ?>
+				  <div style="float:right;width:140px;">
+				  <a href="selectCourse.php?course=website">
+				    <div style="margin:5px 0 5px 10px;background-color:#FFFFFF;font-size:20px;font-weight:bold;text-align:center;padding:14px 0;color:#0099FF;border:2px solid #FF9900;">
+				      <span>
+					  <?php if(empty($username) || !isset($row["project"]) || $row["project"]!="website"){?>
+					  学习此课程
+					  <?php }
+					  else{?>
+					  已选择
+					  <?php }?>
+					  </span>
+				    </div>
+			      </a>
+				  </div>
+				  
 				  <div style="clear:float;clear:both;"></div>
 				  <ul style="line-height:28px;">
 				    <li>课程背景：互联网世界网站遍地都是、移动应用也在飞速发展，有人不屑于学习网站开发，但这是进入其他课程的基础。</li>

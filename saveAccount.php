@@ -1,5 +1,6 @@
 ﻿<?php
 	include 'db.php';
+	session_start();
 	//$conn = mysql_connect("rdsbezbquaqzfyn.mysql.rds.aliyuncs.com","lvzb","111111");
 	//if(!$conn){
 	//	die("connect mysql error.");
@@ -29,38 +30,77 @@
 	//var_dump($result);
 	//var_dump($_POST);
 	//var_dump($_POST);
-	$data = $_POST["account"];
-	$info = "";
 	
-	if(empty($data["username"]))
-		$info = "用户名不能为空";
-	if(($data["password"]!=$data["password_2"]) && empty($info))
-		$info = "两次密码不相同";
-	$sql = "select * from sgfw_user where username='".base64_encode($data["username"])."'";
-	$result = mysql_query($sql,$conn);
-	$row = mysql_fetch_array($result);
-	
-	if((isset($row["id"]) && !empty($row["id"])) && empty($info))
-		$info = "用户名已被使用";
-	if(empty($info)){
-		$sql = "insert into sgfw_user (username,password,qq,email,recommender,college,create_time) values('".base64_encode($data["username"])."','".$data["password"]."','".$data["qq"]."','".$data["email"]."','".$data["recommender"]."','".$data["college"]."','".time()."')";
-		$result = mysql_query($sql,$conn);
-		if(!$result){
-			$info = "注册失败";
-			var_dump(mysql_error());
-			die;
+	if($_GET["action"]=="upload"){
+		//var_dump($_FILES);
+		$file_name = "upload/" . time()."_".$_FILES["file"]["name"];
+		if ($_FILES["file"]["error"] > 0){
+			echo "Error: " . $_FILES["file"]["error"] . "<br />";
 		}
-		session_start();
-		$_SESSION["user"] = $data["username"];
-		$_SESSION["code"] = md5($data["password"]);
+		else{
+			echo "Upload: " . $file_name . "<br />";
+			echo "Type: " . $_FILES["file"]["type"] . "<br />";
+			echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
+			echo "Stored in: " . $_FILES["file"]["tmp_name"];
+		}
+
+		if (file_exists($file_name)){
+			echo $_FILES["file"]["name"] . " already exists. ";
+		}
+		else{
+			move_uploaded_file($_FILES["file"]["tmp_name"],
+				$file_name);
+			echo "Stored in: " . $file_name;
+			$sql = "UPDATE sgfw_user SET img='".$file_name."' WHERE username='".base64_encode($_SESSION["user"])."'";
+			$result = mysql_query($sql,$conn);
+			//var_dump($result);
+			if(!$result){
+				echo mysql_error();
+			}
+			$info = "upload_success";
+			//var_dump($info);
+		}
+	}
+	else{
+		$data = $_POST["account"];
+		$info = "";
+		
+		if(empty($data["username"]))
+			$info = "用户名不能为空";
+		if(($data["password"]!=$data["password_2"]) && empty($info))
+			$info = "两次密码不相同";
+		$sql = "select * from sgfw_user where username='".base64_encode($data["username"])."'";
+		$result = mysql_query($sql,$conn);
+		$row = mysql_fetch_array($result);
+		
+		if((isset($row["id"]) && !empty($row["id"])) && empty($info))
+			$info = "用户名已被使用";
+		if(empty($info)){
+			$sql = "insert into sgfw_user (username,password,qq,email,recommender,college,create_time) values('".base64_encode($data["username"])."','".$data["password"]."','".$data["qq"]."','".$data["email"]."','".$data["recommender"]."','".$data["college"]."','".time()."')";
+			$result = mysql_query($sql,$conn);
+			if(!$result){
+				$info = "注册失败";
+				var_dump(mysql_error());
+				die;
+			}
+			
+			$_SESSION["user"] = $data["username"];
+			$_SESSION["code"] = md5($data["password"]);
+		}
 	}
 	//var_dump(mysql_error());
 	//var_dump($info,empty($info));die;
 ?>
 <script>
-<?php if(empty($info)){?>
+//alert("burning");
+<?php if(empty($info)){?>/
 window.location.href="mySpace.php?info=注册成功";
 <?php }
+else if($info=="upload_success"){
+?>
+window.location.href="mySpace.php";
+<?php
+}
 else{
 ?>
 window.location.href="register.php?info="+"<?php echo $info;?>";
