@@ -2,9 +2,9 @@
   <head>
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
     <style type="text/css">
-	  p {text-indent:2em;line-height:1.6em;font-size:13px;color:#000000;margin:5px 0;border-top:1px solid #F0F099;}
+	  p {text-indent:2em;line-height:1.6em;font-size:13px;color:#000000;margin:5px 0;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .project_item {width:286px;min-height:220px;margin:5px 0px 0px 10px;float:left;padding:10px;border:2px solid #E2E2E2;color:#000000;}
+	  .project_item {width:286px;min-height:120px;margin:0px 5px 0px 0px;float:left;padding:2px;border:2px solid #FFFFFF;color:#333333;}
 	  .project_item_title {margin:20px 0 0 0px;font-size:16px;font-weight:bold;color:#FF6600;line-height:28px;}
 	  .project_item hr {height:1px;display:none;}
 	  .label_part {background-color:#4EB9ED;padding:1px 2px;margin:0 2px;line-height:26px;}
@@ -44,22 +44,26 @@
 			  </a>-->
 			  <?php 
 				$colleges = array(
-					array("name"=>"郑州大学（新校区）","color"=>"#00A7FF"),
-					array("name"=>"郑州大学（南校区）","color"=>"#71CE01"),
-					array("name"=>"郑州大学（北校区）","color"=>"#FFB500"),
-					array("name"=>"河南大学","color"=>"#B83AFE"),
-					array("name"=>"河南大学（软件学院）","color"=>"#5883E2"),
-					array("name"=>"黄河科技学院","color"=>"#347ABF"),
-					array("name"=>"郑州轻工业学院","color"=>"#347ABF"),
+					array("name"=>"郑州大学（新校区）","color"=>"#00A7FF","img"=>"image/college/zzu.jpg"),
+					array("name"=>"郑州大学（南校区）","color"=>"#71CE01","img"=>"image/college/zzu.jpg"),
+					array("name"=>"郑州大学（北校区）","color"=>"#FFB500","img"=>"image/college/zzu.jpg"),
+					array("name"=>"河南大学","color"=>"#B83AFE","img"=>"image/college/hnu.jpg"),
+					array("name"=>"河南大学（软件学院）","color"=>"#5883E2","img"=>"image/college/hnu.jpg"),
+					array("name"=>"黄河科技学院","color"=>"#347ABF","img"=>"image/college/hstc.jpg"),
+					array("name"=>"郑州轻工业学院","color"=>"#347ABF","img"=>"image/college/zq.jpg"),
 					array("name"=>"河南工业大学","color"=>"#00CBAE"),
 				);
 				foreach($colleges as $college){
 			  ?>
 			  <a href="">
-			  <div style="width:210px;min-height:128px;background-color:<?php echo $college["color"]?>;margin:10px 0 10px 10px;float:left;color:#FFFFFF;padding:10px;" onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#00A7FF';">
-			    <span style="margin:20px 0 0 20px;font-size:18px;font-weight:bold;"><?php echo $college["name"]?></span><hr />
-				<div style="font-size:48px;text-align:center;" onmouseover="this.style.fontWeight='bold';" onmouseout="this.style.fontWeight='normal';">8</div>
-				<div style=""><img src="image/comment.jpg" style="height:40px;"/><span style="font-size:20px;">10</span><img src="image/like.jpg" style="height:40px;"/><span style="font-size:20px;">20</span></div>
+			  <div style="width:210px;min-height:128px;margin:10px 0 10px 10px;float:left;color:#333333;padding:10px;"><!-- onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#00A7FF';">-->
+			    <img src="<?php echo $college['img']?>" style="width:80px;float:left;">
+				<div style="float:left;padding:5px 20px;font-size:48px;text-align:center;" onmouseover="this.style.fontWeight='normal';" onmouseout="this.style.fontWeight='normal';">8</div>
+				<div style="clear:float;clear:both;"></div>
+				<br />
+				<span style="margin:20px 0 0 5px;font-size:18px;font-weight:bold;"><?php echo $college["name"]?></span><hr />
+				
+				<div style=""><img src="image/comment.jpg" style="height:20px;"/><span style="font-size:20px;">10</span><img src="image/like.jpg" style="height:20px;"/><span style="font-size:20px;">20</span></div>
 			  </div>
 			  </a>
 			  <?php }?>
@@ -129,29 +133,30 @@
 				//foreach($data as $item){
 			  ?>
 			  <a href="">
-			    <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
+			    <div class="project_item" onmouseover="this.style.border='2px solid #FF9900';" onmouseout="this.style.border='2px solid #FFFFFF';">
 			      <div style="width:100%;">
-				    <div style="width:140px;float:left;">
+				    <div style="width:100px;max-height:100px;float:left;overflow:hidden;">
 					  <?php $img = "bg".($item["id"]%7).".jpg";
 						if($img=="bg0.jpg")
 							$img = "bg.jpg";
+						if(isset($item["img"]) && !empty($item["img"]))
+							$img = $item["img"];
 					  ?>
-				      <img src="<?php echo $img;?>" style="width:132px;"/>
+				      <img src="<?php echo $img;?>" style="width:100px;"/>
 				    </div>
-				    <div style="width:140px;float:left;margin:5px 0;">
-				      <span class="project_item_title" style=""><?php echo base64_decode($item["username"])?></span><hr />
-				      <div style="margin-top:5px;">
+				    <div style="width:140px;float:left;margin:0px 0;">
+				      <!--<span class="project_item_title" style=""><?php echo base64_decode($item["username"])?></span><hr />-->
+				      <div style="margin:0 0 0 10px;">
 					    <span style="font-weight:bold;"><?php echo base64_decode($item["username"])?></span><br />
 				        <span title="喜欢：8" style="margin-left:10px;font-size:20px;color:#FF0000;">8</span>
+						<span style="font-size:12px;"><span class="label_part">标签1</span> 
+						<span class="label_part">标签2</span><br />
+						<span><?php echo $item["college"]?></span>
 				      </div>
 				    </div>
 				  </div>
 			      <div style="clear:float;clear:both;"></div>
-				  <div style="">
-				    <span style="font-size:12px;"><span class="label_part">标签1</span> 
-				    <span class="label_part">标签2</span>
-				  </div>
-				  <p>（小组口号、小组简介、小组项目介绍等任何信息。）</p>
+				  <p></p>
 			    </div>
 			  </a>
 			  
