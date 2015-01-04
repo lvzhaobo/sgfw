@@ -4,10 +4,10 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;font-size:13px;color:#000000;margin:5px 0;border-top:1px solid #F0F099;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .project_item {width:286px;min-height:220px;margin:5px 0px 0px 10px;float:left;padding:10px;border:2px solid #E2E2E2;color:#000000;}
-	  .project_item_title {margin:20px 0 0 0px;font-size:16px;font-weight:bold;color:#FF6600;line-height:28px;}
+	  .project_item {width:440px;min-height:160px;margin:5px 10px 5px 0px;float:left;padding:10px;border:2px solid #E2E2E2;color:#000000;}
+	  .project_item_title {margin:20px 0 0 0px;font-size:16px;color:#FF6600;line-height:28px;}
 	  .project_item hr {height:1px;display:none;}
-	  .label_part {background-color:#4EB9ED;padding:1px 2px;margin:0 2px;line-height:26px;font-weight:normal;}
+	  .label_part {color:#0099FF;padding:1px 1px;margin:0 2px;line-height:26px;font-weight:normal;font-size:12px;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
@@ -33,32 +33,40 @@
 			  <div style="clear:float;clear:both;"></div>
 			  <hr style="color:#CCCCCC;" />
 			  <br />
-			  
+			  <?php for($i=0;$i<28;$i++){?>
 			  <a href="#">
 			    <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
-			      <div style="width:100%;">
-				    <div style="width:140px;float:left;">
-				      <img src="bg.jpg" style="width:132px;"/>
+			      <div style="height:80px;">
+				    <div style="width:100px;float:left;">
+				      <img src="bg<?php echo $i%6?>.jpg" style="width:96px;"/>
 				    </div>
-				    <div style="width:140px;float:left;margin:5px 0;">
-				      <span class="project_item_title" style="">校园论坛</span><hr />
-				      <div style="margin-top:5px;">
-					    <span style="font-weight:bold;">梦想科技</span><br />
-				        <span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：8" style="margin-left:10px;font-size:20px;color:#FF0000;">8</span>
+				    <div style="width:320px;float:left;margin:0px 10px;">
+					  <div style="width:100%;">
+				        <span class="project_item_title" style="">校园论坛</span>
+					    <span style="color:#0099FF;float:right;">DS-000<?php echo $i?></span>&nbsp;
+					  </div>
+				      <div style="margin-top:5px;color:#999999;font-size:12px;">
+					    <span>开发者：</span>
+					    <span style="font-weight:bold;font-size:14px;">梦想科技</span><br />
+				        
+						<span style="color:#0099FF;">进行中</span>&nbsp;
+						<span title="喜欢：8" style="color:#FF0000;">8</span>
+						<span>赞</span>
 				      </div>
 				    </div>
 				  </div>
 			      <div style="clear:float;clear:both;"></div>
 				  <div style="">
-				    <span style="font-size:12px;"><span class="label_part">HTML</span> 
+				    <span><span class="label_part">HTML</span> 
 				    <span class="label_part">PHP</span> 
 				    <span class="label_part">MySQL</span> 
 				    <span class="label_part">JQuery</span> 
 				    <span class="label_part">GitHub</span>
 				  </div>
-				  <p>建立一个属于自己学校校园的论坛。整合社团、班级、宿舍、课外活动等多方资源的综合性交流平台。</p>
+				  <span style="color:#999999;">建立一个属于自己学校校园的论坛。整合社团、班级、宿舍、课外活动等多方资源的综合性交流平台。</span>
 			    </div>
 			  </a>
+			  <?php }?>
 			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">校园周边服务网</span>
 				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想科技</span>&nbsp;&nbsp;

@@ -18,7 +18,7 @@ $nav = array(
 		);
 $current_page = $_SERVER["REQUEST_URI"];
 $current_page = preg_replace("/\?.*/","",$current_page);
-//var_dump($current_page);
+$current_page = trim($current_page,"\/");
 $current_page = preg_replace("/\/sgfw\//","",$current_page);
 $nav_str = "";
 foreach($nav as $key=>$nav_item){

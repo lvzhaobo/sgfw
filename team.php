@@ -8,6 +8,8 @@
 	  .project_item_title {margin:20px 0 0 0px;font-size:16px;font-weight:bold;color:#FF6600;line-height:28px;}
 	  .project_item hr {height:1px;display:none;}
 	  .label_part {background-color:#4EB9ED;padding:1px 2px;margin:0 2px;line-height:26px;}
+	  .college_item {width:168px;min-height:128px;margin:10px 20px 10px 0px;float:left;color:#333333;border:1px solid #DCDCDC;box-shadow:0 0 5px #DCDCDC;text-align:center;}
+	  .college_item:hover {box-shadow:0 0 5px #0099FF;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
@@ -17,16 +19,9 @@
 		  <div class="content" style="width:960px;margin:0 auto;font-size:14px;">
 		    <div style="width:100%;margin:40px 0;min-height:480px;">
 			  <div style="margin:0 0 0 10px;">
-			    <span style="font-size:28px;font-weight:bold;">参与学校</span><br />
-				<div style="width:600px;float:left;">
+			    <span style="font-size:20px;font-weight:bold;color:#333333;">参与学校</span><br />
+				<div style="width:600px;float:left;color:#3F3F3F;">
 				  <span>已经参与的学校/校区，如果没找到你的学校，请第一个注册并让你的学校/校区显示在这里吧。</span>
-				</div>
-				<div style="float:left;width:334px;">
-				  <a href="register.php">
-				    <div style="margin:5px 0 5px 10px;background-color:#FFFFFF;font-size:22px;font-weight:bold;text-align:center;padding:5px 0;color:#0099FF;border:2px solid #FF9900;">
-				      点击这里，加入我们
-				    </div>
-			      </a>
 				</div>
 			  </div>
 			  <div style="clear:float;clear:both;"></div>
@@ -34,7 +29,7 @@
 			  <br />
 			  
 			  <div>
-			  <div style="width:720px;float:left;">
+			  <div style="width:100%;float:left;">
 			  <!--<a href="website.php">
 			  <div style="width:210px;min-height:128px;background-color:#00A7FF;margin:10px 0 10px 10px;float:left;color:#FFFFFF;padding:10px;" onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#00A7FF';">
 			    <span style="margin:20px 0 0 20px;font-size:18px;font-weight:bold;">郑州大学（新校区）</span><hr />
@@ -56,14 +51,26 @@
 				foreach($colleges as $college){
 			  ?>
 			  <a href="">
-			  <div style="width:210px;min-height:128px;margin:10px 0 10px 10px;float:left;color:#333333;padding:10px;"><!-- onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#00A7FF';">-->
-			    <img src="<?php echo $college['img']?>" style="width:80px;float:left;">
-				<div style="float:left;padding:5px 20px;font-size:48px;text-align:center;" onmouseover="this.style.fontWeight='normal';" onmouseout="this.style.fontWeight='normal';">8</div>
+			  <div class="college_item" style=""><!-- onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#00A7FF';">-->
+			    <div style="margin:20px;align:center;">
+				  <img src="<?php echo $college['img']?>" style="width:80px;float:left;margin:0 20px;">
+				</div>
+				<!--<div style="float:left;padding:5px 20px;font-size:48px;text-align:center;">8</div>-->
 				<div style="clear:float;clear:both;"></div>
 				<br />
-				<span style="margin:20px 0 0 5px;font-size:18px;font-weight:bold;"><?php echo $college["name"]?></span><hr />
-				
-				<div style=""><img src="image/comment.jpg" style="height:20px;"/><span style="font-size:20px;">10</span><img src="image/like.jpg" style="height:20px;"/><span style="font-size:20px;">20</span></div>
+				<div style="background-color:#FAFAFA;line-height:28px;">
+				  <span style="margin:20px 0 0 5px;font-size:14px;font-weight:bold;"><?php echo $college["name"]?></span>
+				</div>
+				<div style="background-color:#FAFAFA;margin-top:2px;font-size:14px;">
+				  <div style="">
+					<span style="color:#0099FF;">10</span>
+					<span style="color:#999999;">赞</span>&nbsp;
+					<span style="color:#0099FF;">20</span>
+					<span style="color:#999999;">留言</span>
+					<span style="color:#FF9900;">20</span>
+					<span style="color:#999999;">同学</span>
+				  </div>
+				</div>
 			  </div>
 			  </a>
 			  <?php }?>
@@ -97,14 +104,14 @@
 			    <span style="margin:20px 0 0 20px;font-size:18px;font-weight:bold;">河南工业大学</span><hr />
 				<p></p>
 			  </div>-->
-			  <div style="width:210px;height:150px;background-color:#0099FF;margin:10px 0 10px 10px;float:left;color:#FFFFFF;padding:10px;" onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#0099FF';">
+			  <!--<div style="width:210px;height:150px;background-color:#0099FF;margin:10px 0 10px 10px;float:left;color:#FFFFFF;padding:10px;" onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#0099FF';">
 			    <span style="margin:20px 0 0 20px;font-size:18px;font-weight:bold;">静候新学校加入</span><hr />
 				<p>想成为你们学校的首位加入我们的成员吗？赶紧联系我们。</p>
 			  </div>
-			  </div>
-			  <div style="width:230px;min-height:548px;margin:10px 0 0 5px;float:left;border:2px solid #0099FF;">
+			  </div>-->
+			  <!--<div style="width:230px;min-height:548px;margin:10px 0 0 5px;float:left;border:2px solid #0099FF;">
 			  
-			  </div>
+			  </div>-->
 			  </div>
 			</div>
 			<div style="clear:float;clear:both;"></div>
