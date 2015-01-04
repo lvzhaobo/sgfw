@@ -33,8 +33,13 @@
 			  <div style="clear:float;clear:both;"></div>
 			  <hr style="color:#CCCCCC;" />
 			  <br />
-			  <?php for($i=0;$i<28;$i++){?>
-			  <a href="#">
+			  <?php 
+				include 'db.php';
+				$result = mysql_query("select * from sgfw_project order by id desc");
+				$i = 0;
+				while($item = mysql_fetch_array($result)){
+			  ?>
+			  <?php ?>
 			    <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			      <div style="height:80px;">
 				    <div style="width:100px;float:left;">
@@ -42,13 +47,12 @@
 				    </div>
 				    <div style="width:320px;float:left;margin:0px 10px;">
 					  <div style="width:100%;">
-				        <span class="project_item_title" style="">校园论坛</span>
+				        <span class="project_item_title" style=""><?php echo base64_decode($item["name"])?></span>
 					    <span style="color:#0099FF;float:right;">DS-000<?php echo $i?></span>&nbsp;
 					  </div>
 				      <div style="margin-top:5px;color:#999999;font-size:12px;">
 					    <span>开发者：</span>
 					    <span style="font-weight:bold;font-size:14px;">梦想科技</span><br />
-				        
 						<span style="color:#0099FF;">进行中</span>&nbsp;
 						<span title="喜欢：8" style="color:#FF0000;">8</span>
 						<span>赞</span>
@@ -57,15 +61,13 @@
 				  </div>
 			      <div style="clear:float;clear:both;"></div>
 				  <div style="">
-				    <span><span class="label_part">HTML</span> 
-				    <span class="label_part">PHP</span> 
-				    <span class="label_part">MySQL</span> 
-				    <span class="label_part">JQuery</span> 
-				    <span class="label_part">GitHub</span>
+				    <?php $label = explode(",",$item["label"]);
+					foreach($label as $label_item){?>
+				      <span class="label_part"><?php echo $label_item?></span>
+					<?php }?>
 				  </div>
 				  <span style="color:#999999;">建立一个属于自己学校校园的论坛。整合社团、班级、宿舍、课外活动等多方资源的综合性交流平台。</span>
 			    </div>
-			  </a>
 			  <?php }?>
 			  <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">
 			    <span class="project_item_title" style="">校园周边服务网</span>
