@@ -24,7 +24,7 @@
 		    指导老师：
 		  </div>
 		  <div class="intro_content">
-		    Burning lvzhaobopku@163.com
+		    吕昭波&nbsp;&nbsp;lvzhaobopku@163.com
 		  </div>
 		  <div class="intro_title">
 		    学习目标：
@@ -55,19 +55,27 @@
 		  <div style="font-size:18px;margin:10px 0px;color:#333333;font-weight:bold;">
 		    学习周期<span style="color:#999999;">（共6周）</span>
 		  </div>
-		  <a href="myCourse.php?course=website&process=week1">
-		    <div class="intro_title<?php echo preg_match("/week1/",$_SERVER["REQUEST_URI"])?" current":""?>">
+		  <?php 
+			$host = $_SERVER["HTTP_HOST"];
+			$uri = $_SERVER["REQUEST_URI"];
+			$uri = preg_replace("/\?.*/","",$uri);
+			$uri = "/sgfw";
+			//$uri = preg_replace("/\/sgfw\//","",$uri);
+			//$uri = trim($uri,"\/");
+		  ?>
+		  <div onclick='top.location="<?php echo "http://".$host.$uri."/myCourse.php?course=website"."&process=week1"?>"'>
+		    <div class="intro_title<?php echo (!preg_match("/week1/",$_SERVER["REQUEST_URI"]) && !empty($_GET["process"]))?"":" current"?>">
 		      第一周：基础准备、简历制作
 		    </div>
-		  </a>
+		  </div>
 		  <div class="intro_content">
 		    建立项目，了解HTML基本语法和标签、CSS样式，完成个人简历网页。
 		  </div>
-		  <a href="myCourse.php?course=website&process=week2">
+		  <div onclick='top.location="<?php echo "http://".$host.$uri."/myCourse.php?course=website"."&process=week2"?>"'>
 		    <div class="intro_title<?php echo preg_match("/week2/",$_SERVER["REQUEST_URI"])?" current":""?>">
 		      第二周：网站原形分析设计
 		    </div>
-		  </a>
+		  </div>
 		  <div class="intro_content">
 		    学习文档，分析网站基本结构，完成个人网站（自己感兴趣的网站）原型初步设计。
 		  </div>

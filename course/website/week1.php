@@ -15,7 +15,7 @@
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
-  <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
+  <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;font-size:14px;">
 	<div style="padding:20px 0px;line-height:24px;border-bottom:1px dashed #FF9900;margin:0 20px;font-size:14px;">
 		    <div style="min-height:32px;font-weight:bold;font-size:18px;color:#333333;">
 			  第一周学习目标

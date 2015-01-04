@@ -115,7 +115,7 @@
 		  
 		</div>
 		<div class="project_item" style="width:300px;float:right;padding:10px 20px 10px 20px;border-left:2px solid #CCCCCC;">
-		<iframe src="course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/intro.php" style="border:0px;width:100%;height:800px;"></iframe>
+		<iframe src="course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/intro.php?course=<?php echo $_GET["course"]."&process=".$_GET["process"]?>" style="border:0px;width:100%;height:800px;"></iframe>
 		  
 		</div>
 	</div>
