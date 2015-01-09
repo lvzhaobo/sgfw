@@ -30,8 +30,11 @@
 	//var_dump($result);
 	//var_dump($_POST);
 	//var_dump($_POST);
+	$action = "";
+	if(isset($_GET["action"]))
+		$action = $_GET["action"];
 	
-	if($_GET["action"]=="upload"){
+	if($action=="upload"){
 		//var_dump($_FILES);
 		$file_name = "upload/" . time()."_".$_FILES["file"]["name"];
 		if ($_FILES["file"]["error"] > 0){
