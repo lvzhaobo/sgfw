@@ -11,9 +11,10 @@ else{
 $nav = array(
 			array('href'=>'index.php','label'=>'首页','links'=>array('index.php')),
 			array('href'=>'study.php','label'=>'种子课程','links'=>array('study.php','website.php','database.php')),
-			array('href'=>'project.php','label'=>'萌芽项目','links'=>array('project.php')),
+			//array('href'=>'project.php','label'=>'萌芽项目','links'=>array('project.php')),
 			array('href'=>'team.php','label'=>'梦想团队','links'=>array('team.php')),
 			array('href'=>'mySpace.php','label'=>'我的空间','links'=>array('mySpace.php','myStudy.php','myCourse.php')),
+			array('href'=>'discuss.php','label'=>'讨论','links'=>array('discuss.php')),
 			array('href'=>'about.php','label'=>'关于','links'=>array('about.php'))
 		);
 $current_page = $_SERVER["REQUEST_URI"];
@@ -48,7 +49,7 @@ $header = <<<EOF
 		<!--<span style="color:#FF9900;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
 		<span style="color:#FF6600;font-size:14px;">梦想科技 | I Dream, I Do, I Succeed!</span>
 	  </div>
-	  <div id="intro" name="intro" style="width:600px;font-size:20px;float:left;margin:8px 0 0 148px;">
+	  <div id="intro" name="intro" style="width:680px;font-size:20px;float:left;margin:8px 0 0 148px;">
 	    $nav_str
 	  </div>
 	  </div>
