@@ -14,6 +14,7 @@
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
+	<?php include 'src/notice.php'?>
 	<div>
 	  <div class="main index" style="padding-top:30px;width:960px;height:380px;margin:0 auto;font-size:14px;background-image:url('image/dream.jpg');">
 		<div class="content" style="width:760px;float:left;margin:0 0 0 220px;min-height:320px;">

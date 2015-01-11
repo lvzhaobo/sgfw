@@ -11,7 +11,9 @@
 	  .text {margin:5px;font-size:12px;font-weight:normal;}
 	  button {font-weight: bold; line-height: 32px; box-shadow: 0px 0px 2px rgb(220, 220, 220); width: 80px; font-size: 16px; border-radius: 0.5em; margin: 0px 0px 0px 204px; border: 2px solid #FF9900; color:#0099FF; background-color: rgb(255, 255, 255);}
 	  button:hover {border:2px solid #0099FF;color:#FF9900;}
-	  .discuss_item {margin:10px 0;line-height:22px;}
+	  .discuss_item {margin:14px 0;line-height:24px;}
+	  textarea {width:600px;height:120px;border:1px solid #FF9900;box-shadow:0 0 3px #FF9900;color:#0099FF;padding:2px 5px;border-radius:0.5em;}
+	  textarea:hover {border:1px solid #0099FF;box-shadow:0 0 3px #0099FF;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
@@ -20,17 +22,13 @@
 	<div>
 	  <div class="main_index" style="width:960px;margin:0 auto;font-size:14px;background-image:url('image/dream.jpg');">
 	    <div style="width:100%;margin:20px auto;min-height:814px;">
-		  <?php $info = @file_get_contents(md5($_SESSION["user"]).".txt");if(!empty($info)){?>
-		    <div style="margin:0 auto;background-color:#F3F3F3;with:200px;height:28px;border:2px solid #DDDDDD;text-align:center;color:#FF9900;font-size:16px;font-weight:bold;padding:5px 10px;">
-			  <?php echo $info;file_put_contents("info.txt","")?>
-			</div>
-		  <?php }?>
+		  <?php include 'src/notice.php'?>
 			  <div style="clear:float;clear:both;"></div>
 			  <div style="margin:20px;text-align:center;">
 			    <form action="saveDiscuss.php" method="post">
-				  <textarea name="content" style="width:600px;height:120px;"></textarea>
+				  <textarea name="content" style=""></textarea>
 				  <br />
-				  <button type="submit" style="margin:10px 0 0 0;">确定</button>
+				  <button type="submit" style="margin:10px 0 0 0;">发表</button>
 				</form>
 			  </div>
 			  <div style="width:600px;margin:0 auto;">

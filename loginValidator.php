@@ -16,6 +16,7 @@
 	else{
 		$info = "登录失败";
 	}
+	file_put_contents("info.txt",$info);
 ?>
 <script>
 <?php if(empty($info)){?>
@@ -23,6 +24,6 @@ window.location.href="mySpace.php";
 <?php }
 else{
 ?>
-window.location.href="login.php?info="+"<?php echo $info;?>";
+window.location.href="login.php";
 <?php }?>
 </script>

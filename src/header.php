@@ -2,7 +2,7 @@
 session_start();
 //var_dump($_SESSION);
 if(isset($_SESSION["user"])){
-	$str = "<a href='mySpace.php'><span style='color:#666666;font-weight:bold;font-size:14px;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='logout.php' style='color:#999999;font-size:14px;'>退出</a>";
+	$str = "<a href='mySpace.php'><span style='color:#0099FF;font-weight:bold;font-size:14px;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='logout.php' style='color:#999999;font-size:14px;'>退出</a>";
 }
 else{
 	$str = '<a href="login.php" style="color:#666666;font-size:14px;">登录</a>&nbsp;&nbsp;<a href="register.php" style="color:#666666;font-size:14px;">注册</a>';
