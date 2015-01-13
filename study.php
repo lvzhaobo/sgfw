@@ -16,7 +16,7 @@
     <?php include 'src/header.php'?>
 	<div>
 	  <div class="main_index" style="width:960px;margin:0 auto;font-size:14px;">
-	    <div style="width:100%;margin:20px 0 40px 0;min-height:814px;">
+	    <div style="width:100%;margin:60px 0 40px 0;min-height:814px;">
 			  <div style="margin:0 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
 			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
 			      <span style="font-size:22px;font-weight:bold;margin:0 5px;">学习课程</span>

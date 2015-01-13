@@ -17,7 +17,7 @@
     <?php include 'src/header.php'?>
 	  <div class="main index">
 		  <div class="content" style="width:960px;margin:0 auto;font-size:14px;">
-		    <div style="width:100%;margin:40px 0;min-height:480px;">
+		    <div style="width:100%;margin:60px 0;min-height:480px;">
 			  <div style="margin:0 0 0 10px;">
 			    <span style="font-size:20px;font-weight:bold;color:#333333;">参与学校</span><br />
 				<div style="width:600px;float:left;color:#3F3F3F;">
