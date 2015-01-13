@@ -7,13 +7,17 @@
 	  .team a {color:#FF9900;text-decoration:none;margin:10px;}
 	  table {font-size:13px;}
 	  ul {margin:0 0 0 -20px;}
+	  .btn,button{font-weight: bold; text-align:center;line-height: 26px; box-shadow: 0px 0px 2px rgb(220, 220, 220); width: 60px; font-size: 16px; border-radius: 0.5em; border: 2px solid #FF9900; color:#0099FF; background-color: rgb(255, 255, 255);}
+	  .btn:hover,button:hover{border:2px solid #0099FF;color:#FF9900;}
+	  .btn a {color:#0099FF;}
+	  .btn a:hover {color:#FF9900;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;min-height:400px;">
+	  <div class="main index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;min-height:400px;">
 	    <div style="width:192px;float:left;position:fixed;font-weight:bold;font-size:16px;">
 		  <a href="mySpace.php">
 		  <div style="width:100%;height:40px;color:#000000;">
@@ -35,11 +39,6 @@
 		<div class="content" style="width:760px;float:left;margin:0 0 40px 200px;min-height:320px;">
 		  <?php
 			include 'db.php';
-			//session_start();
-			//var_dump($_SESSION);
-			//$conn = mysql_connect("127.0.0.1","root");
-			//mysql_select_db("sgfw");
-			//var_dump("select * from sgfw_user where username='".$_SESSION["user"]."';");
 			$data = array();
 			if(isset($_SESSION["user"])){
 				$result = mysql_query("select * from sgfw_user where username='".base64_encode($_SESSION["user"])."'");
@@ -51,19 +50,21 @@
 			}
 			//var_dump($data);
 		  ?>
-		  <fieldset style="border:2px solid #FF0099;padding:0 10px;line-height:28px;">
-		  <legend><div style="font-weight:bold;font-size:16px;color:#FF9900;float:left;">
+		  <fieldset style="border:2px solid #FF9900;padding:0 10px;line-height:28px;">
+		  <legend><div style="font-weight:bold;font-size:16px;color:#0099FF;float:left;">
 			  <?php $project = array("website"=>"网站设计",
 										"database"=>"数据库",
 										"php"=>"PHP",
-										""=>"网站设计");
+										""=>"无课程");
 							echo $project[$data["project"]];
 					?>
 			</div></legend>
+			
+			<?php if($data["project"]=="website"){?>
 			<a href="myCourse.php?course=website">
-			  <div style="background-color:#FF9900;font-size:20px;font-weight:bold;color:#FFFFFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
+			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
-			<div style="background-color:#FF9900;font-size:20px;font-weight:bold;color:#FFFFFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
 			<div style="clear:float;clear:both;"></div>
 			  <table style="font-size:14px;line-height:22px;">
 			    <tr>
@@ -79,6 +80,34 @@
 				  <td>①开发个人博客网站；②为学校社团开发网站；③为学校周边商店、书店等开发网站</td>
 				</tr>
 			  </table>
+			  <?php }
+			  else if($data["project"]=="database1"){?>
+			  <a href="myCourse.php?course=website">
+			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
+			</a>
+			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="clear:float;clear:both;"></div>
+			    <table style="font-size:14px;line-height:22px;">
+			    <tr>
+				  <th style="width:80px;">学习目标：</th>
+				  <td>学习数据库知识并使用MySQL完成论坛类项目，在第六周进行DEMO。</td>
+				  <th style="width:80px;">后续课程：</th>
+				  <td>①PHP、JSP、C++等语言；②MySQL、SQL Server等数据库；③JavaScript</td>
+				</tr>
+				<tr>
+				  <th>学习知识：</th>
+				  <td>SQL语句、MySQL安装、MySQL增删改查、MySQL和PHP/JSP交互、数据库设计</td>
+				  <th>兴趣建议：</th>
+				  <td>①开发个人博客网站；②开发小型论坛；③为学校周边商店、书店等开发网站</td>
+				</tr>
+			  </table>
+			  <?php }
+			  else{?>
+			    <div>还没有课程，去选择课程......</div>
+			    <div class="btn" style="margin:10px;">
+				  GO
+				</div>
+			  <?php }?>
 			  </div>
 			</div>
 		  </fieldset>

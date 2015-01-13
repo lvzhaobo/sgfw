@@ -36,7 +36,7 @@
 			//var_dump($data);
 		  ?>
 	<div>
-	  <div class="main index" style="padding-top:0px;min-width:960px;margin:0 auto;font-size:14px;min-height:400px;">
+	  <div class="main index" style="padding-top:48px;min-width:960px;margin:0 auto;font-size:14px;min-height:400px;">
 	    
 	    <div style="width:200px;float:left;position:fixed;font-weight:bold;font-size:16px;background-color:#F3F3F3;padding:10px 0;line-height:40px;border-right:2px solid #CCCCCC;">
 		<div style="margin:10px 0;text-align:center;border-bottom:2px solid #FFFFFF;">

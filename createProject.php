@@ -13,7 +13,7 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
+	  <div class="main index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;">
 	    <div style="width:192px;float:left;position:fixed;">
 		  <a href="login.php">
 		  <div style="width:100%;height:40px;background-color:#FF9900;font-size:24px;">

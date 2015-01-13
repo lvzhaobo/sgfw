@@ -38,6 +38,11 @@
 			  </div>
 			  </a>-->
 			  <?php 
+			    include 'db.php';
+				$data = array();
+					$result = mysql_query("select * from sgfw_college");
+					//var_dump(mysql_error());
+					while($college = mysql_fetch_array($result)){
 				$colleges = array(
 					array("name"=>"郑州大学（新校区）","color"=>"#00A7FF","img"=>"image/college/zzu.jpg"),
 					array("name"=>"郑州大学（南校区）","color"=>"#71CE01","img"=>"image/college/zzu.jpg"),
@@ -48,23 +53,23 @@
 					array("name"=>"郑州轻工业学院","color"=>"#347ABF","img"=>"image/college/zq.jpg"),
 					array("name"=>"河南工业大学","color"=>"#00CBAE"),
 				);
-				foreach($colleges as $college){
+				//foreach($colleges as $college){
 			  ?>
 			  <a href="">
 			  <div class="college_item" style=""><!-- onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#00A7FF';">-->
 			    <div style="margin:20px;align:center;">
-				  <img src="<?php echo $college['img']?>" style="width:80px;float:left;margin:0 20px;">
+				  <img src="<?php echo $college['image']?>" style="width:80px;float:left;margin:0 20px;">
 				</div>
 				<!--<div style="float:left;padding:5px 20px;font-size:48px;text-align:center;">8</div>-->
 				<div style="clear:float;clear:both;"></div>
 				<br />
 				<div style="background-color:#FAFAFA;line-height:28px;">
-				  <span style="margin:20px 0 0 5px;font-size:14px;font-weight:bold;"><?php echo $college["name"]?></span>
+				  <span style="margin:20px 0 0 5px;font-size:14px;font-weight:bold;"><?php echo base64_decode($college["name"])?></span>
 				</div>
 				<div style="background-color:#FAFAFA;margin-top:2px;font-size:14px;">
 				  <div style="">
-					<span style="color:#0099FF;">10</span>
-					<span style="color:#999999;">赞</span>&nbsp;
+					<span style="color:#0099FF;"><?php echo $college["zan"]?></span>
+					<span style="color:#999999;"><a href="request.php?action=zan&college=<?php echo $college["id"]?>" style="text-decoration:underline;">点赞</a></span>&nbsp;
 					<span style="color:#0099FF;">20</span>
 					<span style="color:#999999;">留言</span>
 					<span style="color:#FF9900;">20</span>

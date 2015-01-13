@@ -11,7 +11,7 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main_index" style="padding-top:10px;width:960px;margin:0 auto;font-size:14px;">
+	  <div class="main_index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;">
 	    <!--<div>
 		  <a href="register.php">
 		    <div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;margin:0 0 10px 0;">
