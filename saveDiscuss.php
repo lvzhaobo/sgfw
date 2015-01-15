@@ -1,5 +1,6 @@
 ﻿<?php
 	include 'db.php';
+	include 'notice.php';
 	session_start();
 	
 	$action = "saveDiscuss";
@@ -7,25 +8,29 @@
 		$action = $_GET["action"];
 	
 	if($action=="saveDiscuss"){
-		//var_dump($_SESSION,$_POST);
-		$username = $_SESSION["user"];
 		$info = "";
-		if(empty($info)){
-			$sql = "insert into sgfw_discuss (username,content,create_time) values('".base64_encode($username)."','".$_POST["content"]."','".(time()+3600*8)."')";
-			$result = mysql_query($sql,$conn);
-			if(!$result){
-				$info = "发表失败";
-				//var_dump(mysql_error());
-				//die;
+		if(isset($_SESSION["user"]) && !empty($_SESSION["user"])){
+			$username = $_SESSION["user"];
+			
+			if(empty($info)){
+				$sql = "insert into sgfw_discuss (username,content,create_time) values('".base64_encode($username)."','".$_POST["content"]."','".(time()+3600*8)."')";
+				$result = mysql_query($sql,$conn);
+				if(!$result){
+					$info = "发表失败";
+				}
 			}
-			$info = "发表成功";
-			//$_SESSION["user"] = $data["username"];
-			//$_SESSION["code"] = md5($data["password"]);
 		}
+		else{
+			$info = "请先登录";
+			noticeObject::setNotice($info);
+			echo '<script>
+window.location.href="login.php";
+</script>';
+		return ;
+		}
+		$info = "发表成功";
 	}
-	//var_dump(mysql_error());
-	//var_dump($info,empty($info));
-	file_put_contents(md5($username).".txt",$info);
+	noticeObject::setNotice($info);
 ?>
 <script>
 window.location.href="discuss.php";

@@ -19,7 +19,7 @@
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
-	<div>
+	<div style="margin:80px 0 0 0;">
 	  <div class="main_index" style="width:960px;margin:0 auto;font-size:14px;background-image:url('image/dream.jpg');">
 	    <div style="width:100%;margin:20px auto;min-height:814px;">
 		  <?php include 'src/notice.php'?>
@@ -36,7 +36,7 @@
 			    include 'db.php';
 				$sql = "SELECT * FROM sgfw_discuss ORDER BY create_time DESC;";
 				$result = mysql_query($sql,$conn);
-				while($item = mysql_fetch_array($result)){
+				while($item = @mysql_fetch_array($result)){
 			  ?>
 			  <div class="discuss_item">
 			    <div>
