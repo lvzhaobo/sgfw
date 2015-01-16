@@ -38,18 +38,17 @@ $header = <<<EOF
 	  .nav_item {padding:0 16px;}
 	  .selected,.nav_item:hover{height:40px;color:#FF9900;border-bottom:2px solid #FF9900;}
 	</style>
-	<div id="logo" style="margin-top:-28px;overflow:hidden;background-color:#F3F3F3;width:100%;position:fixed;">
-	  <div style="margin:4px 200px 0 0;float:right;font-weight:bold;">
+	<div id="logo" style="margin-top:-30px;overflow:hidden;background-color:#F3F3F3;width:100%;position:fixed;">
+	  <div style="margin:0px 0px 0 0;float:right;font-weight:bold;position:fixed;right:238px;top:4px;">
 	    $str
 	  </div>
-	  <div style="clear:float;clear:both;"></div>
-	  <div style="height:48px;border-bottom:2px solid #0099FF;">
-	  <div style="margin:-20px 0 0 200px;float:left;">
+	  <div style="height:80px;border-bottom:2px solid #0099FF;">
+	  <div style="margin:14px 0 0 200px;float:left;width:238px;">
 	    <span style="font-size:28px;font-weight:bold;color:#FF9900;">梦&nbsp;&nbsp;想&nbsp;&nbsp;学&nbsp;&nbsp;院</span><br />
 		<!--<span style="color:#FF9900;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
 		<span style="color:#FF6600;font-size:14px;">梦想科技 | I Dream, I Do, I Succeed!</span>
 	  </div>
-	  <div id="intro" name="intro" style="width:680px;font-size:20px;float:left;margin:8px 0 0 148px;">
+	  <div id="intro" name="intro" style="width:680px;font-size:20px;float:left;margin:40px 0 0 140px;">
 	    $nav_str
 	  </div>
 	  </div>

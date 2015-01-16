@@ -11,34 +11,9 @@
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
   <?php $rand = rand(1,5);$img = "bg".$rand.".jpg";?>
-    <div id="logo" style="margin:0 auto;margin-top:0px;height:88px;overflow:hidden;background:url('".$img."') no-repeat scroll 0 0 / 1400px auto rgba(0, 0, 0, 0);">
-	  <div style="margin:20px 0 0 200px;float:left;width:480px;">
-	    <span style="font-size:28px;font-weight:bold;color:#FF9900;">梦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;想&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;之&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星</span><br />
-		<!--<span style="color:#0099FF;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
-		<span style="color:#0099FF;font-size:14px;">梦想科技 &nbsp;|&nbsp; I Dream, I Do, I Succeed!</span>
-	  </div>
-	  <div style="margin:14px 0 0 100px;float:left;width:280px;font-size:13px;text-align:right;line-height:22px;color:#0099FF;padding:0 10px;border-right:2px solid #FF9900;">
-		以新的模式辅助大学教育<br /><span style="color:#FF9900;">一个免费的学习平台</span><br />加速实现梦想的舞台
-	  </div>
-	  <?php 
-	    session_start();
-//var_dump($_SESSION);
-if(isset($_SESSION["user"])){
-	$str = "<a href='mySpace.php'><span style='color:#FF9900;font-weight:bold;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='logout.php' style='color:0099FF;'>退出</a>";
-}
-else{
-	$str = '<a href="login.php" style="color:0099FF;">登录</a>&nbsp;&nbsp;<a href="register.php" style="color:0099FF;">注册</a>';
-}
-	  ?>
-	  <div style="width:100px;margin:20px 60px 0 0;float:right;">
-	    <?php echo $str;?>
-	  </div>
-	</div>
-	<div style="height:0px;border:2px solid #FF9900;"></div>
+    <?php include 'src/header.php'?>
     <div id="logo" style="margin:0px;padding:0px;height:420px;overflow:hidden;background:url('<?php echo $img?>') no-repeat scroll 0 0 / 1400px auto rgba(0, 0, 0, 0);">
-	  
-	  <div style="clear:float;clear:both;"></div>
-	  <div style="margin:40px 0 0 280px;">
+	  <div style="margin:100px 0 0 280px;">
 	    <span style="font-size:56px;font-weight:bold;color:#FFFFFF;">梦&nbsp;&nbsp;想&nbsp;&nbsp;之&nbsp;&nbsp;星</span><br />
 		<span style="color:#FFFFFF;font-size:24px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />
 		<span style="color:#FF6600;font-size:24px;">梦想科技 | I Dream, I Do, I Succeed!</span>

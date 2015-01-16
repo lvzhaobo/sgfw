@@ -9,15 +9,15 @@
 	  .btn:hover,button:hover{border:2px solid #0099FF;color:#FF9900;}
 	  .btn a {color:#0099FF;}
 	  .btn a:hover {color:#FF9900;}
-	  th {font-weight:normal;}
-	  td {font-weight:bold;}
+	  th {font-weight:normal;font-size:14px;text-align:right;padding:0 10px 0 0;color:#CCCCCC;}
+	  td {font-weight:normal;font-size:14px;}
 	</style>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
 	  <div class="main index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;min-height:400px;">
-	    <div style="width:192px;float:left;position:fixed;font-weight:bold;font-size:16px;">
+	    <div style="width:192px;float:left;position:fixed;font-weight:bold;font-size:16px;margin:20px 0 0 0;">
 		  <a href="mySpace.php">
 		  <div style="width:100%;height:40px;color:#FF9900;">
 		    <span style="margin:0 0 0 20px;">基本信息</span>
@@ -54,6 +54,7 @@
 			//var_dump($data);
 			$edit = isset($_GET["edit"]);
 		  ?>
+		  <div style="margin:10px 0 ;">
 		  <!--<a href="createTeam.php">创建团队</a>&nbsp;&nbsp;<a href="createProject.php">创建项目</a>&nbsp;&nbsp;-->
 		  <?php if($edit){?>
 			<div class="btn"><a href="mySpace.php">返回</a></div>
@@ -62,17 +63,18 @@
 		  ?>
 			<div class="btn"><a href="mySpace.php?edit=true">编辑</a></div>
 		  <?php }?>
+		  </div>
 		  <fieldset>
 		  <legend>基本信息</legend>
 		  <div id="basic_info" style="width:400px;float:left;">
 		  <form action="saveAccount.php?edit=true" method="post">
 		    <table style="line-height:28px;">
 			  <tr>
-			    <th width="100">用户名：</th>
+			    <th width="100">用户名</th>
 				<td><?php echo base64_decode($data["username"]);?></td>
 			  </tr>
 			  <tr>
-			    <th>QQ：</th>
+			    <th>QQ</th>
 				<td><?php 
 					if($edit){
 					?>
@@ -85,7 +87,7 @@
 				</td>
 			  </tr>
 			  <tr>
-			    <th>Email：</th>
+			    <th>Email</th>
 				<td><?php 
 					if($edit){
 					?>
@@ -94,6 +96,19 @@
 					}
 					else{
 						echo $data["email"];
+					}?>
+				</td>
+			  </tr>
+			  <tr>
+			    <th>学校</th>
+				<td><?php 
+					if($edit){
+					?>
+					<input type="text" name="account['college']" value="<?php echo $data['college'];?>">
+					<?php
+					}
+					else{
+						echo $data["college"];
 					}?>
 				</td>
 			  </tr>
@@ -120,7 +135,7 @@
 			  </tr>-->
 			  <?php if(!empty($data["create_time"])){?>
 			  <tr>
-			    <th>注册时间：</th>
+			    <th>注册时间</th>
 				<td><?php echo date("Y年m月d日 H:i:s",$data["create_time"]+3600*7)?></td>
 			  </tr>
 			  <?php }?>
@@ -134,7 +149,12 @@
 		  </form>
 		  </div>
 		  <div style="width:280px;float:left;">
+		    <?php if(!file_exists($data["img"])){?>
 		    <img src="<?php echo $data["img"]?>" style="width:100px;"/>
+			<?php }
+			else{?>
+			<div style="width:100px;height:100px;border:1px solid #CCCCCC;">请上传头像</div>
+			<?php }?>
 			<form action="saveAccount.php?action=upload" method="post" enctype="multipart/form-data">
 			  <input type="file" name="file" style="width:148px;float:left;" />
 			  <button type="submit">确定</button>

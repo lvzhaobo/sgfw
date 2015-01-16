@@ -1,5 +1,6 @@
 ﻿<?php
 	include 'db.php';
+	include 'src/notice.php';
 	session_start();
 	//$conn = mysql_connect("rdsbezbquaqzfyn.mysql.rds.aliyuncs.com","lvzb","111111");
 	//if(!$conn){
@@ -51,8 +52,7 @@
 			echo $_FILES["file"]["name"] . " already exists. ";
 		}
 		else{
-			move_uploaded_file($_FILES["file"]["tmp_name"],
-				$file_name);
+			move_uploaded_file($_FILES["file"]["tmp_name"],$file_name);
 			echo "Stored in: " . $file_name;
 			$sql = "UPDATE sgfw_user SET img='".$file_name."' WHERE username='".base64_encode($_SESSION["user"])."'";
 			$result = mysql_query($sql,$conn);
@@ -65,33 +65,49 @@
 		}
 	}
 	else{
-		$data = $_POST["account"];
-		$info = "";
-		
-		if(empty($data["username"]))
-			$info = "用户名不能为空";
-		if(($data["password"]!=$data["password_2"]) && empty($info))
-			$info = "两次密码不相同";
-		$sql = "select * from sgfw_user where username='".base64_encode($data["username"])."'";
-		$result = mysql_query($sql,$conn);
-		$row = mysql_fetch_array($result);
-		
-		if((isset($row["id"]) && !empty($row["id"])) && empty($info))
-			$info = "用户名已被使用";
-		if(empty($info)){
-			$sql = "insert into sgfw_user (username,password,qq,email,recommender,college,create_time) values('".base64_encode($data["username"])."','".$data["password"]."','".$data["qq"]."','".$data["email"]."','".$data["recommender"]."','".$data["college"]."','".time()."')";
-			$result = mysql_query($sql,$conn);
-			if(!$result){
-				$info = "注册失败";
-				var_dump(mysql_error());
-				die;
-			}
+		$edit = @$_GET["edit"];
+		if($edit!="true"){
+			$data = $_POST["account"];
+			$info = "";
 			
-			$_SESSION["user"] = $data["username"];
-			$_SESSION["code"] = md5($data["password"]);
+			if(empty($data["username"]))
+				$info = "用户名不能为空";
+			if(($data["password"]!=$data["password_2"]) && empty($info))
+				$info = "两次密码不相同";
+			$sql = "select * from sgfw_user where username='".base64_encode($data["username"])."'";
+			$result = mysql_query($sql,$conn);
+			$row = mysql_fetch_array($result);
+			
+			if((isset($row["id"]) && !empty($row["id"])) && empty($info))
+				$info = "用户名已被使用";
+			if(empty($info)){
+				$sql = "insert into sgfw_user (username,password,qq,email,recommender,college,create_time) values('".base64_encode($data["username"])."','".$data["password"]."','".$data["qq"]."','".$data["email"]."','".$data["recommender"]."','".$data["college"]."','".time()."')";
+				$result = mysql_query($sql,$conn);
+				if(!$result){
+					$info = "注册失败";
+					//var_dump(mysql_error());
+					//die;
+				}
+				
+				$_SESSION["user"] = $data["username"];
+				$_SESSION["code"] = md5($data["password"]);
+			}
+			noticeObject::setNotice("注册成功");
 		}
+		else{
+			$username = $_SESSION["user"];
+			$sql = "UPDATE sgfw_user SET (qq,email,college) values('".base64_encode($data["username"])."','".$data["email"]."','".$data["college"]."')";
+			$result = mysql_query($sql);
+			if(!$result){
+				$info = "更新失败";
+			}
+			$info = "更新成功";
+			noticeObject::setNotice($info);
+		}
+		echo '<script>window.location.href="mySpace.php";</script>';
 	}
 	//var_dump(mysql_error());
+	
 	//var_dump($info,empty($info));die;
 ?>
 <script>
