@@ -78,7 +78,7 @@
 				<td><?php 
 					if($edit){
 					?>
-					<input type="text" name="account['qq']" value="<?php echo $data['qq'];?>">
+					<input type="text" name="account[qq]" value="<?php echo $data['qq'];?>">
 					<?php
 					}
 					else{
@@ -91,7 +91,7 @@
 				<td><?php 
 					if($edit){
 					?>
-					<input type="text" name="account['email']" value="<?php echo $data['email'];?>">
+					<input type="text" name="account[email]" value="<?php echo $data['email'];?>">
 					<?php
 					}
 					else{
@@ -104,7 +104,7 @@
 				<td><?php 
 					if($edit){
 					?>
-					<input type="text" name="account['college']" value="<?php echo $data['college'];?>">
+					<input type="text" name="account[college]" value="<?php echo $data['college'];?>">
 					<?php
 					}
 					else{
@@ -149,7 +149,7 @@
 		  </form>
 		  </div>
 		  <div style="width:280px;float:left;">
-		    <?php if(!file_exists($data["img"])){?>
+		    <?php if(file_exists($data["img"])){?>
 		    <img src="<?php echo $data["img"]?>" style="width:100px;"/>
 			<?php }
 			else{?>

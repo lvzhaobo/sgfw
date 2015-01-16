@@ -1,6 +1,6 @@
 ﻿<?php
 	include 'db.php';
-	include 'src/notice.php';
+	include 'notice.php';
 	session_start();
 	//$conn = mysql_connect("rdsbezbquaqzfyn.mysql.rds.aliyuncs.com","lvzb","111111");
 	//if(!$conn){
@@ -38,7 +38,7 @@
 	if($action=="upload"){
 		//var_dump($_FILES);
 		$file_name = "upload/" . time()."_".$_FILES["file"]["name"];
-		if ($_FILES["file"]["error"] > 0){
+		/*if ($_FILES["file"]["error"] > 0){
 			echo "Error: " . $_FILES["file"]["error"] . "<br />";
 		}
 		else{
@@ -46,19 +46,19 @@
 			echo "Type: " . $_FILES["file"]["type"] . "<br />";
 			echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
 			echo "Stored in: " . $_FILES["file"]["tmp_name"];
-		}
+		}*/
 
 		if (file_exists($file_name)){
-			echo $_FILES["file"]["name"] . " already exists. ";
+			//echo $_FILES["file"]["name"] . " already exists. ";
 		}
 		else{
 			move_uploaded_file($_FILES["file"]["tmp_name"],$file_name);
-			echo "Stored in: " . $file_name;
+			//echo "Stored in: " . $file_name;
 			$sql = "UPDATE sgfw_user SET img='".$file_name."' WHERE username='".base64_encode($_SESSION["user"])."'";
 			$result = mysql_query($sql,$conn);
 			//var_dump($result);
 			if(!$result){
-				echo mysql_error();
+				//echo mysql_error();
 			}
 			$info = "upload_success";
 			//var_dump($info);
@@ -66,10 +66,9 @@
 	}
 	else{
 		$edit = @$_GET["edit"];
+		$data = $_POST["account"];
+		$info = "";
 		if($edit!="true"){
-			$data = $_POST["account"];
-			$info = "";
-			
 			if(empty($data["username"]))
 				$info = "用户名不能为空";
 			if(($data["password"]!=$data["password_2"]) && empty($info))
@@ -88,15 +87,15 @@
 					//var_dump(mysql_error());
 					//die;
 				}
-				
+				$info = "注册成功";
 				$_SESSION["user"] = $data["username"];
 				$_SESSION["code"] = md5($data["password"]);
 			}
-			noticeObject::setNotice("注册成功");
+			noticeObject::setNotice($info);
 		}
 		else{
 			$username = $_SESSION["user"];
-			$sql = "UPDATE sgfw_user SET (qq,email,college) values('".base64_encode($data["username"])."','".$data["email"]."','".$data["college"]."')";
+			$sql = "UPDATE sgfw_user SET qq='".$data["qq"]."' , email='".$data["email"]."' , college='".$data["college"]."'";
 			$result = mysql_query($sql);
 			if(!$result){
 				$info = "更新失败";
