@@ -37,7 +37,7 @@
 	
 	if($action=="upload"){
 		//var_dump($_FILES);
-		$file_name = "upload/" . time()."_".$_FILES["file"]["name"];
+		$file_name = "upload/" . time()."_".base64_encode($_FILES["file"]["name"]);
 		/*if ($_FILES["file"]["error"] > 0){
 			echo "Error: " . $_FILES["file"]["error"] . "<br />";
 		}

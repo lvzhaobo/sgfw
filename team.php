@@ -4,12 +4,14 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;font-size:13px;color:#000000;margin:5px 0;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .project_item {width:286px;min-height:120px;margin:0px 5px 0px 0px;float:left;padding:2px;border:2px solid #FFFFFF;color:#333333;}
+	  .project_item {width:300px;height:148px;margin:0px 5px 0px 0px;float:left;padding:5px;border:2px solid #FFFFFF;color:#333333;background-color:#F3F3F3;}
 	  .project_item_title {margin:20px 0 0 0px;font-size:16px;font-weight:bold;color:#FF6600;line-height:28px;}
 	  .project_item hr {height:1px;display:none;}
-	  .label_part {background-color:#4EB9ED;padding:1px 2px;margin:0 2px;line-height:26px;}
+	  .label_part {padding:1px 2px;margin:0 2px;line-height:26px;border:1px solid #0099FF;border-radius:0.5em;}
 	  .college_item {width:168px;min-height:128px;margin:10px 20px 10px 0px;float:left;color:#333333;border:1px solid #DCDCDC;box-shadow:0 0 5px #DCDCDC;text-align:center;}
 	  .college_item:hover {box-shadow:0 0 5px #0099FF;}
+	  .zan a{color:#999999;}
+	  .zan a:hover {color:#FF9900;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
@@ -65,11 +67,11 @@
 				<div style="background-color:#FAFAFA;margin-top:2px;font-size:14px;">
 				  <div style="">
 					<span style="color:#0099FF;"><?php echo $college["zan"]?></span>
-					<span style="color:#999999;"><a href="request.php?action=zan&college=<?php echo $college["id"]?>" style="text-decoration:underline;">点赞</a></span>&nbsp;
-					<span style="color:#0099FF;">20</span>
+					<span style="" class="zan"><a href="request.php?action=zan&college=<?php echo $college["id"]?>" style="text-decoration:underline;">点赞</a></span>&nbsp;
+					<!--<span style="color:#0099FF;">20</span>
 					<span style="color:#999999;">留言</span>
 					<span style="color:#FF9900;">20</span>
-					<span style="color:#999999;">同学</span>
+					<span style="color:#999999;">同学</span>-->
 				  </div>
 				</div>
 			  </div>
@@ -125,7 +127,7 @@
 			  </div>
 			  <?php
 				include 'db.php';
-				$result = mysql_query("select * from sgfw_user where id>=5 order by id desc");
+				$result = mysql_query("select * from sgfw_team order by id desc");
 				$i = 0;
 				while($item = mysql_fetch_array($result)){
 				//foreach($data as $item){
@@ -140,20 +142,28 @@
 						if(isset($item["img"]) && !empty($item["img"]))
 							$img = $item["img"];
 					  ?>
-				      <img src="<?php echo $img;?>" style="width:100px;"/>
+				      <img src="<?php echo $img;?>" style="width:80px;height:80px;border-radius:3em;"/>
 				    </div>
-				    <div style="width:140px;float:left;margin:0px 0;">
-				      <!--<span class="project_item_title" style=""><?php echo base64_decode($item["username"])?></span><hr />-->
+				    <div style="max-width:200px;float:left;margin:0px 0;">
+				      <!--<span class="project_item_title" style=""><?php echo base64_decode($item["name"])?></span><hr />-->
 				      <div style="margin:0 0 0 10px;">
-					    <span style="font-weight:bold;"><?php echo base64_decode($item["username"])?></span><br />
-				        <span title="喜欢：8" style="margin-left:10px;font-size:20px;color:#FF0000;">8</span>
-						<span style="font-size:12px;"><span class="label_part">标签1</span> 
+					    <span style="font-weight:bold;"><?php echo base64_decode($item["name"])?></span><br />
+						
+				        <span title="喜欢：8" style="margin-left:10px;font-size:20px;color:#FF9900;">0</span>
+						<span>赞</span><br />
+						<span style="font-size:12px;"><span class="label_part">标签1</span>
 						<span class="label_part">标签2</span><br />
-						<span><?php echo $item["college"]?></span>
+						
 				      </div>
 				    </div>
 				  </div>
 			      <div style="clear:float;clear:both;"></div>
+				  <div style="margin:10px 0 0 0;color:#333333;font-weight:normal;">
+				  <div>
+				    <span><?php echo $item["member"]?></span>
+				  </div>
+				  <span><?php echo $item["slogan"]?></span>
+				  </div>
 				  <p></p>
 			    </div>
 			  </a>
