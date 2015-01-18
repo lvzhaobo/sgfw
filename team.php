@@ -4,7 +4,7 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;font-size:13px;color:#000000;margin:5px 0;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .project_item {width:300px;height:148px;margin:0px 5px 0px 0px;float:left;padding:5px;border:2px solid #FFFFFF;color:#333333;background-color:#F3F3F3;}
+	  .project_item {width:300px;height:148jfpx;margin:0px 5px 0px 0px;float:left;padding:5px;border:2px solid #FFFFFF;color:#333333;background-color:#F3F3F3;}
 	  .project_item_title {margin:20px 0 0 0px;font-size:16px;font-weight:bold;color:#FF6600;line-height:28px;}
 	  .project_item hr {height:1px;display:none;}
 	  .label_part {padding:1px 2px;margin:0 2px;line-height:26px;border:1px solid #0099FF;border-radius:0.5em;}
@@ -159,8 +159,8 @@
 				  </div>
 			      <div style="clear:float;clear:both;"></div>
 				  <div style="margin:10px 0 0 0;color:#333333;font-weight:normal;">
-				  <div>
-				    <span><?php echo $item["member"]?></span>
+				  <div style="margin:0 0 5px 0;">
+				    <span>成员：<?php echo $item["member"]?></span>
 				  </div>
 				  <span><?php echo $item["slogan"]?></span>
 				  </div>
