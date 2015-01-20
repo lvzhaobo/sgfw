@@ -13,9 +13,8 @@
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
-	<div>
+	<div style="margin:120px 0 0 0;">
 	  <div class="main_index" style="width:960px;margin:0 auto;font-size:14px;">
-			
 			<div style="width:100%;margin:40px 0 0 0;min-height:480px;">
 			  <div style="margin:0 0 0 10px;">
 			    <span style="font-size:28px;font-weight:bold;">兴趣项目</span><br />
@@ -122,10 +121,6 @@
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<div id="footer" style="height:80px;background-color:#99FF00;padding:20px;">
-	  <div style="text-align:center;">
-	    @版权所有  2014·时光飞舞·梦想之星
-	  </div>
-	</div>
+	<?php include 'src/footer.php';?>
   </body>
 </html>

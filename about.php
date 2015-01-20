@@ -15,7 +15,7 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main_index" style="padding-top:30px;width:960px;margin:0 auto;font-size:14px;">
+	  <div class="main_index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;">
 	    <!--<div>
 		  <a href="register.php">
 		    <div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;margin:0 0 10px 0;">
@@ -134,10 +134,6 @@
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<div id="footer" style="height:80px;background-color:#99FF00;padding:20px;">
-	  <div style="text-align:center;">
-	    @版权所有  2014·时光飞舞·梦想之星
-	  </div>
-	</div>
+	<?php include 'src/footer.php'?>
   </body>
 </html>
