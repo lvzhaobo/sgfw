@@ -23,7 +23,7 @@
 		    </div>
 		  </a>
 		</div>-->
-	    <div style="width:192px;float:left;font-size:16px;">
+	    <div style="width:192px;float:left;font-size:16px;margin:28px 0 0 0;">
 		  <a href="about.php">
 		  <div class="item" style="width:100%;height:40px;color:#FF9900;">
 		    <span style="margin:0 0 0 20px;">关于我们</span>

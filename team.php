@@ -4,11 +4,11 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;font-size:13px;color:#000000;margin:5px 0;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .project_item {width:300px;height:148jfpx;margin:0px 5px 0px 0px;float:left;padding:5px;border:2px solid #FFFFFF;color:#333333;background-color:#F3F3F3;}
+	  .project_item {width:300px;height:148px;margin:0px 5px 0px 0px;float:left;padding:5px;border:2px solid #FFFFFF;color:#333333;background-color:#F3F3F3;}
 	  .project_item_title {margin:20px 0 0 0px;font-size:16px;font-weight:bold;color:#FF6600;line-height:28px;}
 	  .project_item hr {height:1px;display:none;}
 	  .label_part {padding:1px 2px;margin:0 2px;line-height:26px;border:1px solid #0099FF;border-radius:0.5em;}
-	  .college_item {width:168px;min-height:128px;margin:10px 20px 10px 0px;float:left;color:#333333;border:1px solid #DCDCDC;box-shadow:0 0 5px #DCDCDC;text-align:center;}
+	  .college_item {width:168px;height:200px;margin:10px 20px 10px 0px;float:left;color:#333333;border:1px solid #DCDCDC;box-shadow:0 0 5px #DCDCDC;text-align:center;}
 	  .college_item:hover {box-shadow:0 0 5px #0099FF;}
 	  .zan a{color:#999999;}
 	  .zan a:hover {color:#FF9900;}
@@ -41,22 +41,22 @@
 					$result = mysql_query("select * from sgfw_college");
 					//var_dump(mysql_error());
 					while($college = mysql_fetch_array($result)){
-				$colleges = array(
-					array("name"=>"郑州大学（新校区）","color"=>"#00A7FF","img"=>"image/college/zzu.jpg"),
-					array("name"=>"郑州大学（南校区）","color"=>"#71CE01","img"=>"image/college/zzu.jpg"),
-					array("name"=>"郑州大学（北校区）","color"=>"#FFB500","img"=>"image/college/zzu.jpg"),
-					array("name"=>"河南大学","color"=>"#B83AFE","img"=>"image/college/hnu.jpg"),
-					array("name"=>"河南大学（软件学院）","color"=>"#5883E2","img"=>"image/college/hnu.jpg"),
-					array("name"=>"黄河科技学院","color"=>"#347ABF","img"=>"image/college/hstc.jpg"),
-					array("name"=>"郑州轻工业学院","color"=>"#347ABF","img"=>"image/college/zq.jpg"),
-					array("name"=>"河南工业大学","color"=>"#00CBAE"),
-				);
+				/*$colleges = array(
+					array("name"=>"郑州大学（新校区）","color"=>"#00A7FF","img"=>"image/college/zzu.jpg","start_time"=>"2015年3月10日"),
+					array("name"=>"郑州大学（南校区）","color"=>"#71CE01","img"=>"image/college/zzu.jpg","start_time"=>"2015年3月10日"),
+					array("name"=>"郑州大学（北校区）","color"=>"#FFB500","img"=>"image/college/zzu.jpg","start_time"=>"2015年3月10日"),
+					array("name"=>"河南大学","color"=>"#B83AFE","img"=>"image/college/hnu.jpg","start_time"=>"2015年3月10日"),
+					array("name"=>"河南大学（软件学院）","color"=>"#5883E2","img"=>"image/college/hnu.jpg","start_time"=>"2015年3月10日"),
+					array("name"=>"黄河科技学院","color"=>"#347ABF","img"=>"image/college/hstc.jpg","start_time"=>"2015年3月10日"),
+					array("name"=>"郑州轻工业学院","color"=>"#347ABF","img"=>"image/college/zq.jpg","start_time"=>"2015年3月10日"),
+					array("name"=>"河南工业大学","color"=>"#00CBAE","start_time"=>"2015年3月10日"),
+				);*/
 				//foreach($colleges as $college){
 			  ?>
 			  <a href="">
 			  <div class="college_item" style=""><!-- onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#00A7FF';">-->
-			    <div style="margin:20px;align:center;">
-				  <img src="<?php echo $college['image']?>" style="width:80px;float:left;margin:0 20px;">
+			    <div style="margin:20px;align:center;height:60px;">
+				  <img src="<?php echo $college['image']?>" style="width:80px;float:left;margin:0 20px;align:middle;">
 				</div>
 				<!--<div style="float:left;padding:5px 20px;font-size:48px;text-align:center;">8</div>-->
 				<div style="clear:float;clear:both;"></div>
@@ -72,6 +72,9 @@
 					<span style="color:#999999;">留言</span>
 					<span style="color:#FF9900;">20</span>
 					<span style="color:#999999;">同学</span>-->
+				  </div>
+				  <div style="color:#CCCCCC;margin:5px 0 0 0;">
+				    开放注册：<?php echo $college["register_time"];?>
 				  </div>
 				</div>
 			  </div>
