@@ -55,6 +55,7 @@
 			  <?php $project = array("website"=>"网站设计",
 										"database"=>"数据库",
 										"php"=>"PHP",
+										"jsp"=>"JSP",
 										""=>"无课程");
 							echo $project[$data["project"]];
 					?>
@@ -78,6 +79,50 @@
 				  <td>HTML、CSS、原型设计</td>
 				  <th>兴趣建议：</th>
 				  <td>①开发个人博客网站；②为学校社团开发网站；③为学校周边商店、书店等开发网站</td>
+				</tr>
+			  </table>
+			  <?php }
+				else if($data["project"]=="php"){
+			  ?>
+			  <a href="myCourse.php?course=website">
+			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
+			</a>
+			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="clear:float;clear:both;"></div>
+			  <table style="font-size:14px;line-height:22px;">
+			    <tr>
+				  <th style="width:80px;">学习目标：</th>
+				  <td>完成论坛/团购网开发，在第八周进行DEMO。</td>
+				  <th style="width:80px;">后续课程：</th>
+				  <td>①PHP语言高级；②MySQL等数据库高级；③Linux服务器；④JavaScript</td>
+				</tr>
+				<tr>
+				  <th>学习知识：</th>
+				  <td>PHP基础使用、MySQL等数据库基础、产品设计、团队协作</td>
+				  <th>兴趣建议：</th>
+				  <td>①CMS类网站；②情侣空间；③音乐播放器</td>
+				</tr>
+			  </table>
+			  <?php }
+				else if($data["project"]=="jsp"){
+			  ?>
+			  <a href="myCourse.php?course=website">
+			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
+			</a>
+			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="clear:float;clear:both;"></div>
+			  <table style="font-size:14px;line-height:22px;">
+			    <tr>
+				  <th style="width:80px;">学习目标：</th>
+				  <td>完成论坛/团购网开发，在第八周进行DEMO。</td>
+				  <th style="width:80px;">后续课程：</th>
+				  <td>①Java语言；②MySQL等数据库高级；③Linux服务器；④JavaScript</td>
+				</tr>
+				<tr>
+				  <th>学习知识：</th>
+				  <td>PHP基础使用、MySQL等数据库基础、产品设计、团队协作</td>
+				  <th>兴趣建议：</th>
+				  <td>①CMS类网站；②情侣空间；③音乐播放器</td>
 				</tr>
 			  </table>
 			  <?php }

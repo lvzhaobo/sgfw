@@ -22,8 +22,8 @@
 		<div class="content" style="width:760px;float:left;">
 			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:28px 10px;min-height:200px;line-height:28px;">
 			  <div>
-			    <div style="float:left;height:120px;">
-				  <img src="image/php.jpg" style="width:200px;"/>
+			    <div style="float:left;max-height:120px;overflow:hidden;">
+				  <img src="image/java.png" style="width:200px;margin-top:-20px;"/>
 				</div>
 				<div style="float:left;padding:0px 20px;line-height:22px;">
 				  <div><span style="color:#999999;">课程时长：</span><span>共8周，8周后进行DEMO</span></div>
@@ -44,10 +44,10 @@
 					}
 				  ?>
 				  <div style="float:right;width:140px;">
-				  <a href="selectCourse.php?course=php">
+				  <a href="selectCourse.php?course=jsp">
 				    <div style="margin:5px 0 5px 10px;background-color:#FFFFFF;font-size:20px;font-weight:bold;text-align:center;padding:14px 0;color:#0099FF;border:2px solid #FF9900;">
 				      <span>
-					  <?php if(empty($username) || !isset($row["project"]) || $row["project"]!="php"){?>
+					  <?php if(empty($username) || !isset($row["project"]) || $row["project"]!="jsp"){?>
 					  学习此课程
 					  <?php }
 					  else{?>
@@ -62,14 +62,14 @@
 				    <div style="margin:0 10px;font-weight:bold;font-size:18px;color:#CCCCCC;">你将会学到：</div>
 				    <div style="padding:0 10px;">
 					  <div style="font-weight:bold;margin:10px 0;">
-					    <span style="font-size:14px;color:#0099FF;margin:0 22px 0 0;">PHP部分</span>
+					    <span style="font-size:14px;color:#0099FF;margin:0 22px 0 0;">Java(JSP)部分</span>
 						<span style="color:#CCCCCC;">切换为：</span>
-						<a href="jsp.php" style="text-decoration:underline;"><span style="">Java(JSP)</span></a>
+						<a href="php.php" style="text-decoration:underline;"><span style="">PHP</span></a>
 					  </div>
 					  <ul style="padding:0px;">
-					    <li>运行PHP代码，和HTML&CSS结合</li>
-					    <li>PHP基本语法，包括代码格式、变量（数字、字符串、数组）等</li>
-						<li>PHP逻辑处理，包括if else/switch判断，for/foreach/while循环</li>
+					    <li>运行JSP代码，和HTML&CSS结合</li>
+					    <li>JSP基本语法，包括代码格式、变量（数字、字符串、数组）等</li>
+						<li>JSP逻辑处理，包括if else/switch判断，for/foreach/while循环</li>
 						<li>和数据库交互</li>
 						<li>PHP常用函数，字符串处理、数组处理等</li>
 						<li>面向对象编程</li>

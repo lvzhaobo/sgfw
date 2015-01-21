@@ -31,7 +31,7 @@
 								array("name"=>"数据库","url"=>"database.php","img"=>"image/mysql.jpg","text"=>"软件开发必不可少的一部分，通过本课程学习可以让你轻松应对期末数据库考试。"),
 								array("name"=>"ACM","url"=>"","img"=>"image/acm.jpg","text"=>"（敬请期待）不必羡慕ACMer，你也可以成为他们，从这里开始。"),
 								array("name"=>"JavaScript","url"=>"","img"=>"image/jquery.jpg","text"=>"在前端页面处理中的王者语言。"),
-								array("name"=>"Java（JSP）","url"=>"","img"=>"image/java.png","text"=>"高大上的综合性开发语言。"),
+								array("name"=>"Java（JSP）","url"=>"jsp.php","img"=>"image/java.png","text"=>"高大上的综合性开发语言。"),
 								array("name"=>"软件测试","url"=>"","img"=>"image/test.jpg","text"=>"多方面、多角度掌握软件测试，你掌握的不仅是书本上的知识。"),
 								//array("name"=>"计算机网络","url"=>"","img"=>"","text"=>"（敬请期待）在实践中学习互联网互通互联的原理。"),
 								array("name"=>"Linux服务器","url"=>"","img"=>"image/ubuntu.jpg","text"=>"（敬请期待）在Linux系统中搭建各种服务，包括FTP服务器、Samba服务器、WEB服务器等。"),
