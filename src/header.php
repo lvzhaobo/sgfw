@@ -38,7 +38,7 @@ $header = <<<EOF
 	  .nav_item {padding:0 16px;}
 	  .selected,.nav_item:hover{height:40px;color:#FF9900;border-bottom:2px solid #FF9900;}
 	</style>
-	<div id="logo" style="margin-top:-30px;overflow:hidden;background-color:#F3F3F3;width:100%;position:fixed;z-index:9999;">
+	<div id="logo" style="margin-top:-30px;overflow:hidden;background-color:#F3F3F3;width:100%;position:fixed;z-index:9999;box-shadow:0 0 10px #999999;">
 	  <div style="margin:0px 0px 0 0;float:right;font-weight:bold;position:fixed;right:238px;top:4px;">
 	    $str
 	  </div>
