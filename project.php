@@ -13,25 +13,15 @@
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
-	<div style="margin:120px 0 0 0;">
+	<div style="margin:0px 0 0 0;">
 	  <div class="main_index" style="width:960px;margin:0 auto;font-size:14px;">
-			<div style="width:100%;margin:40px 0 0 0;min-height:480px;">
-			  <div style="margin:0 0 0 10px;">
-			    <span style="font-size:28px;font-weight:bold;">兴趣项目</span><br />
-				<div style="width:600px;float:left;">
-				  <span>这里是大家最喜欢的兴趣项目，由各自团队开发。提交你的项目，如果你只有想法和小伙伴也是可以的，可以免费得到我们的技术帮助和资金扶持。</span>
-				</div>
-				<div style="float:left;width:334px;">
-				  <a href="register.php">
-				    <div style="margin:5px 0 5px 10px;background-color:#FFFFFF;font-size:22px;font-weight:bold;text-align:center;padding:5px 0;color:#0099FF;border:2px solid #FF9900;">
-				      点击这里，加入我们
-				    </div>
-			      </a>
+			<div style="width:100%;margin:60px 0 0 0;min-height:480px;">
+			  <div style="margin:0 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
+			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
+			      <span style="font-size:20px;font-weight:bold;margin:0 5px;">兴趣项目</span>
+				  <span>这里是大家最喜欢的兴趣项目，由各自团队开发。如果你只有想法和小伙伴，可以免费得到我们的技术帮助和资金扶持。</span>
 				</div>
 			  </div>
-			  <div style="clear:float;clear:both;"></div>
-			  <hr style="color:#CCCCCC;" />
-			  <br />
 			  <?php for($i=0;$i<28;$i++){?>
 			  <a href="#">
 			    <div class="project_item" onmouseover="this.style.border='2px solid #0099FF';" onmouseout="this.style.border='2px solid #E2E2E2';">

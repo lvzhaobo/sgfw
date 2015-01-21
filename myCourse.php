@@ -38,7 +38,7 @@
 	<div>
 	  <div class="main index" style="padding-top:48px;min-width:960px;margin:0 auto;font-size:14px;min-height:400px;">
 	    
-	    <div style="width:200px;float:left;position:fixed;font-weight:bold;font-size:16px;background-color:#F3F3F3;padding:10px 0;line-height:40px;border-right:2px solid #CCCCCC;">
+	    <div style="width:200px;height:100%;z-index:0;float:left;position:fixed;font-weight:bold;font-size:16px;background-color:#F3F3F3;padding:10px 0;line-height:40px;border-right:2px solid #CCCCCC;">
 		<div style="margin:10px 0;text-align:center;border-bottom:2px solid #FFFFFF;">
 		  <div><img src="<?php echo $data["img"]?>" style="width:80px;height:80px;border-radius:3em;" /></div>
 		  <div style="line-height:28px;color:#666666;margin:5px 0;"><?php echo base64_decode($data["username"]);?></div>
@@ -55,14 +55,14 @@
 		    <span>我的课程</span>
 		  </div>
 		  </a>
-		  <a href="myHomework.php">
-		  <div style="color:#000000;">
+		  <a href="#">
+		  <div style="color:#CCCCCC;">
 		    <span>我的作业</span>
 		  </div>
 		  </a>
-		  <a href="myDiscuss.php">
+		  <a href="myResource.php">
 		  <div style="color:#000000;">
-		    <span>学习讨论</span>
+		    <span>学习资源</span>
 		  </div>
 		  </a>
 		</div>
@@ -116,15 +116,9 @@
 		</div>
 		<div class="project_item" style="width:300px;float:right;padding:10px 20px 10px 20px;border-left:2px solid #CCCCCC;">
 		<iframe src="course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/intro.php?course=<?php echo $_GET["course"]."&process=".$_GET["process"]?>" style="border:0px;width:100%;height:800px;"></iframe>
-		  
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<div id="footer" style="height:80px;background-color:#99FF00;padding:20px;">
-	  <div style="text-align:center;">
-	    @版权所有  2014·时光飞舞·梦想之星
-	  </div>
-	</div>
   </body>
 </html>
 <script>

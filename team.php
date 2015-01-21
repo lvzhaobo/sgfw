@@ -53,7 +53,6 @@
 				);*/
 				//foreach($colleges as $college){
 			  ?>
-			  <a href="">
 			  <div class="college_item" style=""><!-- onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#00A7FF';">-->
 			    <div style="margin:20px;align:center;height:60px;">
 				  <img src="<?php echo $college['image']?>" style="width:80px;float:left;margin:0 20px;align:middle;">
@@ -67,18 +66,28 @@
 				<div style="background-color:#FAFAFA;margin-top:2px;font-size:14px;">
 				  <div style="">
 					<span style="color:#0099FF;"><?php echo $college["zan"]?></span>
-					<span style="" class="zan"><a href="request.php?action=zan&college=<?php echo $college["id"]?>" style="text-decoration:underline;">点赞</a></span>&nbsp;
+					<?php 
+						$sign = $_SERVER["REMOTE_ADDR"]."-".$college["id"];
+						$data = file_get_contents("data/request_ip.json");
+						$data = empty($data) ? array() : $data;
+						$data = json_decode($data,true);
+						if(!in_array($sign,$data)){
+					?>
+					<span style="color:#999999;"><a href="request.php?action=zan&college=<?php echo $college["id"]?>" style="text-decoration:underline;">点赞</a></span>&nbsp;
+					<?php }
+					else{?>
+					<span style="color:#999999;">已赞</span>&nbsp;
+					<?php }?>
 					<!--<span style="color:#0099FF;">20</span>
 					<span style="color:#999999;">留言</span>
 					<span style="color:#FF9900;">20</span>
 					<span style="color:#999999;">同学</span>-->
 				  </div>
-				  <div style="color:#CCCCCC;margin:5px 0 0 0;">
-				    开放注册：<?php echo $college["register_time"];?>
+				  <div style="margin:5px 0 0 0;">
+				    <span style="color:#FF9900;"><?php echo $college["register_time"];?></span>&nbsp;<span style="color:#CCCCCC;">开放注册</span>
 				  </div>
 				</div>
 			  </div>
-			  </a>
 			  <?php }?>
 			  <!--<div style="width:210px;height:128px;background-color:#71CE01;margin:10px 0 10px 10px;float:left;color:#FFFFFF;padding:10px;" onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#71CE01';">
 			    <span style="margin:20px 0 0 20px;font-size:18px;font-weight:bold;">郑州大学（南校区）</span><hr />
