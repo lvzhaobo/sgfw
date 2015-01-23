@@ -36,19 +36,19 @@ $header = <<<EOF
 	  p {text-indent:2em;line-height:1.6em;}
 	  a {text-decoration:none;color:#5D5D5D;font-weight:bold;}
 	  .nav_item {padding:0 16px;}
-	  .selected,.nav_item:hover{height:40px;color:#FF9900;border-bottom:2px solid #FF9900;}
+	  .selected,.nav_item:hover{height:28px;color:#FF9900;#border-bottom:2px solid #FF9900;}
 	</style>
-	<div id="logo" style="margin-top:-30px;overflow:hidden;background-color:#F3F3F3;width:100%;position:fixed;z-index:9999;box-shadow:0 0 10px #999999;">
+	<div id="logo" style="margin-top:-30px;overflow:hidden;background-color:#F3F3F3;width:100%;position:fixed;z-index:9999;box-shadow:0 0 5px #999999;">
 	  <div style="margin:0px 0px 0 0;float:right;font-weight:bold;position:fixed;right:238px;top:4px;">
 	    $str
 	  </div>
-	  <div style="height:80px;border-bottom:2px solid #0099FF;">
+	  <div style="height:80px;border-bottom:1px solid #FF9900;">
 	  <div style="margin:14px 0 0 200px;float:left;width:238px;">
-	    <span style="font-size:28px;font-weight:bold;color:#FF9900;">梦&nbsp;&nbsp;想&nbsp;&nbsp;学&nbsp;&nbsp;院</span><br />
+	    <span style="font-size:30px;font-weight:bold;color:#FF9900;">梦&nbsp;想&nbsp;学&nbsp;院</span><br />
 		<!--<span style="color:#FF9900;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
-		<span style="color:#FF6600;font-size:14px;">梦想科技 | I Dream, I Do, I Succeed!</span>
+		<span style="color:#0099FF;font-size:12px;">I Dream, I Do, I Succeed!</span>
 	  </div>
-	  <div id="intro" name="intro" style="width:680px;font-size:20px;float:left;margin:40px 0 0 140px;">
+	  <div id="intro" name="intro" style="width:680px;font-size:16px;float:left;margin:40px 0 0 40px;">
 	    $nav_str
 	  </div>
 	  </div>
