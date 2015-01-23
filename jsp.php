@@ -25,12 +25,12 @@
 			    <div style="float:left;max-height:120px;overflow:hidden;">
 				  <img src="image/java.png" style="width:200px;margin-top:-20px;"/>
 				</div>
-				<div style="float:left;padding:0px 20px;line-height:22px;">
-				  <div><span style="color:#999999;">课程时长：</span><span>共8周，8周后进行DEMO</span></div>
-				  <div><span style="color:#999999;">团队要求：</span><span>3-6人组成小组</span></div>
-				  <div><span style="color:#999999;">课程目标：</span><span>1.开发论坛；2.开发团购网</span></div>
-				  <div><span style="color:#999999;">关联课程：</span><span>1.HTML&CSS；2.MySQL；3.Javascript</span></div>
-				  <div><span style="color:#999999;">建议：</span><span>大二及以上学生，利用课下时间和同学一起完成</span></div>
+				<div style="float:left;padding:0px 20px;line-height:22px;font-size:12px;">
+				  <div><span style="color:#999999;margin:0 10px 0 0;">课程时长</span><span>共8周，8周后进行DEMO</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">团队要求</span><span>3-6人组成小组</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">课程目标</span><span>1.开发论坛；2.开发团购网</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">关联课程</span><span>1.HTML&CSS；2.MySQL；3.Javascript</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">建议</span><span>大二及以上学生，利用课下时间和同学一起完成</span></div>
 				</div>
 				  
 				  <?php 
@@ -59,7 +59,7 @@
 				  </div>
 				  <div style="clear:float;clear:both;"></div>
 				  <div style="color:#333333;">
-				    <div style="margin:0 10px;font-weight:bold;font-size:18px;color:#CCCCCC;">你将会学到：</div>
+				    <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:18px;color:#333333;width:100%;height:32px;background-color:#F5F5F5;border-left:2px solid #00A2C9;">你将会学到：</div>
 				    <div style="padding:0 10px;">
 					  <div style="font-weight:bold;margin:10px 0;">
 					    <span style="font-size:14px;color:#0099FF;margin:0 22px 0 0;">Java(JSP)部分</span>

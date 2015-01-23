@@ -10,7 +10,7 @@ else{
 
 $nav = array(
 			array('href'=>'index.php','label'=>'首页','links'=>array('index.php')),
-			array('href'=>'study.php','label'=>'种子课程','links'=>array('study.php','website.php','database.php')),
+			array('href'=>'study.php','label'=>'种子课程','links'=>array('study.php','website.php','database.php','php.php','c.php','jsp.php')),
 			//array('href'=>'project.php','label'=>'萌芽项目','links'=>array('project.php')),
 			array('href'=>'team.php','label'=>'梦想团队','links'=>array('team.php')),
 			array('href'=>'mySpace.php','label'=>'我的空间','links'=>array('mySpace.php','myStudy.php','myCourse.php','createTeam.php','createProject.php')),
@@ -38,17 +38,17 @@ $header = <<<EOF
 	  .nav_item {padding:0 16px;}
 	  .selected,.nav_item:hover{height:28px;color:#FF9900;#border-bottom:2px solid #FF9900;}
 	</style>
-	<div id="logo" style="margin-top:-30px;overflow:hidden;background-color:#F3F3F3;width:100%;position:fixed;z-index:9999;box-shadow:0 0 5px #999999;">
+	<div id="logo" style="height:64px;margin-top:-30px;overflow:hidden;background-color:#FEFEFE;width:100%;position:fixed;z-index:9999;box-shadow:0 1px 5px #999999;">
 	  <div style="margin:0px 0px 0 0;float:right;font-weight:bold;position:fixed;right:238px;top:4px;">
 	    $str
 	  </div>
-	  <div style="height:80px;border-bottom:1px solid #FF9900;">
-	  <div style="margin:14px 0 0 200px;float:left;width:238px;">
-	    <span style="font-size:30px;font-weight:bold;color:#FF9900;">梦&nbsp;想&nbsp;学&nbsp;院</span><br />
+	  <div style="height:60px;">
+	  <div style="margin:8px 0 8px 200px;float:left;width:238px;">
+	    <span style="font-size:26px;font-weight:bold;color:#FF9900;">梦&nbsp;想&nbsp;学&nbsp;院</span><br />
 		<!--<span style="color:#FF9900;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
-		<span style="color:#0099FF;font-size:12px;">I Dream, I Do, I Succeed!</span>
+		<span style="color:#0099FF;font-size:11px;">I Dream, I Do, I Succeed!</span>
 	  </div>
-	  <div id="intro" name="intro" style="width:680px;font-size:16px;float:left;margin:40px 0 0 40px;">
+	  <div id="intro" name="intro" style="width:680px;font-size:16px;float:left;margin:32px 0 0 40px;">
 	    $nav_str
 	  </div>
 	  </div>
