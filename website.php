@@ -23,14 +23,18 @@
 		  <?php include 'src/project_index.php'?>
 		</div>
 		<div class="content" style="width:760px;float:left;">
-			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
-			  <div class="index_feature_intro_title">
-				  <div style="float:left;">
-				  <img src="p2.jpg" style="height:40px;" />
-				  </div>
-				  <div style="float:left;color:#108ac6;">
-				  <h1>网站开发介绍</h1>
-				  </div>
+			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:28px 10px;min-height:200px;line-height:28px;">
+			  <div>
+			    <div style="float:left;height:120px;overflow:hidden;">
+				  <img src="image/html.jpg" style="width:200px;"/>
+				</div>
+				<div style="float:left;padding:0px 20px;line-height:22px;font-size:12px;">
+				  <div><span style="color:#999999;margin:0 10px 0 0;">课程时长</span><span>共6周，6周后进行DEMO</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">团队要求</span><span>3-6人组成小组</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">课程目标</span><span>1.社团/班级网站；2.个人博客；3.小企业网站</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">关联课程</span><span>1.PHP/JSP；2.MySQL；3.Javascript</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">建议</span><span>有兴趣的同学均可，利用课下时间和同学一起完成</span></div>
+				</div>
 				  <?php 
 					include 'db.php';
 					
@@ -55,92 +59,49 @@
 				    </div>
 			      </a>
 				  </div>
-				  
 				  <div style="clear:float;clear:both;"></div>
-				  <ul style="line-height:28px;">
-				    <li>课程背景：互联网世界网站遍地都是、移动应用也在飞速发展，有人不屑于学习网站开发，但这是进入其他课程的基础。</li>
-					<li>学习内容：HTML、CSS、网站布局框架及类型分析、建立自己的个人网站</li>
-					<li>学习目标：掌握网页开发、网站开发基本步骤，能够快速按照需求完成网站原型开发。</li>
-					<li>使用工具：火狐（Firefox）或谷歌（Chrome）浏览器、Notepad++或Dreamware或其他编辑工具</li>
-					<li>学习方式：通过本网站注册，3-6位同学组成一个小组，我们会指定一位小组指导员，负责协调和解答问题。一共6-8周时间，每周完成一部分内容，每周小组成员至少面对面交流一次。前两周完成工具准备和个人简历的网页制作。再使用四周时间小组成员设计并开发一个静态网站。根据进度，最后讨论小组兴趣，协助持续开发。</li>
-				  </ul>
+				  <div style="color:#333333;">
+				    <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:18px;color:#333333;width:100%;height:32px;background-color:#F5F5F5;border-left:2px solid #00A2C9;">你将会学到：</div>
+				    <div style="padding:0 10px;">
+					  <div style="font-weight:bold;margin:10px 0;">
+					    <span style="font-size:14px;color:#0099FF;margin:0 22px 0 0;">HTML部分</span>
+					  </div>
+					  <ul style="padding:0px;">
+					    <li>了解HTML及其标签及CSS常用样式</li>
+					    <li>完成个人简介网页制作</li>
+						<li>div table br span p a img等标签</li>
+						<li>常用网站风格、分组完成网站各个页面</li>
+						<li>协调完成网站组合，并优化测试</li>
+					  </ul>
+					</div>
+					<div style="padding:10px;">
+					  <div style="font-weight:bold;margin:10px 0;">
+					    <span style="font-size:14px;color:#FF9900;margin:0 22px 0 0;">CSS部分</span>
+					  </div>
+					  <ul style="margin:0px;padding:0px;">
+					    <li>CSS是什么、有什么作用</li>
+						<li>常用CSS样式</li>
+						<li>浏览器兼容性处理</li>
+						<li>对现有CSS样式进行整理方法</li>
+					  </ul>
+					</div>
+					<div style="padding:10px;">
+					  <div style="font-weight:bold;margin:10px 0;font-size:14px;color:#FF0099;">团队部分</div>
+					  <ul style="margin:0px;padding:0px;">
+					    <li>团队成员间互相协作</li>
+						<li>掌握网页开发、网站开发基本步骤，能够快速按照需求完成网站原型开发</li>
+						<li>网站、项目开发设计文档</li>
+						<li>域名、Apache服务器及网站发布</li>
+					  </ul>
+					</div>
+				  </div>
 			  </div>
 			</div>
-			<div style="margin:40px 0;width:100%;height:28px;border:1px solid #CCCCCC;font-size:16px;text-align:middle;padding:5px;color:#FF0099;">
-			  以下为第一周任务预览，更多资料，请先注册。小组指导员会根据小组成员实际情况进行调整。
-			</div>
-			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
-				<div class="index_feature_intro_title">
-				  <div style="float:left;">
-				  <img src="p2.jpg" style="height:40px;" />
-				  </div>
-				  <div style="float:left;color:#108ac6;">
-				  <h1>工具和准备</h1>
-				  </div>
-				  <div style="clear:float;clear:both;"></div>
-				  <ul style="line-height:28px;">
-				    <li>1. 使用Notepad++编写代码，也可以使用文本编辑器或其他的编辑器。Notepad++下载地址：http://www.baidu.com/s?wd=notepad%2B%2B&rsv_spt=1&issp=1&f=8&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&inputT=2395</li>
-					<li>2. 使用火狐（Firefox）浏览器或谷歌（Chrome）浏览器，不要使用IE、360等</li>
-					<li>3. 在桌面或D盘或E盘等任意一个地方建立一个文件，命名为“my.html”（要求后缀名为html，文件名可以为“my”或其他）</li>
-					<li>4. 在火狐/谷歌浏览器中打开my.html可以查看效果，刷新会立即更新代码改动效果。使用Notepad++打开my.html可以编辑代码。</li>
-				  </ul>
-			  </div>
-			</div>
-			<div style="clear:float;clear:both;"></div>
-			<hr />
-			
-			<div class="index_feature_box al_left" style="margin:10px 60px;min-height:200px;line-height:10px;">
-				<div class="index_feature_intro_title">
-				  <div style="float:left;">
-				  <img src="p2.jpg" style="height:40px;" />
-				  </div>
-				  <div style="float:left;color:#108ac6;">
-				  <h1>任务要求</h1>
-				  </div>
-				  <div style="clear:float;clear:both;"></div>
-				  <img src="week1-1.jpg" style="margin:0 -60px;width:760px;"/>
-				  <ul style="line-height:28px;">
-				    <li>1. html页面中要包含head和body。在head中设置网页的title，如图中左上角的名字。</li>
-					<li>2. 一般在body中编写html代码，整体上设置宽度为960像素，居中显示。</li>
-					<li>3. Part 1，使用h1和h4。</li>
-					<li>4. Part 2，包括标题和表格，建议使用table。标题高28像素，背景颜色为#FF9900;。表格有两行（tr），四列（分别是th、td、th、td）。表格中所有字体靠右显示，边框（border）为1像素。</li>
-					<li>5. Part 3，标题和Part 2一样，颜色进行修改（自己喜欢的任意颜色即可）。表格中有两行，如Part2，没有边框，其中th的列字体靠右显示，td中的字体不做修改。</li>
-					<li>6. Part 4，不要使用table，使用div。标题样式如上。评价中有两行，中间需要换行。第一行“勤奋好学”设置为段落。“橙色”字体使用span，且字体颜色需要修改。第二行字体大小设置为28像素，加粗显示。</li>
-					<li>7. Part 5，标题如上。添加链接，字样显示为“梦想之星英语社”，链接地址为：http://i.my-dreamstar.com，设置链接颜色为#000000;，取消下划线。加一条横线。添加图片，图片来源：http://i.my-dreamstar.com/images/logo.jpg，图片宽度设置为100像素。</li>
-				  </ul>
-			  </div>
-			</div>
-			<div style="clear:float;clear:both;"></div>
-			<hr />
-			
-			<div class="index_feature_box al_left" style="margin:10px 60px;min-height:200px;line-height:10px;">
-				<div class="index_feature_intro_title">
-				  <div style="float:left;">
-				  <img src="p2.jpg" style="height:40px;" />
-				  </div>
-				  <div style="float:left;color:#108ac6;">
-				  <h1>技巧</h1>
-				  </div>
-				  <div style="clear:float;clear:both;"></div>
-				  <ul style="line-height:28px;">
-				    <li>1. 不需要一次性完成，每次编写一块代码，立刻查看效果，进行修改。</li>
-					<li>2. 如有疑难点，可以先跳过，等一块内容完成后可以再去搜索查找解决办法。</li>
-					<li>3. 以上说的效果（如字体大小、颜色、靠右显示等）是附加的，如果没有这些效果，内容也可以显示，只是没有那么好看。这些效果一般是写在style中的（如<div style=””></div>）。这些效果是依靠CSS来实现的，其他部分即为HTML。</li>
-					<li>4. 如有时间，可以在火狐浏览器中安装插件firebug，安装后重启火狐浏览器，按F12打开/关闭。在谷歌浏览器中默认已安装，可直接使用。</li>
-					<li>5. 和同学保持沟通、交流，可以方便的完成自己的任务，也可以帮助对方完成任务。</li>
-				  </ul>
-			  </div>
-			</div>
-			<div style="clear:float;clear:both;"></div>
-			
+		  </div>
 		  </div>
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<div id="footer" style="height:80px;background-color:#99FF00;padding:20px;">
-	  <div style="text-align:center;">
-	    @版权所有  2014·时光飞舞·梦想之星
-	  </div>
-	</div>
+	<?php include 'src/footer.php'?>
   </body>
 </html>

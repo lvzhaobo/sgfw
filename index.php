@@ -8,21 +8,63 @@
 	  .item_content {line-height:36px;margin:20px;float:left;width:520px;color:#FFFFFF;letter-spacing:2px;font-size:16px;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
+	
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
   <?php $rand = rand(1,5);$img = "bg".$rand.".jpg";?>
     <?php include 'src/header.php'?>
-    <div id="logo" style="margin:0px;padding:0px;height:420px;overflow:hidden;background:url('<?php echo $img?>') no-repeat scroll 0 0 / 1400px auto rgba(0, 0, 0, 0);">
+	<div id="header">
+  <div class="wrap">
+   <div id="slide-holder">
+		<div id="slide-runner">
+			<a  target="_blank"><img id="slide-img-1" src="bg.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
+			<a  target="_blank"><img id="slide-img-2" src="bg4.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-100px 0 0 0;"/></a>
+			<div id="slide-controls">
+			 <p id="slide-client" class="text"><strong></strong><span></span></p>
+			 <p id="slide-desc" class="text"></p>
+			 <p id="slide-nav"></p>
+			</div>
+		</div>
+   </div>
+   <script type="text/javascript">
+    if(!window.slider) {
+		var slider={};
+	}
+
+	slider.data= [
+    {
+        "id":"slide-img-1", // 与slide-runner中的img标签id对应
+        "client":"基础课程",
+        "desc":"我是大一学生，我在学习梦想学院的“C语言基础”，她能很好的弥补老师讲解理论的不足，让我快速掌握C语言。" //这里修改描述
+    },
+    {
+        "id":"slide-img-2",
+        "client":"项目实践",
+        "desc":"在迷茫的大学生活中，我想获得更多的能力和舞台，我在梦想学院中和同学们使用PHP+MySQL一起开发学校的论坛。"
+    }
+	];
+   </script>
+  </div>
+</div>
+<!--<div style="width:100%;height:420px;background-color:#333333;">
+  <div style="color:#FF9900;font-size:22px;font-weight:bold;">
+    我是大一学生，我在学习梦想学院的C语言基础课程。
+  </div>
+</div>-->
+    <?php /*?><div id="logo" style="margin:0px;padding:0px;height:420px;overflow:hidden;background:url('<?php echo $img?>') no-repeat scroll 0 0 / 1400px auto rgba(0, 0, 0, 0);">
 	  <div style="margin:100px 0 0 280px;">
 	    <span style="font-size:56px;font-weight:bold;color:#FFFFFF;">梦&nbsp;&nbsp;想&nbsp;&nbsp;之&nbsp;&nbsp;星</span><br />
 		<span style="color:#FFFFFF;font-size:24px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />
 		<span style="color:#FF6600;font-size:24px;">梦想科技 | I Dream, I Do, I Succeed!</span>
 	  </div>
-	  <div style="margin:0px 0 0 720px;font-size:16px;font-weight:bold;width:400px;color:#FFFFFF;">
-	    <?php if($rand%3==0){?><span>一起免费学习计算机编程的平台，无论你是零基础、还是学习的佼佼者，都将会有所收获</span><br /><?php }?>
-		<?php if($rand%3==1){?><span>2-6人组成小组一起完成感兴趣的动手实践项目，6-8周的时间学习一门课程，我们全程陪同指导</span><br /><?php }?>
+	  <?php ?><div style="margin:0px 0 0 720px;font-size:16px;font-weight:bold;width:400px;color:#FFFFFF;">
+	    <?php if($rand%3==0){?><span>我是大一学生，在学习梦想学院的C语言基础，能很好的弥补老师讲课的不足</span><br /><?php }?>
+		<?php if($rand%3==1){?><span>在迷茫的大学生活中，我想获得更多的能力和舞台，我在使用PHP开发学校的论坛</span><br /><?php }?>
 		<?php if($rand%3==2){?><span>寻找有梦想、有兴趣、有想法的同学，通过我们的扶持，让你的想法、项目顺利发芽、成长</span><br /><?php }?>
-	  </div>
+	  </div><?php /*?>
 	  <div id="project" name="project" style="width:960px;margin:140px auto;font-size:32px;">
 	    <a href="index.php">
 		<div style="width:192px;background-color:rgba(1515,00,00,0.25);height:60px;text-align:center;float:left;">
@@ -50,8 +92,9 @@
 		</div>
 		</a>
 	  </div>
-	</div>
-	<div>
+	  <?php */?>
+	<?php /*?></div>
+	<div><?php */?>
 	  <div class="main index">
 		  <div class="content" style="width:960px;margin:0 auto;font-size:14px;">
 		    
@@ -214,6 +257,12 @@
 			    </div>-->
 			  </div>
 			</div>
+		  </div>
+		  <div style="height:320px;">
+		    <div style="">我在上课</div>
+		  </div>
+		  <div style="height:320px;">
+		    <div style="">学生评价</div>
 		  </div>
 		  <!--<div style="width:960px;margin:0 auto;">
 			<div class="index_feature_box al_left" style="margin:40px 60px;min-height:280px;">

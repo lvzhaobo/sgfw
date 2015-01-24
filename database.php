@@ -57,7 +57,7 @@
 				  </div>
 				  <div style="clear:float;clear:both;"></div>
 				  <div style="color:#333333;">
-				    <div style="margin:0 10px;font-weight:bold;font-size:18px;color:#CCCCCC;">你将会学到：</div>
+				    <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:18px;color:#333333;width:100%;height:32px;background-color:#F5F5F5;border-left:2px solid #00A2C9;">你将会学到：</div>
 					<div style="padding:10px;">
 					  <div style="font-weight:bold;margin:10px 0;">
 					    <span style="font-size:14px;color:#FF9900;margin:0 22px 0 0;">MySQL部分</span>
@@ -104,10 +104,6 @@
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<div id="footer" style="height:80px;background-color:#99FF00;padding:20px;">
-	  <div style="text-align:center;">
-	    @版权所有  2014·时光飞舞·梦想之星
-	  </div>
-	</div>
+	<?php include 'src/footer.php'?>
   </body>
 </html>
