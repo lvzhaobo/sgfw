@@ -20,8 +20,9 @@
   <div class="wrap">
    <div id="slide-holder">
 		<div id="slide-runner">
-			<a  target="_blank"><img id="slide-img-1" src="bg.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
-			<a  target="_blank"><img id="slide-img-2" src="bg4.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-100px 0 0 0;"/></a>
+			<a target="_blank"><img id="slide-img-1" src="bg.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
+			<a target="_blank"><img id="slide-img-2" src="bg4.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-100px 0 0 0;"/></a>
+			<a target="_blank"><img id="slide-img-3" src="image/1st.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-20px 0 0 0;"/></a>
 			<div id="slide-controls">
 			 <p id="slide-client" class="text"><strong></strong><span></span></p>
 			 <p id="slide-desc" class="text"></p>
@@ -44,11 +45,30 @@
         "id":"slide-img-2",
         "client":"项目实践",
         "desc":"在迷茫的大学生活中，我想获得更多的能力和舞台，我在梦想学院中和同学们使用PHP+MySQL一起开发学校的论坛。"
+    },
+	{
+        "id":"slide-img-3",
+        "client":"开放注册",
+        "desc":"我们在各高校校区招募负责人，有兴趣请联系我们。"
     }
 	];
    </script>
   </div>
 </div>
+<!--<div style="width:100%;height:420px;background-image:url('bg-.jpg');background-repeat:no-repeat;background-color:#FFFFFF;">
+<img src="image/dream.jpg" style="margin:40px 100px 0 220px;width:420px;float:left;">
+<div style="margin:40px 0 0 100px;">
+  <div style="font-size:22px;font-weight:bold;padding:40px 0 40px 0;">首批接受注册学校</div>
+  <div style="font-size:18px;font-weight:bold;line-height:32px;">
+    <div><span style="color:#333333;">郑州大学</span> <span style="color:#FF9900;">2015年3月13日</span></div>
+	<div><span style="color:#333333;">黄河科技学院</span> <span style="color:#FF9900;">2015年3月13日</span></div>
+	<div><span style="color:#333333;">郑州轻工业学院</span> <span style="color:#FF9900;">2015年3月13日</span></div>
+	<div><span style="color:#333333;">中原工学院</span> <span style="color:#FF9900;">2015年3月17日</span></div>
+	<div><span style="color:#333333;">郑州航空工业管理学院</span> <span style="color:#FF9900;">2015年3月18日</span></div>
+	<div><span style="color:#333333;">河南工业大学</span> <span style="color:#FF9900;">2015年3月19日</span></div>
+  </div>
+</div>
+</div>-->
 <!--<div style="width:100%;height:420px;background-color:#333333;">
   <div style="color:#FF9900;font-size:22px;font-weight:bold;">
     我是大一学生，我在学习梦想学院的C语言基础课程。
@@ -287,11 +307,37 @@
 			  </div>
 			</div>
 		  </div>
-		  <div style="height:320px;">
+		  <!--<div style="height:320px;">
 		    <div style="">我在上课</div>
-		  </div>
-		  <div style="height:320px;">
-		    <div style="">学生评价</div>
+		  </div>-->
+		  <div style="height:320px;padding:0 200px;background-color:#F3F3F3;">
+		    <div style="padding:60px 0 20px 0;font-weight:bold;">学生评价</div>
+			<div>
+			  <div style="width:240px;margin:0 20px 0 0;float:left;background-color:#F3F3F3;padding:10px;">
+			    <div style="font-size:20px;">
+				  <span>&nbsp;&nbsp;&nbsp;&nbsp;“要是在学校能学到（需要的）东西，还找你们干什么”</span>
+				</div>
+				<div style="margin:10px 0 0 0;text-align:right;">
+				  <span>--大二学生</span>
+				</div>
+			  </div>
+			  <div style="width:240px;margin:0 20px 0 20px;float:left;background-color:#F3F3F3;padding:10px;">
+			    <div style="font-size:20px;">
+				  <span>&nbsp;&nbsp;&nbsp;&nbsp;“我什么都不会，可是我想做网站”</span>
+				</div>
+				<div style="margin:10px 0 0 0;text-align:right;">
+				  <span>--大二学生</span>
+				</div>
+			  </div>
+			  <div style="width:240px;margin:0 0px 0 20px;float:left;background-color:#F3F3F3;padding:10px;">
+			    <div style="margin:10px 0 0 0;font-size:20px;">
+				  <span>&nbsp;&nbsp;&nbsp;&nbsp;就是学到的东西太少了，动手实践（学东西）比较快</span>
+				</div>
+				<div style="text-align:right;">
+				  <span>--大二学生</span>
+				</div>
+			  </div>
+			</div>
 		  </div>
 		  <!--<div style="width:960px;margin:0 auto;">
 			<div class="index_feature_box al_left" style="margin:40px 60px;min-height:280px;">

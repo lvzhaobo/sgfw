@@ -19,14 +19,20 @@
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
+	<?php include 'src/notice.php'?>
 	<div style="margin:80px 0 0 0;">
 	  <div class="main_index" style="width:960px;margin:0 auto;font-size:14px;background-image:url('image/dream.jpg');">
 	    <div style="width:100%;margin:20px auto;min-height:814px;">
-		  <?php include 'src/notice.php'?>
+		    
 			  <div style="clear:float;clear:both;"></div>
 			  <div style="margin:20px;text-align:center;">
 			    <form action="saveDiscuss.php" method="post">
+				  <?php if(isset($_SESSION["user"])){?>
 				  <textarea name="content" style=""></textarea>
+				  <?php }
+				  else{?>
+				  <textarea name="content" style="" disabled="disabled">请先登录</textarea>
+				  <?php }?>
 				  <br />
 				  <button type="submit" style="margin:10px 0 0 0;">发表</button>
 				</form>
