@@ -189,6 +189,35 @@
 			-->
 		  </div>
 		  <div>
+			<div style="min-height:465px;padding:0 0 0 280px;background-color:#000000;">
+			  <div style="padding:10px 0;">
+			    <div class="item_content" style="width:100%;line-height:26px;font-size:14px;">
+				int main(){
+				<div style="margin:0 0 0 20px;">
+				if(<span style="color:#0099FF;">我在学习学校的课程</span>){<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;我应该选择【基础辅助课程】，相辅相成，以动手实践来弥补课堂讲解理论知识的不足;<br />
+				}<br />
+				else if(<span style="color:#FF9900;">我想在大学生活中更有意义</span>){<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;我应该选择【项目实践课程】，我可以选择自己感兴趣的项目参与，梦想不再遥远;<br />
+				}<br />
+				else if(<span style="color:#9900FF;">他们叫我学霸</span>){<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;我应该选择【梦想实验室】，学习、研究互联网时代正在使用的最新技术和产品;<br />
+				}<br />
+				else{<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;我至少已经学会了C语言的if/else选择语句，不是么？关注我们两个月一次的项目/团队大赛吧;<br />
+				}<br />
+				<br />
+				return "通过在梦想学院的学习，我顺利提升了自己的能力!";<br />
+				</div>
+				}
+			    </div>
+				
+			    <!--<div style="float:left;margin:0 0 0 20px;">
+			      <img src="p3.jpg" />
+			    </div>-->
+			  </div>
+			</div>
+		  <div>
 			<div style="min-height:465px;padding:0 0 0 280px;background-color:#44B8EA;">
 			  <div style="padding:100px 0;">
 			    <div style="font-weight:bold;font-size:22px;color:#FFFFFF;">
