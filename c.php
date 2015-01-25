@@ -25,12 +25,12 @@
 			    <div style="float:left;height:140px;overflow:hidden;margin:-20px 0 0 0;">
 				  <img src="image/acm.jpg" style="width:200px;margin:-20px 0 0 0;"/>
 				</div>
-				<div style="float:left;padding:0px 20px;line-height:22px;">
-				  <div><span style="color:#999999;">课程时长：</span><span>共8周，8周后进行DEMO</span></div>
-				  <div><span style="color:#999999;">团队要求：</span><span>2-4人组成小组</span></div>
-				  <div><span style="color:#999999;">课程目标：</span><span>1.开发论坛；2.开发团购网</span></div>
-				  <div><span style="color:#999999;">后续课程：</span><span>1.数据结构；2.ACM；3.网站设计</span></div>
-				  <div><span style="color:#999999;">建议：</span><span>本学期开设C语言课程的同学，课下学习</span></div>
+				<div style="float:left;padding:0px 20px;line-height:22px;font-size:12px;">
+				  <div><span style="color:#999999;margin:0 10px 0 0;">课程时长</span><span>共8周，8周后进行DEMO</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">团队要求</span><span>2-4人组成小组</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">课程目标</span><span>1.开发论坛；2.开发团购网</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">后续课程</span><span>1.数据结构；2.ACM；3.网站设计</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">建议</span><span>本学期开设C语言课程的同学，课下学习</span></div>
 				</div>
 				  
 				  <?php 

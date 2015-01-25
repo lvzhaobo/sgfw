@@ -17,7 +17,7 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;min-height:400px;">
+	  <div class="main index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;min-height:428px;">
 	    <div style="width:192px;float:left;position:fixed;font-weight:bold;font-size:16px;margin:20px 0 0 0;">
 		  <a href="mySpace.php">
 		  <div style="width:100%;height:40px;color:#000000;">
@@ -56,6 +56,7 @@
 										"database"=>"数据库",
 										"php"=>"PHP",
 										"jsp"=>"JSP",
+										"c"=>"C语言基础",
 										""=>"无课程");
 							echo $project[$data["project"]];
 					?>
@@ -148,13 +149,15 @@
 			  </table>
 			  <?php }
 			  else{?>
+			    <?php if(empty($data["project"])){?>
 			    <div>还没有课程，去选择课程......</div>
 			    <div class="btn" style="margin:10px;">
 				  <a href="study.php">
 				  GO
 				  </a>
 				</div>
-			  <?php }?>
+			  <?php }
+			  }?>
 			  </div>
 			</div>
 		  </fieldset>

@@ -25,12 +25,12 @@
 			    <div style="float:left;height:120px;">
 				  <img src="image/mysql.jpg" style="width:200px;"/>
 				</div>
-				<div style="float:left;padding:0px 20px;line-height:22px;">
-				  <div><span style="color:#999999;">课程时长：</span><span>共8周，8周后进行DEMO</span></div>
-				  <div><span style="color:#999999;">团队要求：</span><span>2-6人组成小组</span></div>
-				  <div><span style="color:#999999;">课程目标：</span><span>开发论坛（实践）、学习数据库知识（理论）</span></div>
-				  <div><span style="color:#999999;">关联课程：</span><span>1.HTML&CSS；2.动态语言；3.小项目开发</span></div>
-				  <div><span style="color:#999999;">建议：</span><span>本学期开设数据库的学生同步课下学习</span></div>
+				<div style="float:left;padding:0px 20px;line-height:22px;font-size:12px;">
+				  <div><span style="color:#999999;margin:0 10px 0 0;">课程时长</span><span>共8周，8周后进行DEMO</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">团队要求</span><span>2-6人组成小组</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">课程目标</span><span>开发论坛（实践）、学习数据库知识（理论）</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">关联课程</span><span>1.HTML&CSS；2.动态语言；3.小项目开发</span></div>
+				  <div><span style="color:#999999;margin:0 10px 0 0;">建议</span><span>本学期开设数据库的学生同步课下学习</span></div>
 				</div>
 				  <?php 
 					include 'db.php';

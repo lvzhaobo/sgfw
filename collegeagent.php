@@ -12,7 +12,7 @@
 	  .college_item:hover {box-shadow:0 0 5px #0099FF;}
 	  .zan a{color:#999999;}
 	  .zan a:hover {color:#FF9900;}
-	  .agent_item {margin:20px;border:2px solid #F3F3F3;padding:5px 10px;}
+	  .agent_item {margin:20px;border:2px solid #F3F3F3;padding:5px 10px;line-height:28px;}
 	  .agent_item:hover {border:2px solid #FF9900;box-shadow:0 0 5px #FF9900;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
@@ -23,22 +23,43 @@
 	    <div class="agent_item">
 		  <div style="font-weight:bold;">郑州大学（南校区）</div>
 		  <div style="">开放注册时间：2015年3月10日  预计限额：200人</div>
-		  <div style="">吕昭波  QQ：794683095  Email：lvzhaobopku@163.com</div>
+		  <!--<div style="">吕昭波  QQ：794683095  Email：lvzhaobopku@163.com</div>-->
+		  <div style="">负责人：</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">郑州大学（新校区）</div>
 		  <div style="">开放注册时间：2015年3月13日  预计限额：50人</div>
-		  <div style=""></div>
+		  <div style="">负责人：</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">郑州大学（北校区）</div>
 		  <div style="">开放注册时间：2015年3月13日  预计限额：1000人</div>
-		  <div style=""></div>
+		  <div style="">负责人：</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">黄河科技学院</div>
 		  <div style="">开放注册时间：2015年3月13日  预计限额：200人</div>
-		  <div style=""></div>
+		  <div style="">负责人：</div>
+		</div>
+		<div class="agent_item">
+		  <div style="font-weight:bold;">郑州轻工业学院</div>
+		  <div style="">开放注册时间：2015年3月13日  预计限额：200人</div>
+		  <div style="">负责人：</div>
+		</div>
+		<div class="agent_item">
+		  <div style="font-weight:bold;">中原工学院</div>
+		  <div style="">开放注册时间：2015年3月17日  预计限额：200人</div>
+		  <div style="">负责人：</div>
+		</div>
+		<div class="agent_item">
+		  <div style="font-weight:bold;">郑州航空工业管理学院</div>
+		  <div style="">开放注册时间：2015年3月18日  预计限额：200人</div>
+		  <div style="">负责人：</div>
+		</div>
+		<div class="agent_item">
+		  <div style="font-weight:bold;">河南工业大学</div>
+		  <div style="">开放注册时间：2015年3月19日  预计限额：200人</div>
+		  <div style="">负责人：</div>
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
