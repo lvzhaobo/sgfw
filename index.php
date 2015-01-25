@@ -211,7 +211,7 @@
 		  <div>
 			<div style="min-height:465px;padding:0 0 0 280px;background-color:#000000;">
 			  <div style="padding:10px 0;">
-			    <div class="item_content" style="width:100%;line-height:26px;font-size:14px;">
+			    <div class="item_content" style="min-width:800px;line-height:26px;font-size:14px;">
 				int main(){
 				<div style="margin:0 0 0 20px;">
 				if(<span style="color:#0099FF;">我在学习学校的课程</span>){<br />
@@ -241,10 +241,10 @@
 			<div style="min-height:465px;padding:0 0 0 280px;background-color:#44B8EA;">
 			  <div style="padding:100px 0;">
 			    <div style="font-weight:bold;font-size:22px;color:#FFFFFF;">
-			      学习计算机基础课程
+			      基础辅助课程
 			    </div>
 			    <div class="item_content" style="">
-				  1.精心准备的多门计算机课程，按难易度和技术体系分类<br />
+				  1.精心准备的多门课程，按难易度和技术体系分类<br />
 				  2.入门首选，适合“零”基础或想快速掌握一门课程的同学<br />
 				  3.专人负责指导，以完成项目为指导，需求和兴趣驱动式学习<br />
 				  4.只要认真参与，让你给自己或那个他/她做个网站“很随意”
