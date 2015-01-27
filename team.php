@@ -180,15 +180,22 @@
 			    </div>
 			  </a>
 			  <?php }?>
+			  <div style="clear:float;clear:both;"></div>
+			  <div style="margin:20px 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
+			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
+			      <span style="font-size:20px;font-weight:bold;margin:0 5px;">注册用户</span>
+				  <span></span>
+				</div>
+			  </div>
 			  <?php
 				include 'db.php';
 				$result = mysql_query("select * from sgfw_user order by id desc");
 				$i = 0;
 				while($item = mysql_fetch_array($result)){
 			  ?>
-			  <div style="width:200px;height:140px;border:0px solid #0099FF;padding:10px;margin:20px;font-size:14px;line-height:22px;float:left;">
+			  <div style="width:200px;height:140px;text-align:center;border:0px solid #0099FF;padding:10px;margin:10px;font-size:14px;line-height:22px;float:left;">
 			    <div style="">
-				  <img src="<?php echo $item["url"]?>" style="width:80px;border-radius:5em;" />
+				  <img src="<?php echo empty($item["img"])?"image/dream.jpg":$item["img"]?>" style="width:80px;height:80px;border-radius:5em;border:2px solid #CCCCCC;" />
 				</div>
 			    <div class="team_item_title" style="font-weight:bold;color:#FF9900;font-size:18px;line-height:40px;">
 				  <?php echo base64_decode($item["username"])?>
