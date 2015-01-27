@@ -22,43 +22,43 @@
 	  <div class="main index" style="width:960px;margin:80px auto;font-family:'Microsoft YaHei',宋体,Arial;">
 	    <div class="agent_item">
 		  <div style="font-weight:bold;">郑州大学（南校区）</div>
-		  <div style="">开放注册时间：2015年3月10日  预计限额：200人</div>
+		  <div style="">开放注册时间：2015年3月10日</div>
 		  <!--<div style="">吕昭波  QQ：794683095  Email：lvzhaobopku@163.com</div>-->
 		  <div style="">负责人：</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">郑州大学（新校区）</div>
-		  <div style="">开放注册时间：2015年3月13日  预计限额：50人</div>
+		  <div style="">开放注册时间：2015年3月13日</div>
 		  <div style="">负责人：</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">郑州大学（北校区）</div>
-		  <div style="">开放注册时间：2015年3月13日  预计限额：1000人</div>
-		  <div style="">负责人：</div>
+		  <div style="">开放注册时间：2015年3月13日</div>
+		  <div style="">负责人：沈帅虎&nbsp;&nbsp;&nbsp;&nbsp;QQ：544026832</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">黄河科技学院</div>
-		  <div style="">开放注册时间：2015年3月13日  预计限额：200人</div>
+		  <div style="">开放注册时间：2015年3月13日</div>
 		  <div style="">负责人：</div>
 		</div>
 		<div class="agent_item">
-		  <div style="font-weight:bold;">郑州轻工业学院</div>
-		  <div style="">开放注册时间：2015年3月13日  预计限额：200人</div>
-		  <div style="">负责人：</div>
+		  <div style="font-weight:bold;">郑州轻工业学院（新校区&老校区）</div>
+		  <div style="">开放注册时间：2015年3月13日</div>
+		  <div style="">负责人：王昆宇&nbsp;&nbsp;&nbsp;&nbsp;QQ：971072111</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">中原工学院</div>
-		  <div style="">开放注册时间：2015年3月17日  预计限额：200人</div>
+		  <div style="">开放注册时间：2015年3月17日</div>
 		  <div style="">负责人：</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">郑州航空工业管理学院</div>
-		  <div style="">开放注册时间：2015年3月18日  预计限额：200人</div>
+		  <div style="">开放注册时间：2015年3月18日</div>
 		  <div style="">负责人：</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">河南工业大学</div>
-		  <div style="">开放注册时间：2015年3月19日  预计限额：200人</div>
+		  <div style="">开放注册时间：2015年3月19日</div>
 		  <div style="">负责人：</div>
 		</div>
 	</div>
