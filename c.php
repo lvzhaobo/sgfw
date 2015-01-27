@@ -22,8 +22,8 @@
 		<div class="content" style="width:760px;float:left;">
 			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:28px 10px;min-height:200px;line-height:28px;">
 			  <div>
-			    <div style="float:left;height:140px;overflow:hidden;margin:-20px 0 0 0;">
-				  <img src="image/acm.jpg" style="width:200px;margin:-20px 0 0 0;"/>
+			    <div style="float:left;height:140px;width:200px;overflow:hidden;margin:-20px 0 0 0;">
+				  <img src="image/c.jpg" style="height:140px;width:200px;margin:0px 0 0 0px;"/>
 				</div>
 				<div style="float:left;padding:0px 20px;line-height:22px;font-size:12px;">
 				  <div><span style="color:#999999;margin:0 10px 0 0;">课程时长</span><span>共8周，8周后进行DEMO</span></div>

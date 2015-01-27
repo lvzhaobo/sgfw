@@ -5,7 +5,7 @@
 	  p {text-indent:2em;line-height:1.6em;font-size:14px;color:#000000;}
 	  a {color:#FFFFFF;text-decoration:none;}
 	  .project_item {width:206px;height:240px;margin:20px 0px 0px 20px;float:left;color:#333333;border:2px solid #FFFFFF;box-shadow:0 0 0px #DCDCDC;}
-	  .project_item:hover {border:2px solid #FF9900;color:#FF6600;}
+	  .project_item:hover {border:2px solid #FF9900;background-color:#F3F3F3;#color:#FF6600;}
 	  .project_item_title {margin:10px 0;font-size:14px;font-weight:weight;text-align:center;}
 	  .project_item hr {color:#FFFFFF;height:1px;display:none;}
 	  .text {margin:5px;font-size:12px;font-weight:normal;}
@@ -26,27 +26,43 @@
 			  <div style="clear:float;clear:both;"></div>
 			  <?php 
 			      $data = array(
-								array("name"=>"HTML CSS","url"=>"website.php","img"=>"image/html.jpg","text"=>"开发静态网站，满足院系、社团、兴趣小组、中小企业官方网站的需求。"),
-								array("name"=>"PHP","url"=>"php.php","img"=>"image/php.jpg","text"=>"适合用于动态网站，例如论坛、交流网站，更方便开发静态网站。"),
-								array("name"=>"数据库","url"=>"database.php","img"=>"image/mysql.jpg","text"=>"软件开发必不可少的一部分，通过本课程学习可以让你轻松应对期末数据库考试。"),
-								array("name"=>"ACM","url"=>"","img"=>"image/acm.jpg","text"=>"（敬请期待）不必羡慕ACMer，你也可以成为他们，从这里开始。"),
-								array("name"=>"JavaScript","url"=>"","img"=>"image/jquery.jpg","text"=>"在前端页面处理中的王者语言。"),
-								array("name"=>"Java（JSP）","url"=>"jsp.php","img"=>"image/java.png","text"=>"高大上的综合性开发语言。"),
-								array("name"=>"软件测试","url"=>"","img"=>"image/test.jpg","text"=>"多方面、多角度掌握软件测试，你掌握的不仅是书本上的知识。"),
+								array("name"=>"C语言基础","url"=>"c.php","img"=>"image/c.jpg","text"=>"辅助大学课程，最重要的基础课程","type"=>"basic"),
+								array("name"=>"数据库","url"=>"database.php","img"=>"image/mysql.jpg","text"=>"软件开发必不可少的一部分，通过本课程学习可以让你轻松应对期末数据库考试。","type"=>"basic"),
+								
+								array("name"=>"HTML CSS","url"=>"website.php","img"=>"image/html.jpg","text"=>"开发静态网站，满足院系、社团、兴趣小组、中小企业官方网站的需求。","type"=>"project"),
+								array("name"=>"PHP","url"=>"php.php","img"=>"image/php.jpg","text"=>"适合用于动态网站，例如论坛、交流网站，更方便开发静态网站。","type"=>"project"),
+								array("name"=>"Java（JSP）","url"=>"jsp.php","img"=>"image/java.png","text"=>"高大上的综合性开发语言。","type"=>"project"),
+								array("name"=>"JavaScript","url"=>"","img"=>"image/jquery.jpg","text"=>"（敬请期待）在前端页面处理中的王者语言。","type"=>"project"),
+								
+								array("name"=>"IOS开发","url"=>"","img"=>"image/ios.jpg","text"=>"（敬请期待）IOS开发","type"=>"project"),
+								array("name"=>"Android开发","url"=>"","img"=>"image/android.png","text"=>"（敬请期待）Andriod开发","type"=>"project"),
+								
+								array("name"=>"ACM","url"=>"","img"=>"image/acm.jpg","text"=>"（敬请期待）不必羡慕ACMer，你也可以成为他们，从这里开始。","type"=>"advanced"),
+								//array("name"=>"软件测试","url"=>"","img"=>"image/test.jpg","text"=>"多方面、多角度掌握软件测试，你掌握的不仅是书本上的知识。"),
 								//array("name"=>"计算机网络","url"=>"","img"=>"","text"=>"（敬请期待）在实践中学习互联网互通互联的原理。"),
-								array("name"=>"Linux服务器","url"=>"","img"=>"image/ubuntu.jpg","text"=>"（敬请期待）在Linux系统中搭建各种服务，包括FTP服务器、Samba服务器、WEB服务器等。"),
-								array("name"=>"IOS开发","url"=>"","img"=>"image/ios.jpg","text"=>"IOS开发"),
-								array("name"=>"Android开发","url"=>"","img"=>"image/android.png","text"=>"Andriod开发"),
+								array("name"=>"Linux服务器","url"=>"","img"=>"image/ubuntu.jpg","text"=>"（敬请期待）在Linux系统中搭建各种服务，包括FTP服务器、Samba服务器、WEB服务器等。","type"=>"advanced"),
+								
 								//array("name"=>"云存储","url"=>"","img"=>"","text"=>"百度云、Dropbox、Google Drive等云存储服务商提供了丰富的API、SDK，赶紧加入云存储吧。"),
-								array("name"=>"第三方开发","url"=>"","img"=>"image/devleporplatform.jpg","text"=>"百度、Google等公司有开发者平台，开发者可以在这些平台上方便快捷的开发、部署应用。"),
-								array("name"=>"等你来发掘","url"=>"","img"=>"image/dream.jpg","text"=>"如果你有好的想法，能够帮助自己或别人请联系我们。"),
+								array("name"=>"第三方开发","url"=>"","img"=>"image/devleporplatform.jpg","text"=>"百度、Google等公司有开发者平台，开发者可以在这些平台上方便快捷的开发、部署应用。","type"=>"advanced"),
+								array("name"=>"等你来发掘","url"=>"","img"=>"image/dream.jpg","text"=>"如果你有好的想法，能够帮助自己或别人请联系我们。","type"=>""),
 				  );
 			  ?>
 			  <?php foreach($data as $item){?>
 			    <a href="<?php echo $item['url']?>">
 			    <div class="project_item">
 			      <img src="<?php echo $item['img']?>" style="width:204px;height:128px;border:1px solid #DCDCDC;box-shadow:0 0 5px #DCDCDC;" />
-			      <div class="project_item_title" style=""><?php echo $item["name"]?></div>
+			      <div class="project_item_title" style="">
+				    <?php echo $item["name"]?>
+				    <?php if($item["type"]=="basic"){?>
+					<span style="color:#FF9900;">（基本课程）</span>
+					<?php }
+						  else if($item["type"]=="project"){?>
+					<span style="color:#0099FF;">（综合项目）</span>
+					<?php }
+						  else if($item["type"]=="advanced"){?>
+					<span style="color:#FF0099;">（进阶）</span>
+					<?php }?>
+				  </div>
 				  <div class="text"><?php echo $item['text']?></div>
 			    </div>
 			  </a>

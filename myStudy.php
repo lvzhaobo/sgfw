@@ -127,7 +127,7 @@
 				</tr>
 			  </table>
 			  <?php }
-			  else if($data["project"]=="database1"){?>
+			  else if($data["project"]=="database"){?>
 			  <a href="myCourse.php?course=website">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
@@ -147,6 +147,16 @@
 				  <td>①开发个人博客网站；②开发小型论坛；③为学校周边商店、书店等开发网站</td>
 				</tr>
 			  </table>
+			  <?php }
+			  else if($data["project"]=="c"){?>
+			  <a href="myCourse.php?course=website">
+			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
+			</a>
+			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="clear:float;clear:both;"></div>
+			<div>
+			  <img src="image/c.jpg" style="width:200px;height:140px;"/>
+			</div>
 			  <?php }
 			  else{?>
 			    <?php if(empty($data["project"])){?>
