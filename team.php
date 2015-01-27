@@ -179,18 +179,30 @@
 				  <p></p>
 			    </div>
 			  </a>
-			  
-			  <!--<div style="width:420;height:140px;border:1px solid #0099FF;padding:10px;font-size:14px;line-height:22px;float:left;">
+			  <?php }?>
+			  <?php
+				include 'db.php';
+				$result = mysql_query("select * from sgfw_user order by id desc");
+				$i = 0;
+				while($item = mysql_fetch_array($result)){
+			  ?>
+			  <div style="width:200px;height:140px;border:0px solid #0099FF;padding:10px;margin:20px;font-size:14px;line-height:22px;float:left;">
+			    <div style="">
+				  <img src="<?php echo $item["url"]?>" style="width:80px;border-radius:5em;" />
+				</div>
 			    <div class="team_item_title" style="font-weight:bold;color:#FF9900;font-size:18px;line-height:40px;">
 				  <?php echo base64_decode($item["username"])?>
 				</div>
-				<div style="">
+				<div>
+				  <?php echo $item["college"]?>
+				</div>
+				<!--<div style="">
 				  <span>小组成员：<?php echo base64_decode($item["username"])?><span>
 				</div>
 				<div style="">
 				  （小组口号、小组简介、小组项目介绍等任何信息。）
-				</div>
-			  </div>-->
+				</div>-->
+			  </div>
 			  <?php }?>
 			  <div style="clear:float;clear:both;"></div>
 			  <!--<div style="width:420;height:140px;border:1px solid #0099FF;padding:10px;font-size:14px;line-height:22px;float:left;">
