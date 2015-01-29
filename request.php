@@ -42,6 +42,23 @@ window.location.href="team.php";
 		//$_SESSION["user"] = $data["username"];
 		//$_SESSION["code"] = md5($data["password"]);
 	}
+	
+	if($action=="getCollegeNames"){
+		$sql = "SELECT * FROM sgfw_college";
+		$result = mysql_query($sql,$conn);
+		$college = array();
+		$str = $_GET["str"];
+		while($data = mysql_fetch_array($result)){
+			if(!empty($str) && preg_match("/".$str."/",base64_decode($data["name"])))
+				$college[] = base64_decode($data["name"]);
+			else if(empty($str))
+				$college[] = base64_decode($data["name"]);
+		}
+		
+		//$college = array("郑州大学（南校区）","郑州大学（新校区）");
+		echo join("<br />",$college);
+		return ;
+	}
 	//var_dump(mysql_error());
 	//var_dump($info,empty($info));
 	file_put_contents(md5($_SESSION["user"]).".txt",$info);

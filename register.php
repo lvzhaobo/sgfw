@@ -11,6 +11,7 @@
 	  button:hover {border:2px solid #0099FF;color:#FF9900;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
@@ -49,7 +50,11 @@
 			  </tr>
 			  <tr>
 			    <th>学校</th>
-				<td><input name="account[college]"></td>
+				<td><input name="account[college]" id="selectcollege"></td>
+			  </tr>
+			  <tr>
+			    <th></th>
+				<td style=""><div id="collegedata" style="padding:5px 10px;max-height:104px;overflow:auto;"></div></td>
 			  </tr>
 			  <!--<tr>
 			    <th>学习课程：</th>
@@ -93,6 +98,14 @@
   </body>
 </html>
 <script>
+$(document).ready(function(){
+  $("#selectcollege").keyup(function(){
+  //alert($("#selectcollege").val());
+  htmlobj=$.ajax({url:"request.php?action=getCollegeNames&str="+$("#selectcollege").val(),async:false});
+  $("#collegedata").html(htmlobj.responseText);
+  });
+});
+
 <?php if(!empty($_GET["info"])){?>
 alert("<?php echo $_GET["info"]?>");
 window.location.href="register.php";
