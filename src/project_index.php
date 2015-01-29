@@ -4,9 +4,9 @@ $nav_basic = array(
 			array('href'=>'database.php','label'=>'数据库基础','links'=>array('database.php'))
 		);
 $nav_project = array(
-			array('href'=>'website.php','label'=>'网站设计','links'=>array('website.php')),
-			array('href'=>'php.php','label'=>'PHP','links'=>array('php.php')),
-			array('href'=>'jsp.php','label'=>'JSP','links'=>array('jsp.php'))
+			array('href'=>'website.php','label'=>'网站开发','links'=>array('website.php')),
+			array('href'=>'php.php','label'=>'PHP+MySQL','links'=>array('php.php')),
+			array('href'=>'jsp.php','label'=>'JSP+MySQL','links'=>array('jsp.php'))
 		);
 
 $current_page = $_SERVER["REQUEST_URI"];
@@ -33,7 +33,7 @@ foreach($nav_basic as $key=>$nav_item){
 	';
 }
 $nav_str .= '
-	<div style="margin:-20px 0 10px 14px;padding:5px 0px;font-weight:normal;line-height:28px;font-size:14px;color:#CCCCCC;width:140px;height:28px;border-left:0px solid #00A2C9;">基础课程</div>
+	<div style="margin:-20px 0 10px 14px;padding:5px 0px;font-weight:normal;line-height:28px;font-size:14px;color:#CCCCCC;width:140px;height:28px;border-left:0px solid #00A2C9;">综合项目</div>
 ';
 foreach($nav_project as $key=>$nav_item){
 	$links = $nav_project[$key]["links"];

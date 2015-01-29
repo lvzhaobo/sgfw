@@ -1,4 +1,5 @@
 <?php 
+	return ;
 	include 'notice.php';
 	$info = noticeObject::getNotice();
 	//$info = @file_get_contents("info.txt");

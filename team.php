@@ -192,6 +192,8 @@
 				$result = mysql_query("select * from sgfw_user order by id desc");
 				$i = 0;
 				while($item = mysql_fetch_array($result)){
+					if(++$i>10)
+						break;
 			  ?>
 			  <div style="width:200px;height:140px;text-align:center;border:0px solid #0099FF;padding:10px;margin:10px;font-size:14px;line-height:22px;float:left;">
 			    <div style="">
@@ -201,7 +203,7 @@
 				  <?php echo base64_decode($item["username"])?>
 				</div>
 				<div>
-				  <?php echo $item["college"]?>
+				  <?php //echo $item["college"]?>
 				</div>
 				<!--<div style="">
 				  <span>小组成员：<?php echo base64_decode($item["username"])?><span>
