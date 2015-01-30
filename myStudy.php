@@ -85,7 +85,7 @@
 			  <?php }
 				else if($data["project"]=="php"){
 			  ?>
-			  <a href="myCourse.php?course=website">
+			  <a href="myCourse.php?course=php">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
 			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
@@ -107,7 +107,7 @@
 			  <?php }
 				else if($data["project"]=="jsp"){
 			  ?>
-			  <a href="myCourse.php?course=website">
+			  <a href="myCourse.php?course=jsp">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
 			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
@@ -128,7 +128,7 @@
 			  </table>
 			  <?php }
 			  else if($data["project"]=="database"){?>
-			  <a href="myCourse.php?course=website">
+			  <a href="myCourse.php?course=database">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
 			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
@@ -149,7 +149,7 @@
 			  </table>
 			  <?php }
 			  else if($data["project"]=="c"){?>
-			  <a href="myCourse.php?course=website">
+			  <a href="myCourse.php?course=c">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
 			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
