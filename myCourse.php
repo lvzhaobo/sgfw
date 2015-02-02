@@ -122,6 +122,7 @@
   </body>
 </html>
 <script>
+alert("测试阶段，以网站设计或PHP为例");
 <?php if(!empty($_GET["info"])){?>
 alert("<?php echo $_GET["info"]?>");
 window.location.href="myStudy.php";
