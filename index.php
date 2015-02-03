@@ -5,7 +5,7 @@
 	  p {text-indent:2em;line-height:1.6em;font-size:14px;color:#000000;}
 	  a {color:#FFFFFF;text-decoration:none;}
 	  
-	  .item_content {line-height:36px;margin:20px;float:left;width:520px;color:#FFFFFF;letter-spacing:2px;font-size:16px;}
+	  .item_content {line-height:36px;margin:20px;float:left;width:520px;color:#333333;letter-spacing:2px;font-size:16px;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
 	
@@ -66,6 +66,13 @@
 	<div><span style="color:#333333;">中原工学院</span> <span style="color:#FF9900;">2015年3月17日</span></div>
 	<div><span style="color:#333333;">郑州航空工业管理学院</span> <span style="color:#FF9900;">2015年3月18日</span></div>
 	<div><span style="color:#333333;">河南工业大学</span> <span style="color:#FF9900;">2015年3月19日</span></div>
+  </div>
+</div>
+</div>-->
+<!--<div style="width:100%;height:420px;background-image:url('bg-.jpg');background-repeat:no-repeat;background-color:#FF9900;">
+<div style="margin:40px 0 0 0px;">
+  <div style="font-size:22px;font-weight:bold;padding:80px 0 40px 0;color:#FFFFFF;text-align:center;">Be What You Wanna Be</div>
+  <div style="font-size:18px;font-weight:bold;line-height:32px;">
   </div>
 </div>
 </div>-->
@@ -209,7 +216,7 @@
 			-->
 		  </div>
 		  <div>
-			<div style="min-height:465px;padding:0 0 0 280px;background-color:#000000;">
+			<div style="min-height:465px;padding:0 0 0 280px;background-color:#F3F3F3;">
 			  <div style="padding:10px 0;">
 			    <div class="item_content" style="min-width:800px;line-height:26px;font-size:14px;">
 				int main(){
