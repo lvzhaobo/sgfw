@@ -62,19 +62,16 @@
 		</div>
 		
 		<div class="content" style="width:800px;float:left;margin:0 0 40px 200px;padding:20px 60px;min-height:320px;">
-		  <div style="font-weight:bold;margin:10px 0;">
-		    网站：
-		  </div>
-		  <div style="">
-		    w3school: &nbsp;&nbsp;<a href="http://www.w3school.com.cn/html/index.asp">http://www.w3school.com.cn/html/index.asp</a>
-		  </div>
-		  <div style="font-weight:bold;margin:10px 0;">
-		    书籍：
-		  </div>
-		  <div style="">
-		    HTML CSS JavaScript网页制作从入门到精通 : &nbsp;&nbsp;<a href="http://item.jd.com/11145284.html">http://item.jd.com/11145284.html</a>
-		  </div>
-		  
+		  <?php 
+		    $dir = dir("users/".$_SESSION["user"]);
+			var_dump($dir);
+			if($dir!=false){
+			while(($file = $dir->read()) !== false){
+		  ?>
+		    <div style="width:200px;height:176px;">
+			<?php echo $file;?>
+			</div>
+		  <?php }}?>
 	    </div>
 	<div style="clear:float;clear:both;"></div>
   </body>
