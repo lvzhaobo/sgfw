@@ -91,7 +91,9 @@ width : 100%;
 height : 100px;
 display : none;
 position : absolute;
-background : url(../images/slide-bg.png) 0 0;
+color:#FF9900;
+#background : url(../images/slide-bg.png) 0 0;
+#background-color:#F3F3F3;
 }
 p {
 max-width:600px;
