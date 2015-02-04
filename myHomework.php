@@ -64,11 +64,18 @@
 		<div class="content" style="width:800px;float:left;margin:0 0 40px 200px;padding:20px 60px;min-height:320px;">
 		  <?php 
 		    $dir = dir("users/".$_SESSION["user"]);
-			var_dump($dir);
+			//var_dump($dir);
 			if($dir!=false){
 			while(($file = $dir->read()) !== false){
+				if(in_array($file,array(".","..")))
+					continue;
+				$filePath = "users/".$_SESSION["user"]."/".$file;
+				//var_dump(file_exists($filePath));
+				if(!file_exists($filePath))
+					continue;
 		  ?>
-		    <div style="width:200px;height:176px;">
+		    <div style="margin:10px;float:left;text-align:center;">
+			  <iframe src='<?php echo $filePath?>'></iframe><br />
 			<?php echo $file;?>
 			</div>
 		  <?php }}?>
