@@ -46,16 +46,11 @@
 		  </a>-->
 		</div>
 		<div class="content" style="width:760px;float:left;">
-			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:10px 10px;min-height:200px;line-height:10px;">
+			<div style="margin:10px 10px;min-height:200px;">
 			  <div class="index_feature_intro_title">
-				  <div style="float:left;">
-				  <img src="p2.jpg" style="height:40px;" />
-				  </div>
-				  <div style="float:left;color:#108ac6;">
-				  <h1>关于我们</h1>
-				  </div>
+				  <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:18px;line-height:32px;color:#333333;width:100%;height:32px;background-color:#F5F5F5;border-left:2px solid #00A2C9;">关于我们</div>
 				  <div style="clear:float;clear:both;"></div>
-				  <ul style="line-height:28px;list-style:none;margin-left:-20px;">
+				  <ul style="line-height:28px;margin-left:-20px;">
 				    <li>我们团队位于上海张江，团队核心成员由一群勇于创新的80后大学生组成，我们致力于以全新的学习方式来影响甚至改变大学教育。</li>
 				    <li>立足于新的方式来影响大学教育，贴切的揭示当前学生学习方式的弊端，从积极改变自我的一部分学生开始逐步形成良好的学习方式，营造与时俱进的大学创新氛围。</li>
 					<li>我们在学习大学计算机课程时，常常因枯燥的理论知识烦恼，也因难于坚持完成一个网站而懊恼。现在我们毕业了，我们组织在校学生以小组的形式来共同完成一个项目。我们为有梦想的同学提供一个实现梦想的平台，我们提供技术指导、提供资源，帮你组织团队、推广产品，让更多的人认识到你和你的产品。</li>
