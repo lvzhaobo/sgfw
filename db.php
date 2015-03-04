@@ -1,6 +1,7 @@
 <?php
 
 	$conn = mysql_connect("rdsbezbquaqzfyn.mysql.rds.aliyuncs.com","lvzb","111111");
+	//$conn = mysql_connect("localhost","root");
 	if(!$conn){
 		die("connect mysql error.");
 	}
