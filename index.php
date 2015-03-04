@@ -8,7 +8,6 @@
 	  .item_content {line-height:36px;margin:20px;float:left;width:520px;color:#333333;letter-spacing:2px;font-size:16px;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
-	
 <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>

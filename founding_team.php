@@ -5,7 +5,7 @@
 	  p {text-indent:2em;line-height:1.6em;color:#000000;}
 	  a {color:#FFFFFF;text-decoration:none;}
 	  .main_index a {color:#000000;font-weight:bold;}
-	  .project_item {width:206px;margin:0px 0 0px 10px;float:left;color:#333333;padding:10px;border:2px solid #FFFFFF;}
+	  .project_item {width:206px;min-height:148px;margin:10px 0 0px 10px;float:left;color:#333333;padding:10px;border:2px solid #FFFFFF;border:1px solid #F3F3F3;border-radius:0.5em;background-color:#F3F3F3;}
 	  .project_item_title {margin:20px 0 0 20px;font-size:16px;font-weight:bold;}
 	  .project_item hr {color:#FFFFFF;height:1px;display:none;}
 	  .item:hover {color:#FF9900;}
@@ -15,7 +15,7 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
 	<div>
-	  <div class="main_index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;min-height:428px;">
+	  <div class="main_index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;min-height:628px;">
 	    <!--<div>
 		  <a href="register.php">
 		    <div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;margin:0 0 10px 0;">
@@ -23,7 +23,7 @@
 		    </div>
 		  </a>
 		</div>-->
-	    <div style="width:192px;float:left;font-size:16px;margin:28px 0 0 0;">
+	    <div style="width:192px;float:left;font-size:16px;margin:28px 0 20px 0;">
 		  <a href="about.php">
 		  <div class="item" style="width:100%;height:40px;">
 		    <span style="margin:0 0 0 20px;">关于我们</span>
@@ -45,7 +45,7 @@
 		  </div>
 		  </a>-->
 		</div>
-		<div class="content" style="width:760px;float:left;">
+		<div class="content" style="width:760px;float:left;maring:0 0 20px 0;">
 			<div name="team_core_member" id="team_core_member" style="margin:10px 10px;min-height:200px;line-height:22px;">
 				  <div style="float:left;color:#0099FF;font-size:16px;font-weight:bold;margin:20px 0;">
 				  <span>团队核心成员</span>
@@ -54,11 +54,35 @@
 			<div style="color:#000000;">
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Burning</span><hr />
-				<p>2010年毕业于郑州大学，郑州大学“梦想之星”英语社创始人和第一任社长，热衷于帮助他人实现梦想。现任职于上海某网络安全公司。</p>
+				<p>郑州大学“梦想之星”英语社创始人和第一任社长。现任职于上海某网络安全公司。</p>
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Bella</span><hr />
-				<p>现任职于某国际知名检测公司。</p>
+				<p>现任职于上海某国际知名检测公司。</p>
+			  </div>
+			  <div class="project_item">
+			    <span class="project_item_title" style="">Xuelj</span><hr />
+				<p>在大学中连年获得学校奖学金，现任上海某知名安全公司测试主管。</p>
+			  </div>
+			  <div class="project_item">
+			    <span class="project_item_title" style="">Zhaoqy</span><hr />
+				<p>现于上海某著名公司任财务工作。</p>
+			  </div>
+			  <div class="project_item">
+			    <span class="project_item_title" style="">Shenxy</span><hr />
+				<p>近五年的PHP+JS开发经验，现任上海某知名网络安全公司产品负责人。</p>
+			  </div>
+			  <div class="project_item">
+			    <span class="project_item_title" style="">Blanc</span><hr />
+				<p>精通PHP、Python、C等开发语言，技术大牛。现任职于上海某数据安全公司。</p>
+			  </div>
+			  <div class="project_item">
+			    <span class="project_item_title" style="">Chenn</span><hr />
+				<p>在大学多次获得校级奖学金。</p>
+			  </div>
+			  <div class="project_item">
+			    <span class="project_item_title" style="">Dingxl</span><hr />
+				<p>在大学多次获得校级奖学金。</p>
 			  </div>
 			</div>
 			</div>

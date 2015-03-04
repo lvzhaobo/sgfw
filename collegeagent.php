@@ -24,12 +24,12 @@
 		  <div style="font-weight:bold;">郑州大学（南校区）</div>
 		  <div style="">开放注册时间：2015年3月10日</div>
 		  <!--<div style="">吕昭波  QQ：794683095  Email：lvzhaobopku@163.com</div>-->
-		  <div style="">负责人：</div>
+		  <div style="">负责人：李阳&nbsp;&nbsp;&nbsp;&nbsp;1803868517</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">郑州大学（新校区）</div>
 		  <div style="">开放注册时间：2015年3月13日</div>
-		  <div style="">负责人：</div>
+		  <div style="">负责人：祝周毅&nbsp;&nbsp;&nbsp;&nbsp;1083772172</div>
 		</div>
 		<div class="agent_item">
 		  <div style="font-weight:bold;">郑州大学（北校区）</div>

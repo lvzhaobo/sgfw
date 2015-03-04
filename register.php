@@ -4,11 +4,12 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  input,select {line-height:28px;width:280px;border:2px solid #CCCCCC;font-weight:bold;font-size:14px;padding:4px 10px;margin:2px 4px;border-radius:0.5em;}
+	  input,select {line-height:28px;width:240px;border:2px solid #CCCCCC;font-weight:bold;font-size:14px;padding:4px 10px;margin:2px 4px;border-radius:0.5em;}
 	  input:hover,select:hover {color:#0099FF;border:2px solid #FF9900;}
 	  th {text-align:right;font-weight:normal;font-size:14px;}
 	  button {font-weight: bold; line-height: 32px; box-shadow: 0px 0px 2px rgb(220, 220, 220); width: 80px; font-size: 16px; border-radius: 0.5em; margin: 0px 0px 0px 204px; border: 2px solid #FF9900; color:#0099FF; background-color: rgb(255, 255, 255);}
 	  button:hover {border:2px solid #0099FF;color:#FF9900;}
+	  .message {font-size:14px;color:#333333;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -22,19 +23,22 @@
 		  <img src="image/dream.jpg" style="width:400px;">
 		</div>
 		<div class="content" style="width:560px;float:left;margin:28px 0 0 0px;min-height:320px;">
-		  <form action="saveAccount.php" method="post">
+		  <form action="saveAccount.php" method="post" id="register">
 		    <table>
 			  <tr>
-			    <th width="100">用户名</th>
-				<td><input name="account[username]"></td>
+			    <th width="60">用户名</th>
+				<td><input id="username" name="account[username]"></td>
+				<td><span id="msg_user" class="message">4-20位数字和字母组成</span></td>
 			  </tr>
 			  <tr>
 			    <th>密码</th>
-				<td><input name="account[password]" type="password"></td>
+				<td><input name="account[password]" type="password" id="password"></td>
+				<td><span id="msg_password" class="message">4-20位数字和字母组成</span></td>
 			  </tr>
 			  <tr>
 			    <th>确认密码</th>
-				<td><input name="account[password_2]" type="password"></td>
+				<td><input name="account[password_2]" type="password" id="redo"></td>
+				<td><span id="msg_redo" class="message">再次输入密码</span></td>
 			  </tr>
 			  <tr>
 			    <th>QQ</th>
@@ -42,7 +46,8 @@
 			  </tr>
 			  <tr>
 			    <th>Email</th>
-				<td><input name="account[email]"></td>
+				<td><input name="account[email]" id="email"></td>
+				<td><span id="msg_email" class="message">输入邮箱地址</span></td>
 			  </tr>
 			  <tr>
 			    <th>推荐人</th>
@@ -56,34 +61,6 @@
 			    <th></th>
 				<td style=""><div id="collegedata" style="padding:5px 10px;max-height:104px;overflow:auto;"></div></td>
 			  </tr>
-			  <!--<tr>
-			    <th>学习课程：</th>
-				<td><select name="account[project]">
-				  <option value="website">网站设计</option>
-				  <option value="database">数据库</option>
-				  <option value="php">PHP</option>
-				  <option value="javascript">JavaScript</option>
-				  <option value="jsp">Java(JSP)</option>
-				  <option value="software_test">软件测试</option>
-				  
-				</select></td>
-			  </tr>
-			  <tr>
-			    <th>分组：</th>
-				<td>
-				  <select name="account[team]">
-				    <option value="1">小组1</option>
-				    <option value="2">小组2</option>
-					<option value="3">小组3</option>
-					<option value="4">小组4</option>
-					<option value="5">小组5</option>
-				    <option value="6">小组6</option>
-					<option value="7">小组7</option>
-					<option value="8">小组8</option>
-				  </select>
-				  <span>暂时分组，待注册结束后可微调，建议希望在一组的同学先选择同一个小组。</span>
-				</td>
-			  </tr>-->
 			  <tr>
 			    <th></th>
 				<td><button type="submit" style="">确定</button></td>
@@ -103,6 +80,88 @@ $(document).ready(function(){
   //alert($("#selectcollege").val());
   htmlobj=$.ajax({url:"request.php?action=getCollegeNames&str="+$("#selectcollege").val(),async:false});
   $("#collegedata").html(htmlobj.responseText);
+  });
+  
+  //表单
+	var form = $('#register');
+    //用户名
+	var user 	 = $('#username');
+	var msg_user = $('#msg_user');
+	var mode_user = /[0-9A-z]{4,20}$/;
+	//密码
+	var password 	  = $('#password');
+	var redo	 	  = $('#redo');
+	var bindPassword  = $('#password,#redo')
+	var msg_redo      = $('#msg_password,#msg_redo');
+	var mode_password = /[A-Za-z].*[0-9]|[0-9].*[A-Za-z]$/;
+	//邮箱
+	var email 	   = $('#email');
+	var msg_email  = $('#msg_email');	
+	var mode_email = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+	
+	//触发验证函数
+	user.change(function(){
+		if( fields( user , mode_user) ){
+			msg( msg_user , "<font color='#093'>&radic;</font>");
+		}else{
+			msg( msg_user , "<font color='red'>&times;用户名格式不对</font>");
+		}
+	})
+	bindPassword.bind('change',function(){
+		if( cross( password , redo , mode_password) ){
+			msg( msg_redo , "<font color='#093'>&radic;</font>");
+		}else{
+			msg( msg_redo , "<font color='red'>&times;密码格式不对或两次输入的密码不一至</font>");
+		}
+	})
+	email.change(function(){
+		if( fields( email ,  mode_email) ){
+			msg( msg_email , "<font color='#093'>&radic;</font>");
+		}else{
+			msg( msg_email , "<font color='red'>&times;邮箱格式不对</font>");
+		}
+	})
+	
+	//一般字段验证
+	function fields( field , mode ){
+		console.log(field.val());
+		if( mode.test( field.val() ) ){
+			return true;
+		}
+		return false;
+	}
+	//密码交叉验证
+	function cross( passwordA , passwordB , mode){
+		if( fields( passwordA , mode) && fields( passwordB , mode)){
+			if( passwordA.val() == passwordB.val()){
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	//提交验证
+	form.submit(function(){
+		if( !fields( user , mode_user ) ){
+			msg( msg_user , "<font color='red'>&times;</font>");
+		}else if( !cross( password , redo , mode_password ) ){
+			msg( msg_redo , "<font color='red'>&times;</font>");
+		}else if(!fields( email , mode_email )){
+			msg( msg_email , "<font color='red'>&times;</font>");
+		}else{
+			return true;
+		}
+		return false;
+	})
+	//信息提示
+	function msg( msg_field , str ){
+		msg_field.html(str);
+	}
+
+
+  $('#username').keyup(function(value){
+	  alert(value.val());
+	  //$.ajax({url:""});
   });
 });
 

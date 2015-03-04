@@ -19,14 +19,21 @@
     <?php include 'src/header.php'?>
 	<?php
 			include 'db.php';
+			//session_start();
+			//var_dump($_SESSION);
+			//$conn = mysql_connect("127.0.0.1","root");
+			//mysql_select_db("sgfw");
+			//var_dump("select * from sgfw_user where username='".$_SESSION["user"]."';");
 			$data = array();
 			if(isset($_SESSION["user"])){
 				$result = mysql_query("select * from sgfw_user where username='".base64_encode($_SESSION["user"])."'");
+				//var_dump(mysql_error());
 				$data = mysql_fetch_array($result);
 			}
 			if(!isset($data["id"]) or empty($data["id"])){
 				echo "<script>alert('请先登录');window.location.href='login.php'</script>";
 			}
+			//var_dump($data);
 		  ?>
 	<div>
 	  <div class="main index" style="padding-top:32px;min-width:960px;margin:0 auto;font-size:14px;min-height:400px;">

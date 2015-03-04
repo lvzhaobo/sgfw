@@ -136,7 +136,7 @@
 			  <?php if(!empty($data["create_time"])){?>
 			  <tr>
 			    <th>注册时间</th>
-				<td><?php echo date("Y年m月d日 H:i:s",$data["create_time"]+3600*7)?></td>
+				<td><?php echo date("Y年m月d日 H:i:s",$data["create_time"])?></td>
 			  </tr>
 			  <?php }?>
 			  <?php if($edit){?>

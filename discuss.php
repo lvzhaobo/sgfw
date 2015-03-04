@@ -16,6 +16,7 @@
 	  textarea:hover {border:1px solid #0099FF;box-shadow:0 0 3px #0099FF;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include 'src/header.php'?>
@@ -26,9 +27,10 @@
 		    
 			  <div style="clear:float;clear:both;"></div>
 			  <div style="margin:20px;text-align:center;">
-			    <form action="saveDiscuss.php" method="post">
+			    <form action="saveDiscuss.php" method="post" id="discuss">
 				  <?php if(isset($_SESSION["user"])){?>
-				  <textarea name="content" style=""></textarea>
+				  <textarea name="content" style="" id="discuss_content"></textarea><br />
+				  <span id="msg_content" class="message"></span>
 				  <?php }
 				  else{?>
 				  <textarea name="content" style="" disabled="disabled">请先登录</textarea>
@@ -46,7 +48,7 @@
 			  ?>
 			  <div class="discuss_item">
 			    <div>
-				  <span style="color:#0099FF;"><?php echo base64_decode($item["username"])?></span>&nbsp;&nbsp;<span style="color:333333;"><?php echo date("Y-m-d H:i:s",$item["create_time"])?></span>
+				  <span style="color:#0099FF;"><?php echo base64_decode($item["username"])?></span>&nbsp;&nbsp;<span style="color:333333;"><?php echo date("Y-m-d H:i:s",$item["create_time"]-8*3600)?></span>
 				  <div>
 				    <?php echo $item["content"]?>
 				  </div>
@@ -61,3 +63,56 @@
 	<?php include 'src/footer.php'?>
   </body>
 </html>
+<script>
+$(document).ready(function(){
+  
+  //表单
+	var form = $('#discuss');
+    //用户名
+	var user 	 = $('#discuss_content');
+	var msg_user = $('#msg_content');
+	var mode_user = /.{10,2000}$/;
+	
+	//触发验证函数
+	user.change(function(){
+		if( !fields( user , mode_user) ){
+			msg( msg_user , "<font color='red'>&times;请输入至少10个字符</font>");
+		}
+		else{
+			msg( msg_user ,"");
+		}
+	})
+	
+	//一般字段验证
+	function fields( field , mode ){
+		console.log(field.val());
+		if( mode.test( field.val() ) ){
+			return true;
+		}
+		return false;
+	}
+	//密码交叉验证
+	function cross( passwordA , passwordB , mode){
+		if( fields( passwordA , mode) && fields( passwordB , mode)){
+			if( passwordA.val() == passwordB.val()){
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	//提交验证
+	form.submit(function(){
+		if( !fields( user , mode_user ) ){
+			msg( msg_user , "<font color='red'>&times;a请输入至少10个字符</font>");
+		}else{
+			return true;
+		}
+		return false;
+	})
+	//信息提示
+	function msg( msg_field , str ){
+		msg_field.html(str);
+	}
+});
+</script>
