@@ -1,21 +1,21 @@
 ﻿<?php
 session_start();
 //var_dump($_SESSION);
+$workspace = "http://".$_SERVER["HTTP_HOST"]."/sgfw/";
 if(isset($_SESSION["user"])){
-	$str = "<a href='mySpace.php'><span style='color:#0099FF;font-weight:bold;font-size:14px;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='logout.php' style='color:#999999;font-size:14px;'>退出</a>";
+	$str = "<a href='".$workspace."modules/myspace/index.php'><span style='color:#0099FF;font-weight:bold;font-size:14px;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='".$workspace."modules/logout.php' style='color:#999999;font-size:14px;'>退出</a>";
 }
 else{
-	$str = '<a href="login.php" style="color:#666666;font-size:14px;">登录</a>&nbsp;&nbsp;<a href="register.php" style="color:#666666;font-size:14px;">注册</a>';
+	$str = '<a href="'.$workspace.'modules/login.php" style="color:#666666;font-size:14px;">登录</a>&nbsp;&nbsp;<a href="'.$workspace.'modules/register.php" style="color:#666666;font-size:14px;">注册</a>';
 }
-
 $nav = array(
-			array('href'=>'index.php','label'=>'首页','links'=>array('index.php')),
-			array('href'=>'study.php','label'=>'种子课程','links'=>array('study.php','website.php','database.php','php.php','c.php','jsp.php')),
+			array('href'=>$workspace.'index.php','label'=>'首页','links'=>array('index.php')),
+			array('href'=>$workspace.'modules/study.php','label'=>'种子课程','links'=>array('study.php','website.php','database.php','php.php','c.php','jsp.php')),
 			//array('href'=>'project.php','label'=>'萌芽项目','links'=>array('project.php')),
-			array('href'=>'team.php','label'=>'梦想团队','links'=>array('team.php')),
-			array('href'=>'mySpace.php','label'=>'我的空间','links'=>array('mySpace.php','myStudy.php','myCourse.php','createTeam.php','createProject.php')),
-			array('href'=>'discuss.php','label'=>'讨论','links'=>array('discuss.php')),
-			array('href'=>'about.php','label'=>'关于','links'=>array('about.php'))
+			array('href'=>$workspace.'modules/team.php','label'=>'梦想团队','links'=>array('team.php')),
+			array('href'=>$workspace.'modules/mySpace.php','label'=>'我的空间','links'=>array('mySpace.php','myStudy.php','myCourse.php','createTeam.php','createProject.php')),
+			array('href'=>$workspace.'modules/discuss.php','label'=>'讨论','links'=>array('discuss.php')),
+			array('href'=>$workspace.'modules/about.php','label'=>'关于','links'=>array('about.php'))
 		);
 $current_page = $_SERVER["REQUEST_URI"];
 $current_page = preg_replace("/\?.*/","",$current_page);

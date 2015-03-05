@@ -4,13 +4,12 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;font-size:14px;color:#000000;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  
 	  .item_content {line-height:36px;margin:20px;float:left;width:520px;color:#333333;letter-spacing:2px;font-size:16px;}
 	</style>
-	<script src="account.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+	<script src="src/js/account.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="src/css/main.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="src/js/jquery.min.js"></script>
+	<script type="text/javascript" src="src/js/main.js"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
   <?php $rand = rand(1,5);$img = "bg".$rand.".jpg";?>
@@ -19,9 +18,9 @@
   <div class="wrap">
    <div id="slide-holder">
 		<div id="slide-runner">
-			<a target="_blank"><img id="slide-img-1" src="bg.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
-			<a target="_blank"><img id="slide-img-2" src="bg4.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-100px 0 0 0;"/></a>
-			<a target="_blank"><img id="slide-img-3" src="image/1st.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-20px 0 0 0;"/></a>
+			<a target="_blank"><img id="slide-img-1" src="src/images/bg.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
+			<a target="_blank"><img id="slide-img-2" src="src/images/bg4.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-100px 0 0 0;"/></a>
+			<a target="_blank"><img id="slide-img-3" src="src/images/1st.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-20px 0 0 0;"/></a>
 			<div id="slide-controls">
 			 <p id="slide-client" class="text"><strong></strong><span></span></p>
 			 <p id="slide-desc" class="text"></p>
