@@ -1,4 +1,5 @@
 <?php
+var_dump($_SERVER);
 class noticeObject
 {
 	public static function setNotice($info){
