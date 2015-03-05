@@ -11,6 +11,7 @@
 	$sql = "select * from sgfw_user where username='".base64_encode($data["username"])."'";
 	$result = mysql_query($sql,$conn);
 	@$row = mysql_fetch_array($result);
+	
 	if($row["password"]==$data["password"]){
 		$_SESSION["user"] = $data["username"];
 		$_SESSION["code"] = md5($data["password"]);
@@ -22,10 +23,10 @@
 ?>
 <script>
 <?php if(empty($info)){?>
-window.location.href="mySpace.php";
+window.location.href="../modules/myspace/index.php";
 <?php }
 else{
 ?>
-window.location.href="login.php";
+window.location.href="../modules/login.php";
 <?php }?>
 </script>

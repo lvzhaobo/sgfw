@@ -37,7 +37,8 @@
 	
 	if($action=="upload"){
 		//var_dump($_FILES);
-		$file_name = "upload/" . time()."_".base64_encode($_FILES["file"]["name"]);
+		$img = explode(".",$_FILES["file"]["name"]);
+		$file_name = "../data/upload/" . time()."_".base64_encode($img[0]).".".$img[1];
 		/*if ($_FILES["file"]["error"] > 0){
 			echo "Error: " . $_FILES["file"]["error"] . "<br />";
 		}
@@ -114,7 +115,7 @@
 			$info = "更新成功";
 			noticeObject::setNotice($info);
 		}
-		echo '<script>window.location.href="mySpace.php";</script>';
+		echo '<script>window.location.href="../modules/myspace/index.php";</script>';
 	}
 	//var_dump(mysql_error());
 	
@@ -123,15 +124,15 @@
 <script>
 //alert("burning");
 <?php if(empty($info)){?>/
-window.location.href="mySpace.php?info=注册成功";
+window.location.href="../modules/myspace/index.php?info=注册成功";
 <?php }
 else if($info=="upload_success"){
 ?>
-window.location.href="mySpace.php";
+window.location.href="../modules/myspace/index.php";
 <?php
 }
 else{
 ?>
-window.location.href="register.php?info="+"<?php echo $info;?>";
+window.location.href="../modules/register.php?info="+"<?php echo $info;?>";
 <?php }?>
 </script>

@@ -14,7 +14,7 @@
 	</style>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
-    <?php include 'src/header.php'?>
+    <?php include '../../src/header.php'?>
 	<div>
 	  <div class="main index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;min-height:400px;">
 	    <div style="width:192px;float:left;position:fixed;font-weight:bold;font-size:16px;margin:20px 0 0 0;">
@@ -37,7 +37,7 @@
 		
 		<div class="content" style="width:760px;float:left;margin:0 0 0 200px;min-height:420px;">
 		  <?php
-			include 'db.php';
+			include '../../lib/db.php';
 			$data = array();
 			if(isset($_SESSION["user"])){
 				$result = mysql_query("select * from sgfw_user where username='".base64_encode($_SESSION["user"])."'");
@@ -49,7 +49,7 @@
 				$team = mysql_fetch_array($result);
 			}
 			if(!isset($data["id"]) or empty($data["id"])){
-				echo "<script>alert('请先登录');window.location.href='login.php'</script>";
+				echo "<script>alert('请先登录');window.location.href='../login.php'</script>";
 			}
 			//var_dump($data);
 			$edit = isset($_GET["edit"]);
@@ -67,7 +67,7 @@
 		  <fieldset>
 		  <legend>基本信息</legend>
 		  <div id="basic_info" style="width:400px;float:left;">
-		  <form action="saveAccount.php?edit=true" method="post">
+		  <form action="../../lib/saveAccount.php?edit=true" method="post">
 		    <table style="line-height:28px;">
 			  <tr>
 			    <th width="100">用户名</th>
@@ -149,13 +149,13 @@
 		  </form>
 		  </div>
 		  <div style="width:280px;float:left;">
-		    <?php if(file_exists($data["img"])){?>
-		    <img src="<?php echo $data["img"]?>" style="width:100px;"/>
+		    <?php var_dump($data["img"]);if(file_exists($data["img"])){?>
+		    <img src="<?php echo $workspace."data/".$data["img"]?>" style="width:100px;"/>
 			<?php }
 			else{?>
 			<div style="width:100px;height:100px;border:1px solid #CCCCCC;">请上传头像</div>
 			<?php }?>
-			<form action="saveAccount.php?action=upload" method="post" enctype="multipart/form-data">
+			<form action="../../lib/saveAccount.php?action=upload" method="post" enctype="multipart/form-data">
 			  <input type="file" name="file" style="width:148px;float:left;" />
 			  <button type="submit">确定</button>
 			</form>
@@ -199,12 +199,12 @@
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<?php include 'src/footer.php'?>
+	<?php include '../../src/footer.php'?>
   </body>
 </html>
 <script>
 <?php if(!empty($_GET["info"])){?>
 alert("<?php echo $_GET["info"]?>");
-window.location.href="register.php";
+window.location.href="../register.php";
 <?php }?>
 </script>

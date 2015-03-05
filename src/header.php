@@ -13,7 +13,7 @@ $nav = array(
 			array('href'=>$workspace.'modules/study.php','label'=>'种子课程','links'=>array('study.php','website.php','database.php','php.php','c.php','jsp.php')),
 			//array('href'=>'project.php','label'=>'萌芽项目','links'=>array('project.php')),
 			array('href'=>$workspace.'modules/team.php','label'=>'梦想团队','links'=>array('team.php')),
-			array('href'=>$workspace.'modules/mySpace.php','label'=>'我的空间','links'=>array('mySpace.php','myStudy.php','myCourse.php','createTeam.php','createProject.php')),
+			array('href'=>$workspace.'modules/myspace/index.php','label'=>'我的空间','links'=>array('mypace/index.php','myStudy.php','myCourse.php','createTeam.php','createProject.php')),
 			array('href'=>$workspace.'modules/discuss.php','label'=>'讨论','links'=>array('discuss.php')),
 			array('href'=>$workspace.'modules/about.php','label'=>'关于','links'=>array('about.php'))
 		);

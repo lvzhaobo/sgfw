@@ -164,6 +164,6 @@
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<?php include 'src/footer.php';?>
+	<?php include '../src/footer.php';?>
   </body>
 </html>

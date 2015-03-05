@@ -10,18 +10,18 @@
 	  button {font-weight: bold; line-height: 32px; box-shadow: 0px 0px 2px rgb(220, 220, 220); width: 80px; font-size: 16px; border-radius: 0.5em; margin: 0px 0px 0px 204px; border: 2px solid #FF9900; color:#0099FF; background-color: rgb(255, 255, 255);}
 	  button:hover {border:2px solid #0099FF;color:#FF9900;}
 	</style>
-	<script src="account.js" type="text/javascript"></script>
+	<script src="../src/js/account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
-    <?php include 'src/header.php'?>
-	<?php include 'src/notice.php'?>
+    <?php include '../src/header.php'?>
+	<?php include '../src/notice.php'?>
 	<div class="main index" style="padding-top:60px;width:960px;height:422px;margin:0 auto;font-size:14px;">
 	  <div style="margin:60px 0 0 0;">
 	    <div style="float:left;width:400px;">
-		  <img src="image/dream.jpg" style="width:400px;">
+		  <img src="../src/images/dream.jpg" style="width:400px;">
 		</div>
 		<div class="content" style="width:560px;float:left;margin:60px 0 0 0;">
-		  <form action="loginValidator.php" method="post">
+		  <form action="../lib/loginValidator.php" method="post">
 		    <table>
 			  <tr>
 			    <th width="100">用户名</th>
@@ -41,7 +41,7 @@
 	</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<?php include 'src/footer.php'?>
+	<?php include '../src/footer.php'?>
   </body>
 </html>
 <script>
