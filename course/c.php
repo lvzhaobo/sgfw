@@ -26,7 +26,7 @@
 				  <div><span style="color:#999999;margin:0 10px 0 0;">建议</span><span>本学期开设C语言课程的同学，课下学习</span></div>
 				</div>
 				  <?php 
-					include 'db.php';
+					include '../lib/db.php';
 					
 					$username = isset($_SESSION["user"])?$_SESSION["user"]:"";
 					if(!empty($username)){

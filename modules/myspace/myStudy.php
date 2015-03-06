@@ -15,7 +15,7 @@
 	<script src="account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
-    <?php include 'src/header.php'?>
+    <?php include '../../src/header.php'?>
 	<div>
 	  <div class="main index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;min-height:428px;">
 	    <div style="width:192px;float:left;position:fixed;font-weight:bold;font-size:16px;margin:20px 0 0 0;">
@@ -38,7 +38,7 @@
 		
 		<div class="content" style="width:760px;float:left;margin:0 0 40px 200px;min-height:320px;">
 		  <?php
-			include 'db.php';
+			include '../../lib/db.php';
 			$data = array();
 			if(isset($_SESSION["user"])){
 				$result = mysql_query("select * from sgfw_user where username='".base64_encode($_SESSION["user"])."'");
@@ -155,7 +155,7 @@
 			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
 			<div style="clear:float;clear:both;"></div>
 			<div>
-			  <img src="image/c.jpg" style="width:200px;height:140px;"/>
+			  <img src="../../src/images/c.jpg" style="width:200px;height:140px;"/>
 			</div>
 			  <?php }
 			  else{?>
@@ -173,7 +173,7 @@
 		  </fieldset>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<?php include 'src/footer.php'?>
+	<?php include '../../src/footer.php'?>
   </body>
 </html>
 <script>

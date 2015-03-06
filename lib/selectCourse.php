@@ -5,7 +5,7 @@
 	
 	$username = isset($_SESSION["user"])?$_SESSION["user"]:"";
 	if(empty($username)){
-		echo "<script>window.location.href='register.php?info=请先注册';</script>";
+		echo "<script>window.location.href='../modules/register.php?info=请先注册';</script>";
 	}
 	$course = $_GET["course"];
 	//$data = $_POST["account"];
@@ -33,7 +33,7 @@
 		//$_SESSION["code"] = md5($data["password"]);
 	}
 	noticeObject::setNotice($info);
-	echo '<script>window.location.href="myStudy.php";</script>';
+	echo '<script>window.location.href="../modules/myspace/myStudy.php";</script>';
 	//var_dump(mysql_error());
 	//var_dump($info,empty($info));die;
 ?>

@@ -13,19 +13,19 @@
 	  .intro_content {color:#999999;}
 	  .current {color:#FF9900;}
 	</style>
-	<script src="account.js" type="text/javascript"></script>
+	<script src="../../js/src/account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
-    <?php include 'src/header.php'?>
+    <?php include '../../src/header.php'?>
 	<?php
-			include 'db.php';
+			include '../../lib/db.php';
 			$data = array();
 			if(isset($_SESSION["user"])){
 				$result = mysql_query("select * from sgfw_user where username='".base64_encode($_SESSION["user"])."'");
 				$data = mysql_fetch_array($result);
 			}
 			if(!isset($data["id"]) or empty($data["id"])){
-				echo "<script>alert('请先登录');window.location.href='login.php'</script>";
+				echo "<script>alert('请先登录');window.location.href='../login.php'</script>";
 			}
 		  ?>
 	<div>
@@ -60,7 +60,6 @@
 		  </a>
 		</div>
 		</div>
-		
 		<div class="content" style="width:800px;float:left;margin:0 0 40px 200px;padding:20px 60px;min-height:320px;">
 		  <div style="font-weight:bold;margin:10px 0;">
 		    网站：
