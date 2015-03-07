@@ -15,19 +15,19 @@
 	  textarea {width:600px;height:120px;border:1px solid #FF9900;box-shadow:0 0 3px #FF9900;color:#0099FF;padding:2px 5px;border-radius:0.5em;}
 	  textarea:hover {border:1px solid #0099FF;box-shadow:0 0 3px #0099FF;}
 	</style>
-	<script src="account.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="../src/js/account.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../src/js/jquery.min.js"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
-    <?php include 'src/header.php'?>
-	<?php include 'src/notice.php'?>
+    <?php include '../src/header.php'?>
+	<?php include '../src/notice.php'?>
 	<div style="margin:80px 0 0 0;">
 	  <div class="main_index" style="width:960px;margin:0 auto;font-size:14px;background-image:url('image/dream.jpg');">
 	    <div style="width:100%;margin:20px auto;min-height:814px;">
 		    
 			  <div style="clear:float;clear:both;"></div>
 			  <div style="margin:20px;text-align:center;">
-			    <form action="saveDiscuss.php" method="post" id="discuss">
+			    <form action="../lib/saveDiscuss.php" method="post" id="discuss">
 				  <?php if(isset($_SESSION["user"])){?>
 				  <textarea name="content" style="" id="discuss_content"></textarea><br />
 				  <span id="msg_content" class="message"></span>
@@ -41,7 +41,7 @@
 			  </div>
 			  <div style="width:600px;margin:0 auto;">
 			  <?php
-			    include 'db.php';
+			    include '../lib/db.php';
 				$sql = "SELECT * FROM sgfw_discuss ORDER BY create_time DESC;";
 				$result = mysql_query($sql,$conn);
 				while($item = @mysql_fetch_array($result)){
@@ -60,7 +60,7 @@
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<?php include 'src/footer.php'?>
+	<?php include '../src/footer.php'?>
   </body>
 </html>
 <script>
