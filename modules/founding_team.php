@@ -10,10 +10,10 @@
 	  .project_item hr {color:#FFFFFF;height:1px;display:none;}
 	  .item:hover {color:#FF9900;}
 	</style>
-	<script src="account.js" type="text/javascript"></script>
+	<script src="../src/js/account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
-    <?php include 'src/header.php'?>
+    <?php include '../src/header.php'?>
 	<div>
 	  <div class="main_index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;min-height:628px;">
 	    <!--<div>
@@ -120,6 +120,6 @@
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<?php include 'src/footer.php'?>
+	<?php include '../src/footer.php'?>
   </body>
 </html>

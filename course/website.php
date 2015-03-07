@@ -6,10 +6,10 @@
 	  a {color:#FFFFFF;text-decoration:none;}
 	  .main_index a {color:#000000;font-weight:bold;}
 	</style>
-	<script src="account.js" type="text/javascript"></script>
+	<script src="../src/js/account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
-    <?php include 'src/header.php'?>
+    <?php include '../src/header.php'?>
 	<div>
 	  <div class="main_index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;">
 	    <!--<div>
@@ -20,13 +20,13 @@
 		  </a>
 		</div>-->
 	    <div style="width:192px;float:left;">
-		  <?php include 'src/project_index.php'?>
+		  <?php include '../src/project_index.php'?>
 		</div>
 		<div class="content" style="width:760px;float:left;">
 			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:28px 10px;min-height:200px;line-height:28px;">
 			  <div>
 			    <div style="float:left;height:120px;overflow:hidden;">
-				  <img src="image/html.jpg" style="width:200px;"/>
+				  <img src="../src/images/html.jpg" style="width:200px;"/>
 				</div>
 				<div style="float:left;padding:0px 20px;line-height:22px;font-size:12px;">
 				  <div><span style="color:#999999;margin:0 10px 0 0;">课程时长</span><span>共6周，6周后进行DEMO</span></div>
@@ -36,7 +36,7 @@
 				  <div><span style="color:#999999;margin:0 10px 0 0;">建议</span><span>有兴趣的同学均可，利用课下时间和同学一起完成</span></div>
 				</div>
 				  <?php 
-					include 'db.php';
+					include '../lib/db.php';
 					
 					$username = isset($_SESSION["user"])?$_SESSION["user"]:"";
 					if(!empty($username)){
@@ -102,6 +102,6 @@
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
-	<?php include 'src/footer.php'?>
+	<?php include '../src/footer.php'?>
   </body>
 </html>
