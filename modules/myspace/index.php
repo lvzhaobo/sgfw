@@ -60,6 +60,7 @@
 		</div>
 		</div>
 		<div class="content" style="width:800px;float:left;margin:0 0 40px 200px;min-height:320px;">
+		<div>
 		  <?php
 			include '../../lib/db.php';
 			$data = array();
@@ -157,6 +158,22 @@
 			  <input type="file" name="file" style="width:148px;float:left;" />
 			  <button type="submit">确定</button>
 			</form>
+		  </div>
+		  </div>
+		  <div style="clear:float;clear:both;"></div>
+		  <div style="height:400px;border-top:2px solid #CCCCCC;font-size:22px;text-align:center;padding:20px 10px;">
+		    <div style="width:132px;height:60px;margin:10px;border:1px solid #0099FF;float:left;padding:20px;">
+			  <span>①注册账号，完善信息</span>
+			</div>
+			<div style="width:132px;height:60px;margin:10px;border:1px solid #0099FF;float:left;padding:20px;">
+			  <span>②创建/加入团队</span>
+			</div>
+			<div style="width:132px;height:60px;margin:10px;border:1px solid #0099FF;float:left;padding:20px;">
+			  <span>③选择课程，加入QQ群</span>
+			</div>
+			<div style="width:132px;height:60px;margin:10px;border:1px solid #0099FF;float:left;padding:20px;">
+			  <span>④开始第一周任务</span>
+			</div>
 		  </div>
 		  </div>
 		
