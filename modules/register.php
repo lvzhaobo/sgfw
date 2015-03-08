@@ -17,7 +17,7 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include '../src/header.php'?>
 	<?php include '../src/notice.php'?>
-	<div class="main index" style="padding-top:60px;width:960px;height:390px;margin:0 auto;font-size:14px;">
+	<div class="main index" style="padding-top:60px;width:960px;height:100%;margin:0 auto;font-size:14px;">
 	  <div style="margin:0px 0 0 0;">
 	    <div style="float:left;width:400px;margin:60px 0 0 0;">
 		  <img src="../src/images/dream.jpg" style="width:400px;">

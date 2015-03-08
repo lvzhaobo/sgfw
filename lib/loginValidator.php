@@ -27,6 +27,6 @@ window.location.href="../modules/myspace/index.php";
 <?php }
 else{
 ?>
-window.location.href="../modules/login.php";
+window.location.href="../modules/login.php?info=1";
 <?php }?>
 </script>

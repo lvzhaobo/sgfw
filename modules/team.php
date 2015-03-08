@@ -4,7 +4,7 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;font-size:13px;color:#000000;margin:5px 0;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .project_item {width:300px;height:148px;margin:0px 5px 0px 0px;float:left;padding:5px;border:2px solid #FFFFFF;color:#333333;background-color:#F3F3F3;}
+	  .project_item {width:300px;height:148px;margin:0px 5px 0px 0px;float:left;padding:5px;border:1px solid #FFFFFF;color:#333333;background-color:#F3F3F3;}
 	  .project_item_title {margin:20px 0 0 0px;font-size:16px;font-weight:bold;color:#FF6600;line-height:28px;}
 	  .project_item hr {height:1px;display:none;}
 	  .label_part {padding:1px 2px;margin:0 2px;line-height:26px;border:1px solid #0099FF;border-radius:0.5em;}
@@ -87,8 +87,8 @@
 				while($item = mysql_fetch_array($result)){
 				//foreach($data as $item){
 			  ?>
-			  <a href="">
-			    <div class="project_item" onmouseover="this.style.border='2px solid #FF9900';" onmouseout="this.style.border='2px solid #FFFFFF';">
+			  
+			    <div class="project_item" onmouseover="this.style.border='1px solid #FF9900';" onmouseout="this.style.border='1px solid #FFFFFF';">
 			      <div style="width:100%;">
 				    <div style="width:100px;max-height:100px;float:left;overflow:hidden;">
 					  <?php $img = "bg".($item["id"]%7).".jpg";
@@ -97,31 +97,32 @@
 						if(isset($item["img"]) && !empty($item["img"]))
 							$img = $item["img"];
 					  ?>
-				      <img src="<?php echo $img;?>" style="width:80px;height:80px;border-radius:3em;"/>
+				      <img src="<?php echo "../src/images/dream.jpg";?>" style="width:80px;height:80px;border-radius:3em;"/>
 				    </div>
 				    <div style="max-width:200px;float:left;margin:0px 0;">
 				      <!--<span class="project_item_title" style=""><?php echo base64_decode($item["name"])?></span><hr />-->
 				      <div style="margin:0 0 0 10px;">
 					    <span style="font-weight:bold;"><?php echo base64_decode($item["name"])?></span><br />
 						
-				        <span title="喜欢：8" style="margin-left:10px;font-size:20px;color:#FF9900;">0</span>
+				        <!--<span title="喜欢：8" style="margin-left:10px;font-size:20px;color:#FF9900;">0</span>
 						<span>赞</span><br />
 						<span style="font-size:12px;"><span class="label_part">标签1</span>
-						<span class="label_part">标签2</span><br />
-						
+						<span class="label_part">标签2</span><br />-->
+						<br />
+						<span>成员：<?php echo $item["member"]?></span>
 				      </div>
 				    </div>
 				  </div>
 			      <div style="clear:float;clear:both;"></div>
 				  <div style="margin:10px 0 0 0;color:#333333;font-weight:normal;">
 				  <div style="margin:0 0 5px 0;">
-				    <span>成员：<?php echo $item["member"]?></span>
+				    <!--<span>成员：<?php echo $item["member"]?></span>-->
 				  </div>
-				  <span><?php echo $item["slogan"]?></span>
+				  <span><?php $str = $item["slogan"];echo empty($str)?"<span style='color:#CCCCCC;'>没有团队简介哦</span>":$str;?></span>
 				  </div>
 				  <p></p>
 			    </div>
-			  </a>
+			  
 			  <?php }?>
 			  <div style="clear:float;clear:both;"></div>
 			  <div style="margin:20px 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">

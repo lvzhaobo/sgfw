@@ -8,6 +8,7 @@
 	  .project_item {width:206px;min-height:148px;margin:10px 0 0px 10px;float:left;color:#333333;padding:10px;border:2px solid #FFFFFF;border:1px solid #F3F3F3;border-radius:0.5em;background-color:#F3F3F3;}
 	  .project_item_title {margin:20px 0 0 20px;font-size:16px;font-weight:bold;}
 	  .project_item hr {color:#FFFFFF;height:1px;display:none;}
+	  .project_item:hover {border:1px solid #0099FF;}
 	  .item:hover {color:#FF9900;}
 	</style>
 	<script src="../src/js/account.js" type="text/javascript"></script>
@@ -34,9 +35,14 @@
 		    <span style="margin:0 0 0 20px;">创始团队成员</span>
 		  </div>
 		  </a>
-		  <a href="about.php#reasons">
+		  <a href="">
 		  <div class="item" style="width:100%;height:40px;">
-		    <span style="margin:0 0 0 20px;">为什么这样做？</span>
+		    <span style="margin:0 0 0 20px;">帮助</span>
+		  </div>
+		  </a>
+		  <a href="">
+		  <div class="item" style="width:100%;height:40px;">
+		    <span style="margin:0 0 0 20px;">常见问题</span>
 		  </div>
 		  </a>
 		  <!--<a href="about.php#join_us">
@@ -47,9 +53,7 @@
 		</div>
 		<div class="content" style="width:760px;float:left;maring:0 0 20px 0;">
 			<div name="team_core_member" id="team_core_member" style="margin:10px 10px;min-height:200px;line-height:22px;">
-				  <div style="float:left;color:#0099FF;font-size:16px;font-weight:bold;margin:20px 0;">
-				  <span>团队核心成员</span>
-				  </div>
+				  <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:18px;line-height:32px;color:#333333;width:100%;height:32px;background-color:#F5F5F5;border-left:2px solid #00A2C9;">创始团队成员</div>
 			<div style="clear:float;clear:both;"></div>
 			<div style="color:#000000;">
 			  <div class="project_item">

@@ -15,14 +15,7 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include '../src/header.php'?>
 	<div>
-	  <div class="main_index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;">
-	    <!--<div>
-		  <a href="register.php">
-		    <div style="margin:0 0 0 0;width:100%;height:40px;background-color:#0099FF;font-size:28px;font-weight:bold;text-align:center;padding:5px;margin:0 0 10px 0;">
-			  点击这里，进行注册
-		    </div>
-		  </a>
-		</div>-->
+	  <div class="main_index" style="padding-top:60px;width:960px;height:100%;margin:0 auto;font-size:14px;">
 	    <div style="width:192px;float:left;font-size:16px;margin:28px 0 0 0;">
 		  <a href="about.php">
 		  <div class="item" style="width:100%;height:40px;color:#FF9900;">
@@ -34,9 +27,14 @@
 		    <span style="margin:0 0 0 20px;">创始团队成员</span>
 		  </div>
 		  </a>
-		  <a href="about.php#reasons">
+		  <a href="">
 		  <div class="item" style="width:100%;height:40px;">
-		    <span style="margin:0 0 0 20px;">为什么这样做？</span>
+		    <span style="margin:0 0 0 20px;">帮助</span>
+		  </div>
+		  </a>
+		  <a href="">
+		  <div class="item" style="width:100%;height:40px;">
+		    <span style="margin:0 0 0 20px;">常见问题</span>
 		  </div>
 		  </a>
 		  <!--<a href="about.php#join_us">
@@ -47,10 +45,8 @@
 		</div>
 		<div class="content" style="width:760px;float:left;">
 			<div style="margin:10px 10px;min-height:200px;">
-			  <div class="index_feature_intro_title">
 				  <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:18px;line-height:32px;color:#333333;width:100%;height:32px;background-color:#F5F5F5;border-left:2px solid #00A2C9;">关于我们</div>
-				  <div style="clear:float;clear:both;"></div>
-				  <ul style="line-height:28px;margin-left:-20px;">
+				  <ul style="line-height:32px;margin-left:-20px;">
 				    <li>我们团队位于上海张江，团队核心成员由一群勇于创新的80后大学生组成，我们致力于以全新的学习方式来影响甚至改变大学教育。</li>
 				    <li>立足于新的方式来影响大学教育，贴切的揭示当前学生学习方式的弊端，从积极改变自我的一部分学生开始逐步形成良好的学习方式，营造与时俱进的大学创新氛围。</li>
 					<li>我们在学习大学计算机课程时，常常因枯燥的理论知识烦恼，也因难于坚持完成一个网站而懊恼。现在我们毕业了，我们组织在校学生以小组的形式来共同完成一个项目。我们为有梦想的同学提供一个实现梦想的平台，我们提供技术指导、提供资源，帮你组织团队、推广产品，让更多的人认识到你和你的产品。</li>
@@ -59,7 +55,7 @@
 我们，只是在你不知道如何实现这个想法时提供一点建议，只是在你为复杂的技术难题困扰时提供一点解决办法，只是在你为期末考试、为找工作发愁时提供一点思路。
 要知道Facebook也是从大学中写出来的，Linux出自于大三的作业，我们不一定要跟他们一样，但为了自己的梦想、兴趣，恳请各位为自己努力。</li>
 				  </ul>
-			  </div>
+				  <div style="clear:float;clear:both;"></div>
 			</div>
 		  </div>
 		</div>
