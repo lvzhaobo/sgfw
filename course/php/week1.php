@@ -44,8 +44,8 @@
 			任务要求
 			</div>
 			<div style="">
-			  <img src="../../images/php-1.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
-			  <img src="../../images/php-2.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
+			  <img src="../../src/images/php-1.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
+			  <img src="../../src/images/php-2.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
 			  <ul style="">
 				<li>创建项目，例如myProject。</li>
 				<li>学习使用PHP的echo、数字运算、字符串拼接知识点，并嵌入HTML代码</li>

@@ -13,7 +13,7 @@
 	  .intro_content {color:#999999;}
 	  .current {color:#FF9900;}
 	</style>
-	<script src="account.js" type="text/javascript"></script>
+	<script src="../../src/js/account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;font-size:14px;">
 	<div style="border-bottom:2px solid #FFFFFF;padding:0 0 10px 0;">
@@ -63,15 +63,15 @@
 			//$uri = preg_replace("/\/sgfw\//","",$uri);
 			//$uri = trim($uri,"\/");
 		  ?>
-		  <div onclick='top.location="<?php echo "http://".$host.$uri."/myCourse.php?course=php"."&process=week1"?>"'>
+		  <div onclick='top.location="<?php echo "http://".$host.$uri."/modules/myspace/myCourse.php?course=php"."&process=week1"?>"'>
 		    <div class="intro_title<?php echo (!preg_match("/week1/",$_SERVER["REQUEST_URI"]) && !empty($_GET["process"]))?"":" current"?>">
-		      第一周：环境准备、运行PHP程序
+		      第一周：环境准备、运行JSP程序
 		    </div>
 		  </div>
 		  <div class="intro_content">
-		    建立项目，安装XAMPP工具，PHP和HTML结合、交互，PHP计算器。
+		    建立项目，安装XAMPP工具，JSP和HTML结合、交互，JSP计算器。
 		  </div>
-		  <div onclick='top.location="<?php echo "http://".$host.$uri."/myCourse.php?course=php"."&process=week2"?>"'>
+		  <div onclick='top.location1="<?php echo "http://".$host.$uri."/modules/myspace/myCourse.php?course=php"."&process=week2"?>"'>
 		    <div class="intro_title<?php echo preg_match("/week2/",$_SERVER["REQUEST_URI"])?" current":""?>">
 		      第二周：论坛架构设计，初步编写网站界面。
 		    </div>

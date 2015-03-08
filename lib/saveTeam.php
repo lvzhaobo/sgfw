@@ -62,10 +62,10 @@
 ?>
 <script>
 <?php if(empty($info)){?>
-window.location.href="mySpace.php";
+window.location.href="../modules/myspace/index.php";
 <?php }
 else{
 ?>
-window.location.href="createTeam.php?info="+"<?php echo $info;?>";
+window.location.href="../modules/createTeam.php?info="+"<?php echo $info;?>";
 <?php }?>
 </script>

@@ -32,7 +32,6 @@
 			    include '../lib/db.php';
 				$data = array();
 				$result = mysql_query("select * from sgfw_college");
-				var_dump(mysql_error());
 				while($college = mysql_fetch_array($result)){
 			  ?>
 			  <div class="college_item" style=""><!-- onmouseover="this.style.backgroundColor='#FF0099';" onmouseout="this.style.backgroundColor='#00A7FF';">-->

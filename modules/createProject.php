@@ -8,10 +8,10 @@
 	  textarea {height:100px;width:280px;}
 	  th {text-align:right;}
 	</style>
-	<script src="account.js" type="text/javascript"></script>
+	<script src="../src/js/account.js" type="text/javascript"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
-    <?php include 'src/header.php'?>
+    <?php include '../src/header.php'?>
 	<div>
 	  <div class="main index" style="padding-top:60px;width:960px;margin:0 auto;font-size:14px;">
 	    <div style="width:192px;float:left;position:fixed;">
@@ -39,7 +39,7 @@
 		<div class="content" style="width:760px;float:left;margin:0 0 0 200px;min-height:320px;">
 		  <fieldset>
 		  <legend>创建项目</legend>
-		  <form action="saveProject.php" method="post">
+		  <form action="../lib/saveProject.php" method="post">
 		    <table>
 			  <tr>
 			    <th width="100">项目名称：</th>
