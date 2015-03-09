@@ -1,4 +1,5 @@
-﻿<html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
   <head>
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
     <style type="text/css">
@@ -15,7 +16,7 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include '../src/header.php'?>
 	<?php include '../src/notice.php'?>
-	<div class="main index" style="padding-top:60px;width:960px;height:100%;margin:0 auto;font-size:14px;">
+	<div class="main index" style="padding-top:60px;width:960px;height:100%;min-height:480px;margin:0 auto;font-size:14px;">
 	  <div style="margin:60px 0 0 0;">
 	    <div style="float:left;width:400px;">
 		  <img src="../src/images/dream.jpg" style="width:400px;">

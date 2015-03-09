@@ -1,4 +1,5 @@
-﻿<html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
   <head>
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
     <style type="text/css">
@@ -16,7 +17,7 @@
     <?php include '../src/header.php'?>
 	<div>
 	  <div class="main_index" style="padding-top:60px;width:960px;height:100%;margin:0 auto;font-size:14px;">
-	    <div style="width:192px;float:left;font-size:16px;margin:28px 0 0 0;">
+	    <div style="width:192px;float:left;font-size:14px;margin:28px 0 0 0;">
 		  <a href="about.php">
 		  <div class="item" style="width:100%;height:40px;color:#FF9900;">
 		    <span style="margin:0 0 0 20px;">关于我们</span>
@@ -27,12 +28,12 @@
 		    <span style="margin:0 0 0 20px;">创始团队成员</span>
 		  </div>
 		  </a>
-		  <a href="">
+		  <a href="#">
 		  <div class="item" style="width:100%;height:40px;">
 		    <span style="margin:0 0 0 20px;">帮助</span>
 		  </div>
 		  </a>
-		  <a href="">
+		  <a href="#">
 		  <div class="item" style="width:100%;height:40px;">
 		    <span style="margin:0 0 0 20px;">常见问题</span>
 		  </div>
