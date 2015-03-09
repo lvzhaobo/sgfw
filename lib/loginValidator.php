@@ -6,7 +6,14 @@
 	//$conn = mysql_connect("127.0.0.1","root");
 	//mysql_select_db("sgfw");
 	$data = $_POST["account"];
+	$username = $data["username"];
+	$password = $data["password"];
+	
 	$info = "";
+	
+	if(!(empty($username) && empty($password))){
+		$info = "请输入用户名和密码";
+	}
 	
 	$sql = "select * from sgfw_user where username='".base64_encode($data["username"])."'";
 	$result = mysql_query($sql,$conn);

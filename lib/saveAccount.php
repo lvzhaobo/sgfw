@@ -57,8 +57,8 @@
 				$header .= "Content-type: text/html; charset=utf-8\n";    //邮件内容为utf-8编码
 				$header .= "Content-Transfer-Encoding: 8bit\r\n";    //注意header的结尾，只有这个后面有\r
 				ini_set('sendmail_from', 'root@mail.dreamcollege.cn');     //解决mail的一个bug
-				$send = mail($data["email"], $data["username"]."，您已成功注册梦想学院账号，欢迎使用", html_entity_decode("<div style='width:200px;height:80px;border:2px solid #FF9900;'><a href='http://my.dreamcollege.cn'>DreamCollege</a></div>"),$header);
-
+				$send = mail($data["email"], $data["username"]."，您已成功注册梦想学院账号，欢迎使用", html_entity_decode("<div style='width:200px;height:80px;border:2px solid #FF9900;'>恭喜，您已成功注册梦想学院账号。<a href='http://my.dreamcollege.cn'>梦想学院主页</a><br />梦想团队</div>"),$header);
+				
 				$info = "注册成功";
 				$_SESSION["user"] = $data["username"];
 				$_SESSION["code"] = md5($data["password"]);

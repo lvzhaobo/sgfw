@@ -142,7 +142,8 @@
 			  ?>
 			  <div style="width:200px;height:140px;text-align:center;border:0px solid #0099FF;padding:10px;margin:10px;font-size:14px;line-height:22px;float:left;">
 			    <div style="">
-				  <img src="<?php echo empty($item["img"])?"image/dream.jpg":$item["img"]?>" style="width:80px;height:80px;border-radius:5em;border:2px solid #CCCCCC;" />
+				  <?php $img_path = $workspace."data/upload/".str_replace("upload","",$item["img"]);?>
+				  <img src="<?php echo empty($item["img"])?"../src/images/dream.jpg":($img_path)?>" style="width:80px;height:80px;border-radius:5em;border:2px solid #CCCCCC;" />
 				</div>
 			    <div class="team_item_title" style="font-weight:bold;color:#FF9900;font-size:18px;line-height:40px;">
 				  <?php echo base64_decode($item["username"])?>
