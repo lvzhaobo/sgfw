@@ -29,7 +29,8 @@
 			  <div style="clear:float;clear:both;"></div>
 			  <div style="margin:20px;text-align:center;">
 			    <form action="../lib/saveDiscuss.php" method="post" id="discuss">
-				  <?php if(isset($_SESSION["user"])){?>
+				  <?php 
+				  if(array_key_exists("user",$_SESSION) && isset($_SESSION["user"]) && $_SESSION["user"]!=""){?>
 				  <textarea name="content" style="" id="discuss_content"></textarea><br />
 				  <span id="msg_content" class="message"></span>
 				  <?php }

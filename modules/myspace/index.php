@@ -88,6 +88,7 @@
 			?>
 			  <div class="btn" style="float:left;"><a href="index.php?edit=true">编辑</a></div>
 			<?php }?>
+			<span style="float:right;font-weight:bold;font-size:16px;color:#00AAFF;">QQ群：363368994</span>
 		  </div>
 		  <div id="basic_info" style="width:400px;float:left;">
 		  <form action="../../lib/saveAccount.php?edit=true" method="post">

@@ -78,7 +78,7 @@
 			<a href="myCourse.php?course=website">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
-			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="border:2px solid #CCCCCC;font-size:20px;font-weight:bold;color:#00AAFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
 			<div style="clear:float;clear:both;"></div>
 			  <table style="font-size:14px;line-height:22px;">
 			    <tr>
@@ -104,7 +104,7 @@
 			  <a href="myCourse.php?course=php">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
-			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="border:2px solid #CCCCCC;font-size:20px;font-weight:bold;color:#00AAFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
 			<div style="clear:float;clear:both;"></div>
 			  <table style="font-size:14px;line-height:22px;">
 			    <tr>
@@ -130,9 +130,9 @@
 			  <a href="myCourse.php?course=jsp">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
-			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="border:2px solid #CCCCCC;font-size:20px;font-weight:bold;color:#00AAFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
 			<div style="clear:float;clear:both;"></div>
-			  <table style="font-size:14px;line-height:22px;">
+			  <table style="font-size:14px;line-height:28px;">
 			    <tr>
 				  <th style="width:80px;">学习目标：</th>
 				  <td>完成论坛/团购网开发，在第八周进行DEMO。</td>
@@ -155,7 +155,7 @@
 			  <a href="myCourse.php?course=database">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
-			<div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="border:2px solid #CCCCCC;font-size:20px;font-weight:bold;color:#00AAFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
 			<div style="clear:float;clear:both;"></div>
 			    <table style="font-size:14px;line-height:22px;">
 			    <tr>
@@ -190,7 +190,7 @@
 			    <?php if(empty($data["project"])){?>
 			    <div>还没有课程，去选择课程......</div>
 			    <div class="btn" style="margin:10px;">
-				  <a href="study.php">
+				  <a href="../study.php">
 				  GO
 				  </a>
 				</div>

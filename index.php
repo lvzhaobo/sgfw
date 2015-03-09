@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
-    <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
+    <title>梦想学院·推动高等教育变革</title>
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;font-size:14px;color:#000000;}
 	  a {color:#FFFFFF;text-decoration:none;}

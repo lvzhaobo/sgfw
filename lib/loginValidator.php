@@ -11,20 +11,26 @@
 	
 	$info = "";
 	
-	if(!(empty($username) && empty($password))){
+	if(!(!empty($username) && !empty($password))){
 		$info = "请输入用户名和密码";
 	}
-	
-	$sql = "select * from sgfw_user where username='".base64_encode($data["username"])."'";
-	$result = mysql_query($sql,$conn);
-	@$row = mysql_fetch_array($result);
-	
-	if($row["password"]==$data["password"]){
-		$_SESSION["user"] = $data["username"];
-		$_SESSION["code"] = md5($data["password"]);
-	}
 	else{
-		$info = "登录失败";
+		$sql = "select * from sgfw_user where username='".base64_encode($data["username"])."'";
+		$result = mysql_query($sql,$conn);
+		@$row = mysql_fetch_array($result);
+		
+		$_SESSION["user"] = "";
+		$_SESSION["code"] = "";
+		
+		if($row["password"]==$data["password"]){
+			$_SESSION["user"] = $data["username"];
+			$_SESSION["code"] = md5($data["password"]);
+		}
+		else{
+			$_SESSION["user"] = "";
+			$_SESSION["code"] = "";
+			$info = "登录失败";
+		}
 	}
 	noticeObject::setNotice($info);
 ?>

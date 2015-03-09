@@ -5,7 +5,7 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;font-size:13px;color:#000000;margin:5px 0;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .project_item {width:300px;height:148px;margin:0px 5px 0px 0px;float:left;padding:5px;border:1px solid #FFFFFF;color:#333333;background-color:#F3F3F3;}
+	  .project_item {width:280px;height:148px;margin:10px 10px 0px 0px;float:left;padding:5px;border:1px solid #FFFFFF;border-radius:0.5em;color:#333333;background-color:#F3F3F3;}
 	  .project_item_title {margin:20px 0 0 0px;font-size:16px;font-weight:bold;color:#FF6600;line-height:28px;}
 	  .project_item hr {height:1px;display:none;}
 	  .label_part {padding:1px 2px;margin:0 2px;line-height:26px;border:1px solid #0099FF;border-radius:0.5em;}
@@ -24,7 +24,7 @@
 			  <div style="margin:0 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
 			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
 			      <span style="font-size:20px;font-weight:bold;margin:0 5px;">参与学校</span>
-				  <span>已经参与的学校/校区，如果没找到你的学校，请第一个注册并让你的学校/校区显示在这里吧。</span>
+				  <!--<span>已经参与的学校/校区，如果没找到你的学校，请第一个注册并让你的学校/校区显示在这里吧。</span>-->
 				</div>
 			  </div>
 			  <div>
@@ -55,7 +55,7 @@
 						$data = json_decode($data,true);
 						if(!in_array($sign,$data)){
 					?>
-					<span style="color:#999999;"><a href="request.php?action=zan&college=<?php echo $college["id"]?>" style="text-decoration:underline;">点赞</a></span>&nbsp;
+					<span style="color:#999999;"><a href="../lib/request.php?action=zan&college=<?php echo $college["id"]?>" style="text-decoration:underline;">点赞</a></span>&nbsp;
 					<?php }
 					else{?>
 					<span style="color:#999999;">已赞</span>&nbsp;
@@ -78,7 +78,7 @@
 			  <div style="margin:0 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
 			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
 			      <span style="font-size:20px;font-weight:bold;margin:0 5px;">梦想团队</span>
-				  <span>想显示在此处？先注册页面，尽可能好的完成课程学习、项目开发，让更多的人认识你。</span>
+				  <span>查找自己的小伙伴？我们是最佳合伙人。加入团队，一起学习。</span>
 				</div>
 			  </div>
 			  <?php
@@ -140,7 +140,7 @@
 					if(++$i>12)
 						break;
 			  ?>
-			  <div style="width:200px;height:140px;text-align:center;border:0px solid #0099FF;padding:10px;margin:10px;font-size:14px;line-height:22px;float:left;">
+			  <div style="width:200px;height:140px;text-align:center;border:0px solid #0099FF;padding:10px;margin:10px;font-size:14px;line-height:22px;border-radius:0.5em;float:left;">
 			    <div style="">
 				  <?php $img_path = $workspace."data/upload/".str_replace("upload","",$item["img"]);?>
 				  <img src="<?php echo empty($item["img"])?"../src/images/dream.jpg":($img_path)?>" style="width:80px;height:80px;border-radius:5em;border:2px solid #CCCCCC;" />
@@ -159,7 +159,6 @@
 				</div>-->
 			  </div>
 			  <?php }?>
-			  <div style="clear:float;clear:both;"></div>
 			  <div style="clear:float;clear:both;"></div>
 			</div>
 		  </div>

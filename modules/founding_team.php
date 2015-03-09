@@ -60,15 +60,15 @@
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Xuelj</span><hr />
-				<p>在大学中连年获得学校奖学金，现任上海某知名安全公司测试主管。</p>
+				<p>在大学中连年获得学校奖学金，现任上海某网络安全公司测试主管。</p>
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Zhaoqy</span><hr />
-				<p>现于上海某著名公司任财务工作。</p>
+				<p>大学时学习会计专业，在上海某公司任多年财务工作。</p>
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Shenxy</span><hr />
-				<p>近五年的PHP+JS开发经验，现任上海某知名网络安全公司产品负责人。</p>
+				<p>近五年的PHP+JS开发经验，现任上海某网络安全公司产品负责人。</p>
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Blanc</span><hr />
@@ -76,11 +76,11 @@
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Chenn</span><hr />
-				<p>在大学多次获得校级奖学金。</p>
+				<p>在大学多次获得校级奖学金，参加多次ACM竞赛。</p>
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">Dingxl</span><hr />
-				<p>在大学多次获得校级奖学金。</p>
+				<p>在大学多次获得校级奖学金，参加多次ACM竞赛。</p>
 			  </div>
 			</div>
 			</div>

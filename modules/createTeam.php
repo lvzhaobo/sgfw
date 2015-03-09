@@ -38,12 +38,12 @@
 		  <div style="color:#999999;font-size:13px;"><?php $time = $data["create_time"];$date = $time==0?"2014-10-24":date("Y-m-d H:i:s");echo "注册时间：".$date?></div>
 		</div>
 		<div style="text-align:center;">
-		  <a href="index.php">
+		  <a href="myspace/index.php">
 		  <div style="color:#FF9900;">
 		    <span>基本信息</span>
 		  </div>
 		  </a>
-		  <a href="myStudy.php">
+		  <a href="myspace/myStudy.php">
 		  <div style="color:#000000;">
 		    <span>我的课程</span>
 		  </div>
@@ -53,7 +53,7 @@
 		    <span>我的作业</span>
 		  </div>
 		  </a>
-		  <a href="myResource.php">
+		  <a href="myspace/myResource.php">
 		  <div style="color:#000000;">
 		    <span>学习资源</span>
 		  </div>

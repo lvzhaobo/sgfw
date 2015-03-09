@@ -7,7 +7,7 @@
 	if($action=="zan"){
 		if(!isset($_SESSION["user"]) || empty($_SESSION["user"])){
 			echo '<script>
-window.location.href="login.php";
+window.location.href="../modules/login.php";
 </script>';
 			return ;
 		}
@@ -16,18 +16,18 @@ window.location.href="login.php";
 			return ;
 		
 		$sign = $_SERVER["REMOTE_ADDR"]."-".$_GET["college"];
-		$data = file_get_contents("data/request_ip.json");
+		$data = file_get_contents("../data/request_ip.json");
 		$data = empty($data) ? array() : $data;
 		$data = json_decode($data,true);
 		if(in_array($sign,$data)){
 			echo '<script>
 			alert("每个IP地址只能赞一次");
-window.location.href="team.php";
+window.location.href="../modules/team.php";
 </script>';
 			return ;
 		}
 		$data[] = $sign;
-		file_put_contents("data/request_ip.json",json_encode($data));
+		file_put_contents("../data/request_ip.json",json_encode($data));
 		$sql = "SELECT * FROM sgfw_college WHERE id='".$_GET["college"]."'";
 		$result = mysql_query($sql,$conn);
 		$college = mysql_fetch_array($result);
@@ -64,5 +64,5 @@ window.location.href="team.php";
 	file_put_contents(md5($_SESSION["user"]).".txt",$info);
 ?>
 <script>
-window.location.href="team.php";
+window.location.href="../modules/team.php";
 </script>

@@ -2,7 +2,7 @@
 session_start();
 //var_dump($_SESSION);
 $workspace = "http://".$_SERVER["HTTP_HOST"]."/sgfw/";
-if(isset($_SESSION["user"])){
+if(isset($_SESSION["user"]) && $_SESSION["user"]!=""){
 	$str = "<a href='".$workspace."modules/myspace/index.php'><span style='color:#0099FF;font-weight:bold;font-size:14px;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='".$workspace."modules/logout.php' style='color:#999999;font-size:14px;'>退出</a>";
 }
 else{
@@ -10,12 +10,12 @@ else{
 }
 $nav = array(
 			array('href'=>$workspace.'index.php','label'=>'首页','links'=>array('index.php')),
-			array('href'=>$workspace.'modules/study.php','label'=>'种子课程','links'=>array('study.php','website.php','database.php','php.php','c.php','jsp.php')),
+			array('href'=>$workspace.'modules/study.php','label'=>'种子课程','links'=>array('modules/study.php','course/website.php','course/database.php','course/php.php','course/c.php','course/jsp.php')),
 			//array('href'=>'project.php','label'=>'萌芽项目','links'=>array('project.php')),
-			array('href'=>$workspace.'modules/team.php','label'=>'梦想团队','links'=>array('team.php')),
-			array('href'=>$workspace.'modules/myspace/index.php','label'=>'我的空间','links'=>array('mypace/index.php','myStudy.php','myCourse.php','createTeam.php','createProject.php')),
-			array('href'=>$workspace.'modules/discuss.php','label'=>'讨论','links'=>array('discuss.php')),
-			array('href'=>$workspace.'modules/about.php','label'=>'关于','links'=>array('about.php'))
+			array('href'=>$workspace.'modules/team.php','label'=>'梦想团队','links'=>array('modules/team.php')),
+			array('href'=>$workspace.'modules/myspace/index.php','label'=>'我的空间','links'=>array('modules/myspace/index.php','modules/myspace/myStudy.php','modules/myspace/myCourse.php','modules/createTeam.php','modules/createProject.php')),
+			array('href'=>$workspace.'modules/discuss.php','label'=>'讨论','links'=>array('modules/discuss.php')),
+			array('href'=>$workspace.'modules/about.php','label'=>'关于','links'=>array('modules/about.php'))
 		);
 $current_page = $_SERVER["REQUEST_URI"];
 $current_page = preg_replace("/\?.*/","",$current_page);
@@ -38,17 +38,17 @@ $header = <<<EOF
 	  .nav_item {padding:0 16px;}
 	  .selected,.nav_item:hover{height:28px;color:#FF9900;#border-bottom:2px solid #FF9900;}
 	</style>
-	<div id="logo" style="height:64px;margin-top:-30px;overflow:hidden;background-color:#FEFEFE;width:100%;position:fixed;z-index:9999;box-shadow:0 1px 5px #999999;">
+	<div id="logo" style="height:64px;margin-top:-30px;background-color:#FEFEFE;width:100%;position:fixed;z-index:9999;box-shadow:0 1px 5px #999999;">
 	  <div style="margin:0px 0px 0 0;float:right;font-weight:bold;position:fixed;right:238px;top:4px;">
 	    $str
 	  </div>
 	  <div style="height:60px;">
-	  <div style="margin:8px 0 8px 200px;float:left;width:238px;">
+	  <div style="margin:14px 0 14px 200px;float:left;width:238px;">
 	    <span style="font-size:26px;font-weight:bold;color:#FF9900;">梦&nbsp;想&nbsp;学&nbsp;院</span><br />
 		<!--<span style="color:#FF9900;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
 		<span style="color:#0099FF;font-size:11px;">I Dream, I Do, I Succeed!</span>
 	  </div>
-	  <div id="intro" name="intro" style="width:680px;font-size:16px;float:left;margin:32px 0 0 40px;">
+	  <div id="intro" name="intro" style="width:680px;font-size:16px;margin:32px 0 0 480px;position:fixed;">
 	    $nav_str
 	  </div>
 	  </div>

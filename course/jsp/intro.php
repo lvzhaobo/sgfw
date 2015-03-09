@@ -63,7 +63,7 @@
 			//$uri = preg_replace("/\/sgfw\//","",$uri);
 			//$uri = trim($uri,"\/");
 		  ?>
-		  <div onclick='top.location="<?php echo "http://".$host.$uri."/modules/myspace/myCourse.php?course=php"."&process=week1"?>"'>
+		  <div onclick='top.location="<?php echo "http://".$host.$uri."/modules/myspace/myCourse.php?course=jsp"."&process=week1"?>"'>
 		    <div class="intro_title<?php echo (!preg_match("/week1/",$_SERVER["REQUEST_URI"]) && !empty($_GET["process"]))?"":" current"?>">
 		      第一周：环境准备、运行JSP程序
 		    </div>
@@ -71,7 +71,39 @@
 		  <div class="intro_content">
 		    建立项目，安装XAMPP工具，JSP和HTML结合、交互，JSP计算器。
 		  </div>
-		  <div onclick='top.location1="<?php echo "http://".$host.$uri."/modules/myspace/myCourse.php?course=php"."&process=week2"?>"'>
+		  <div onclick='top.location1="<?php echo "http://".$host.$uri."/modules/myspace/myCourse.php?course=jsp"."&process=week2"?>"'>
+		    <div class="intro_title<?php echo preg_match("/week2/",$_SERVER["REQUEST_URI"])?" current":""?>">
+		      第二周：论坛架构设计，初步编写网站界面。
+		    </div>
+		  </div>
+		  <div class="intro_content">
+		    学习文档，分析并设计论坛网站基本结构，编写论坛界面（不要求美观）
+		  </div>
+		  <div onclick='top.location="<?php echo "http://".$host.$uri."/modules/myspace/myCourse.php?course=jsp"."&process=week1"?>"'>
+		    <div class="intro_title<?php echo (!preg_match("/week1/",$_SERVER["REQUEST_URI"]) && !empty($_GET["process"]))?"":" current"?>">
+		      第一周：环境准备、运行JSP程序
+		    </div>
+		  </div>
+		  <div class="intro_content">
+		    建立项目，安装XAMPP工具，JSP和HTML结合、交互，JSP计算器。
+		  </div>
+		  <div onclick='top.location1="<?php echo "http://".$host.$uri."/modules/myspace/myCourse.php?course=jsp"."&process=week2"?>"'>
+		    <div class="intro_title<?php echo preg_match("/week2/",$_SERVER["REQUEST_URI"])?" current":""?>">
+		      第二周：论坛架构设计，初步编写网站界面。
+		    </div>
+		  </div>
+		  <div class="intro_content">
+		    学习文档，分析并设计论坛网站基本结构，编写论坛界面（不要求美观）
+		  </div>
+		  <div onclick='top.location="<?php echo "http://".$host.$uri."/modules/myspace/myCourse.php?course=jsp"."&process=week1"?>"'>
+		    <div class="intro_title<?php echo (!preg_match("/week1/",$_SERVER["REQUEST_URI"]) && !empty($_GET["process"]))?"":" current"?>">
+		      第一周：环境准备、运行JSP程序
+		    </div>
+		  </div>
+		  <div class="intro_content">
+		    建立项目，安装XAMPP工具，JSP和HTML结合、交互，JSP计算器。
+		  </div>
+		  <div onclick='top.location1="<?php echo "http://".$host.$uri."/modules/myspace/myCourse.php?course=jsp"."&process=week2"?>"'>
 		    <div class="intro_title<?php echo preg_match("/week2/",$_SERVER["REQUEST_URI"])?" current":""?>">
 		      第二周：论坛架构设计，初步编写网站界面。
 		    </div>
