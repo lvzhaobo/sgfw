@@ -1,7 +1,7 @@
 ﻿<?php
 session_start();
 //var_dump($_SESSION);
-$workspace = "http://".$_SERVER["HTTP_HOST"]."/sgfw/";
+$workspace = "http://".$_SERVER["HTTP_HOST"]."/";
 if(isset($_SESSION["user"]) && $_SESSION["user"]!=""){
 	$str = "<a href='".$workspace."modules/myspace/index.php'><span style='color:#0099FF;font-weight:bold;font-size:14px;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='".$workspace."modules/logout.php' style='color:#999999;font-size:14px;'>退出</a>";
 }
@@ -43,14 +43,14 @@ $header = <<<EOF
 	    $str
 	  </div>
 	  <div style="height:60px;">
-	  <div style="margin:14px 0 14px 200px;float:left;width:238px;">
-	    <span style="font-size:26px;font-weight:bold;color:#FF9900;">梦&nbsp;想&nbsp;学&nbsp;院</span><br />
-		<!--<span style="color:#FF9900;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
-		<span style="color:#0099FF;font-size:11px;">I Dream, I Do, I Succeed!</span>
-	  </div>
-	  <div id="intro" name="intro" style="width:680px;font-size:16px;margin:32px 0 0 480px;position:fixed;">
-	    $nav_str
-	  </div>
+	    <div style="margin:8px 0 14px 200px;float:left;width:238px;">
+	      <span style="font-size:26px;font-weight:bold;color:#FF9900;">梦&nbsp;想&nbsp;学&nbsp;院</span><br />
+		  <!--<span style="color:#FF9900;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
+		  <span style="color:#0099FF;font-size:11px;">I Dream, I Do, I Succeed!</span>
+	    </div>
+	    <div id="intro" name="intro" style="font-size:16px;right:17%;top:32px;position:fixed;overflow:auto;">
+	      $nav_str
+	    </div>
 	  </div>
 	  <div style="clear:float;clear:both;"></div>
 	</div>
