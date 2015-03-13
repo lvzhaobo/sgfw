@@ -47,7 +47,7 @@
 					}
 				  ?>
 				  <div style="float:right;width:140px;">
-				  <a href="selectCourse.php?course=website">
+				  <a href="../lib/selectCourse.php?course=website">
 				    <div style="margin:5px 0 5px 10px;background-color:#FFFFFF;font-size:20px;font-weight:bold;text-align:center;padding:14px 0;color:#0099FF;border:2px solid #FF9900;">
 				      <span>
 					  <?php if(empty($username) || !isset($row["project"]) || $row["project"]!="website"){?>
