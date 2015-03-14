@@ -34,7 +34,7 @@
 	    
 	    <div style="width:200px;height:100%;z-index:0;float:left;position:fixed;font-weight:bold;font-size:16px;background-color:#F3F3F3;padding:10px 0;line-height:40px;border-right:2px solid #CCCCCC;">
 		<div style="margin:10px 0;text-align:center;border-bottom:2px solid #FFFFFF;">
-		  <div><img src="<?php echo $workspace."/data/upload/".$data["img"]?>" style="width:80px;height:80px;border-radius:3em;" /></div>
+		  <div><img src="<?php echo $workspace."/data/upload/".str_replace("upload","",$data["img"])?>" style="width:80px;height:80px;border-radius:3em;" /></div>
 		  <div style="line-height:28px;color:#666666;margin:5px 0;"><?php echo base64_decode($data["username"]);?></div>
 		  <div style="color:#999999;font-size:13px;"><?php $time = $data["create_time"];$date = $time==0?"2014-10-24":date("Y-m-d H:i:s");echo "注册时间：".$date?></div>
 		</div>
@@ -88,7 +88,7 @@
 			?>
 			  <div class="btn" style="float:left;"><a href="index.php?edit=true">编辑</a></div>
 			<?php }?>
-			<span style="float:right;font-weight:bold;font-size:16px;color:#00AAFF;">QQ群：363368994</span>
+			<span style="float:right;font-weight:bold;font-size:16px;color:#00AAFF;">QQ群：376265741</span>
 		  </div>
 		  <div id="basic_info" style="width:400px;float:left;">
 		  <form action="../../lib/saveAccount.php?edit=true" method="post">
@@ -226,6 +226,10 @@
 <script>
 <?php if(!empty($_GET["info"])){?>
 alert("<?php echo $_GET["info"]?>");
+<?php if($_GET["info"]=="请选择图片"){?>
+window.location.href="index.php";
+<?php }
+else{?>
 window.location.href="../register.php";
-<?php }?>
+<?php }}?>
 </script>

@@ -8,7 +8,11 @@
 		$action = $_GET["action"];
 	
 	if($action=="upload"){
-		//var_dump($_FILES);
+		$file_name = $_FILES["file"]["name"];
+		if(empty($file_name)){
+			echo '<script>window.location.href="../modules/myspace/index.php?info=请选择图片";</script>';
+			return ;
+		}
 		$img = explode(".",$_FILES["file"]["name"]);
 		$file_name = time()."-".base64_encode($img[0]).".".$img[1];
 

@@ -24,7 +24,7 @@
 			$info = "请先登录";
 			noticeObject::setNotice($info);
 			echo '<script>
-window.location.href="login.php";
+window.location.href="../modules/login.php";
 </script>';
 		return ;
 		}
@@ -33,5 +33,5 @@ window.location.href="login.php";
 	noticeObject::setNotice($info);
 ?>
 <script>
-window.location.href="discuss.php";
+window.location.href="../modules/discuss.php";
 </script>
