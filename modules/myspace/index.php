@@ -2,8 +2,7 @@
 <html>
   <head>
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
-	<script src="../../src/js/account.js" type="text/javascript"></script>
-	<script src="../../src/js/jquery.min.js" type="text/javascript"></script>
+	<script src="account.js" type="text/javascript"></script>
 	<style>
 	  #basic_info input {height:32px;border:2px solid #0099FF;font-weight:bold;font-size:14px;background-color:#F2F2F2;padding:4px;margin:2px;}
 	  .team {font-size:13px;}
@@ -17,7 +16,7 @@
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include '../../src/header.php'?>
-	<?php  
+	<?php
 			include '../../lib/db.php';
 			$data = array();
 			if(isset($_SESSION["user"])){
@@ -80,36 +79,6 @@
 			}
 			$edit = isset($_GET["edit"]);
 		  ?>
-		  <script type="text/javascript">
-		  function PreviewImage(){
-		    $("#uploadImage").on("change", function(){
-    // Get a reference to the fileList
-    var files = !!this.files ? this.files : [];
-    // If no files were selected, or no FileReader support, return
-    if (!files.length || !window.FileReader) return;
-  
-    // Only proceed if the selected file is an image
-    if (/^image/.test( files[0].type)){
-  
-        // Create a new instance of the FileReader
-        var reader = new FileReader();
-  
-        // Read the local file as a DataURL
-        reader.readAsDataURL(files[0]);
-  
-        // When loaded, set image data as background of div
-        reader.onloadend = function(){
-   
-       $("#uploadPreview").css("background-image", "url("+this.result+")");
-	   $("#uploadPreview").css("background-repeat", "no-repeat");
-         
-        }
-  
-    }
-  
-});
-}
-		  </script>
 		  <div style="margin:20px 20px;">
 		    <a href="../createTeam.php" class="btn" style="float:left;">创建团队</a>&nbsp;&nbsp;<!--<a href="../createProject.php">创建项目</a>&nbsp;&nbsp;-->
 			<?php if($edit){?>
@@ -189,9 +158,8 @@
 			else{?>
 			<div style="width:100px;height:100px;border:1px solid #CCCCCC;">请上传头像</div>
 			<?php }?>
-			<div style="width:100px;height:100px;float:right;overflow:auto;" id="uploadPreview"></div>
 			<form action="../../lib/saveAccount.php?action=upload" method="post" enctype="multipart/form-data">
-			  <input type="file" name="file" style="width:148px;float:left;" id="uploadImage" onchange="PreviewImage();"/>
+			  <input type="file" name="file" style="width:148px;float:left;" />
 			  <button type="submit">确定</button>
 			</form>
 		  </div>

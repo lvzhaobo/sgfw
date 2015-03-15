@@ -4,7 +4,7 @@
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;}
-	  a {color:#FFFFFF;text-decoration:none;}
+	  a {text-decoration:none;}
 	  .team a {color:#FF9900;text-decoration:none;margin:10px;}
 	  table {font-size:13px;}
 	  ul {margin:0 0 0 -20px;}

@@ -22,7 +22,7 @@
 			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
 			      <span style="font-size:22px;font-weight:bold;margin:0 5px;">学习课程</span>
 				  <span>每个项目都有指导老师按照计划安排学习。所有项目均为公益性质（完全免费）。</span>
-				  <span style="font-weight:bold;font-size:16px;color:#00AAFF;">QQ群：363368994</span>
+				  <span style="font-weight:bold;font-size:16px;color:#00AAFF;">QQ群：376265741</span>
 				</div>
 			  </div>
 			  <div style="clear:float;clear:both;"></div>
