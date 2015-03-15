@@ -3,7 +3,7 @@
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;}
-	  a {color:#FFFFFF;text-decoration:none;}
+	  a {text-decoration:none;}
 	  .team a {color:#FF9900;text-decoration:none;margin:10px;}
 	  table {font-size:13px;}
 	  ul {margin:0 0 0 -20px;}
@@ -30,12 +30,13 @@
 		    <div style="font-size:18px;font-weight:bold;color:#333333;margin:10px 0;">
 			  工具准备
 			</div>
-			<div style="">
+			<div style="font-size:14px;">
 			  <ul>
-				<li>使用Notepad++编写代码，也可以使用文本编辑器或其他的编辑器。Notepad++下载地址：<a href="http://www.baidu.com/s?wd=notepad%2B%2B&rsv_spt=1&issp=1&f=8&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&inputT=2395">NotePad++下载</a>
-				<li>使用火狐（Firefox）浏览器或谷歌（Chrome）浏览器，不要使用IE、360等
-				<li>在桌面或D盘或E盘等任意一个地方建立一个文件，命名为“my.html”（要求后缀名为html，文件名可以为“my”或其他）
-				<li>在火狐/谷歌浏览器中打开my.html可以查看效果，刷新会立即更新代码改动效果。使用Notepad++打开my.html可以编辑代码。
+				<li>使用Notepad++编写代码，也可以使用文本编辑器或其他的编辑器。Notepad++下载地址：<a href="http://www.baidu.com/s?wd=notepad%2B%2B&rsv_spt=1&issp=1&f=8&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&inputT=2395">NotePad++下载</a></li>
+				<li>使用火狐（Firefox）浏览器或谷歌（Chrome）浏览器，不要使用IE、360等</li>
+				<li>在桌面或D盘或E盘等任意一个地方建立一个文件，命名为“my.html”（要求后缀名为html，文件名可以为“my”或其他）</li>
+				<li>使用Notepad++打开my.html可以编辑代码，输入"&lt;h1&gt;My First Web Page.&lt;/h1&gt;"</li>
+				<li>在火狐/谷歌浏览器中打开my.html即可查看效果。刷新会立即更新代码改动效果。</li>
 			  </ul>
 			</div>
 		  </div>
@@ -64,7 +65,7 @@
 			  <ul style="">
 				<li>不需要一次性完成，每次编写一块代码，立刻查看效果，进行修改。</li>
 				<li>如有疑难点，可以先跳过，等一块内容完成后可以再去搜索查找解决办法。</li>
-				<li>以上说的效果（如字体大小、颜色、靠右显示等）是附加的，如果没有这些效果，内容也可以显示，只是没有那么好看。这些效果一般是写在style中的（如<div style=””></div>）。这些效果是依靠CSS来实现的，其他部分即为HTML。</li>
+				<li>以上说的效果（如字体大小、颜色、靠右显示等）是附加的，如果没有这些效果，内容也可以显示，只是没有那么好看。这些效果一般是写在style中的（如&lt;div style=""&gt;&lt;/div&gt;）。这些效果是依靠CSS来实现的，其他部分即为HTML。</li>
 				<li>如有时间，可以在火狐浏览器中安装插件firebug，安装后重启火狐浏览器，按F12打开/关闭。在谷歌浏览器中默认已安装，可直接使用。</li>
 				<li>和同学保持沟通、交流，可以方便的完成自己的任务，也可以帮助对方完成任务。</li>
 			  </ul>
