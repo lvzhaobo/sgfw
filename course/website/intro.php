@@ -3,7 +3,7 @@
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;}
-	  a {color:#FFFFFF;text-decoration:none;}
+	  a {text-decoration:none;}
 	  .team a {color:#FF9900;text-decoration:none;margin:10px;}
 	  table {font-size:13px;}
 	  ul {margin:0 0 0 -20px;}
@@ -59,11 +59,11 @@
 			$host = $_SERVER["HTTP_HOST"];
 			$uri = $_SERVER["REQUEST_URI"];
 			$uri = preg_replace("/\?.*/","",$uri);
-			$uri = "/sgfw";
+			$uri = "/";
 			//$uri = preg_replace("/\/sgfw\//","",$uri);
 			//$uri = trim($uri,"\/");
 		  ?>
-		  <div onclick='top.location="<?php echo "http://".$host.$uri."/myCourse.php?course=website"."&process=week1"?>"'>
+		  <div onclick='top.location="<?php echo "http://".$host.$uri."modules/myspace/myCourse.php?course=website"."&process=week1"?>"'>
 		    <div class="intro_title<?php echo (!preg_match("/week1/",$_SERVER["REQUEST_URI"]) && !empty($_GET["process"]))?"":" current"?>">
 		      第一周：基础准备、简历制作
 		    </div>
@@ -71,7 +71,7 @@
 		  <div class="intro_content">
 		    建立项目，了解HTML基本语法和标签、CSS样式，完成个人简历网页。
 		  </div>
-		  <div onclick='top.location="<?php echo "http://".$host.$uri."/myCourse.php?course=website"."&process=week2"?>"'>
+		  <div onclick='top.location="<?php echo "http://".$host.$uri."modules/myspace/myCourse.php?course=website"."&process=week2"?>"'>
 		    <div class="intro_title<?php echo preg_match("/week2/",$_SERVER["REQUEST_URI"])?" current":""?>">
 		      第二周：网站原形分析设计
 		    </div>
