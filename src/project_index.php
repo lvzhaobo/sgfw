@@ -1,7 +1,7 @@
 ﻿<?php
 $nav_basic = array(
 			array('href'=>'c.php','label'=>'C语言基础','links'=>array('c.php')),
-			array('href'=>'database.php','label'=>'数据库基础','links'=>array('database.php'))
+			array('href'=>'database.php','label'=>'数据库基础（最近开放）','links'=>array('database.php'))
 		);
 $nav_project = array(
 			array('href'=>'website.php','label'=>'网站开发','links'=>array('website.php')),
@@ -11,7 +11,7 @@ $nav_project = array(
 
 $current_page = $_SERVER["REQUEST_URI"];
 $current_page = preg_replace("/\?.*/","",$current_page);
-$current_page = preg_replace("/\/sgfw\//","",$current_page);
+$current_page = preg_replace("/.*\//","",$current_page);
 $current_page = trim($current_page,"\/");
 $nav_str = "<style type='text/css'>
 	  p {text-indent:2em;line-height:1.6em;}
