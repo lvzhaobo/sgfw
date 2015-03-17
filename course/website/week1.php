@@ -33,8 +33,8 @@
 			<div style="font-size:14px;">
 			  <ul>
 				<li>使用Notepad++编写代码，也可以使用文本编辑器或其他的编辑器。Notepad++下载地址：<a href="http://www.baidu.com/s?wd=notepad%2B%2B&rsv_spt=1&issp=1&f=8&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&inputT=2395" style="color:#FF9900;font-size:14px;" target="_blank">NotePad++下载</a></li>
-				<li>使用火狐（Firefox）浏览器或谷歌（Chrome）浏览器，不要使用IE、360等</li>
-				<li>在桌面或D盘或E盘等任意一个地方建立一个文件，命名为“my.html”（要求后缀名为html，文件名可以为“my”或其他）</li>
+				<li>使用火狐（Firefox）浏览器或谷歌（Chrome）浏览器，不要使用IE、360等浏览器</li>
+				<li>在E盘的dreamcollege文件夹中新建立一个文件，命名为“my.html”（要求后缀名为html）</li>
 				<li>使用Notepad++打开my.html可以编辑代码，输入"&lt;h1&gt;My First Web Page.&lt;/h1&gt;"</li>
 				<li>在火狐/谷歌浏览器中打开my.html即可查看效果。刷新会立即更新代码改动效果。</li>
 			  </ul>
@@ -48,12 +48,11 @@
 			  <img src="../../week1-1.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
 			  <ul style="">
 				<li>html页面中要包含head和body。在head中设置网页的title，如图中左上角的名字。</li>
-				<li>一般在body中编写html代码，整体上设置宽度为960像素，居中显示。</li>
+				<li>一般在body中编写html代码。要求整体上设置宽度为960像素，居中显示。</li>
 				<li>Part 1，使用h1和h4。</li>
-				<li>Part 2，包括标题和表格，建议使用table。标题高28像素，背景颜色为#FF9900;。表格有两行（tr），四列（分别是th、td、th、td）。表格中所有字体靠右显示，边框（border）为1像素。</li>
-				<li>Part 3，标题和Part 2一样，颜色进行修改（自己喜欢的任意颜色即可）。表格中有两行，如Part2，没有边框，其中th的列字体靠右显示，td中的字体不做修改。</li>
-				<li>Part 4，不要使用table，使用div。标题样式如上。评价中有两行，中间需要换行。第一行“勤奋好学”设置为段落。“橙色”字体使用span，且字体颜色需要修改。第二行字体大小设置为28像素，加粗显示。</li>
-				<li>Part 5，标题如上。添加链接，字样显示为“梦想之星英语社”，链接地址为：http://i.my-dreamstar.com，设置链接颜色为#000000;，取消下划线。加一条横线。添加图片，图片来源：http://i.my-dreamstar.com/images/logo.jpg，图片宽度设置为100像素。</li>
+				<li>Part 2，包括标题和表格，建议使用table。表格有两行（tr），四列（分别是th、td、th、td）。表格中th字体靠右显示。</li>
+				<li>Part 4，使用div。个人信息分别使用段落（p）、span，中间需要换行（br）。第一行设置为段落。第二行设置字体大小（font-size）为20px，切字体加粗（font-weight:bold）。第三行中“橙色”字体使用span，且字体颜色需要修改。</li>
+				<li>Part 5，添加链接（a），字样显示为“点击链接跳转”（或其他字样），链接地址为：http://my.dreamcollege.cn，可以设置链接颜色，尝试不显示下划线。加一条横线。添加图片，图片来源：http://my.dreamcollege.cn/src/images/logo.png，图片宽度设置为100px。</li>
 			  </ul>
 			</div>
 		  </div>

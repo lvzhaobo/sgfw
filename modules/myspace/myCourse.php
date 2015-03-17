@@ -37,7 +37,7 @@
 		<div style="margin:10px 0;text-align:center;border-bottom:2px solid #FFFFFF;">
 		  <div><img src="<?php echo $workspace."/data/upload/".str_replace("upload","",$data["img"])?>" style="width:80px;height:80px;border-radius:3em;" /></div>
 		  <div style="line-height:28px;color:#666666;margin:5px 0;"><?php echo base64_decode($data["username"]);?></div>
-		  <div style="color:#999999;font-size:13px;"><?php $time = $data["create_time"];$date = $time==0?"2014-10-24":date("Y-m-d H:i:s");echo "注册时间：".$date?></div>
+		  <div style="color:#999999;font-size:13px;"><?php $time = $data["create_time"];$date = $time==0?"2014-10-24":date("Y-m-d H:i:s",$time);echo "注册时间：".$date?></div>
 		</div>
 		<div style="text-align:center;">
 		  <a href="index.php">
