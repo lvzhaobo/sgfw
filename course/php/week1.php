@@ -33,7 +33,7 @@
 			</div>
 			<div style="">
 			  <ul>
-				<li>使用Notepad++编写代码，也可以使用文本编辑器或其他的编辑器。Notepad++下载地址：<a href="http://www.baidu.com/s?wd=notepad%2B%2B&rsv_spt=1&issp=1&f=8&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&inputT=2395" style="color:#FF9900;font-size:14px;">NotePad++下载</a></li>
+				<li>使用Notepad++编写代码，也可以使用文本编辑器或其他的编辑器。Notepad++下载地址：<a href="http://www.baidu.com/s?wd=notepad%2B%2B&rsv_spt=1&issp=1&f=8&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&inputT=2395" style="color:#FF9900;font-size:14px;" target="_blank">NotePad++下载</a></li>
 				<li>使用火狐（Firefox）浏览器或谷歌（Chrome）浏览器，不要使用IE、360等</li>
 				<li>下载安装XAMPP，例如安装到D盘，工作目录为htdocs（即D:/xampp/htdocs）。在浏览器中访问http://localhost/可查看页面效果。</li>
 			  </ul>

@@ -66,13 +66,13 @@
 		    网站：
 		  </div>
 		  <div style="">
-		    w3school: &nbsp;&nbsp;<a href="http://www.w3school.com.cn/html/index.asp">http://www.w3school.com.cn/html/index.asp</a>
+		    w3school: &nbsp;&nbsp;<a href="http://www.w3school.com.cn/html/index.asp" target="_blank">http://www.w3school.com.cn/html/index.asp</a>
 		  </div>
 		  <div style="font-weight:bold;margin:10px 0;">
 		    书籍：
 		  </div>
 		  <div style="">
-		    HTML CSS JavaScript网页制作从入门到精通 : &nbsp;&nbsp;<a href="http://item.jd.com/11145284.html">http://item.jd.com/11145284.html</a>
+		    HTML CSS JavaScript网页制作从入门到精通 : &nbsp;&nbsp;<a href="http://item.jd.com/11145284.html" target="_blank">http://item.jd.com/11145284.html</a>
 		  </div>
 		  
 	    </div>
