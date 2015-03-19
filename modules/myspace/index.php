@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
-	<script src="account.js" type="text/javascript"></script>
+	<script src="../../src/js/account.js" type="text/javascript"></script>
 	<style>
 	  #basic_info input {height:32px;border:2px solid #0099FF;font-weight:bold;font-size:14px;background-color:#F2F2F2;padding:4px;margin:2px;}
 	  .team {font-size:13px;}
