@@ -11,6 +11,34 @@
 	  .btn a:hover {color:#FF9900;}
 	  th {font-weight:normal;font-size:14px;text-align:right;padding:0 10px 0 0;color:#CCCCCC;}
 	  td {font-weight:normal;font-size:14px;}
+	  .file {
+	  width:60px;
+    position: relative;
+    display: inline-block;
+    #background: #D0EEFF;
+    #border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+	margin: 10px 20px 0 40px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    #background: #AADFFD;
+    #border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
 	</style>
 	<script src="../../src/js/account.js" type="text/javascript"></script>
   <head>
@@ -81,14 +109,24 @@
 		  ?>
 		
 		<div class="content" style="width:800px;float:left;margin:0 0 40px 0px;padding:20px 10px;min-height:320px;">
-		  <div style="height:100px;line-height:28px;">
+		  <div style="height:100px;line-height:28px;margin:10px 0;">
+		  <fieldset>
+		    <legend>上传作业</legend>
 		    <form action="../../lib/request.php?action=uploadHomework" method="post" enctype="multipart/form-data">
-			  <input type="file" name="file" style="" /><br />
-			  <span>备注</span><textarea name="content"></textarea><br />
-			  <button type="submit" style="margin:0 0 0 140px;">确定</button>
+			  <!--<input type="file" name="file" style="" /><br />-->
+			  <a href="javascript:;" class="file">
+				<img src="../../src/images/upload.jpg" style="width:80px;"/>
+				<input type="file" name="file" id="">
+			  </a>
+			  <span></span><textarea name="content">备注</textarea><br />
+			  <button type="submit" style="margin:0 0 0 280px;">确定</button>
 			</form>
+		  </fieldset>
 		  </div>
 		  <div style="clear:float;clear:both;"></div>
+		  <div style="width:100%;height:28px;margin:60px 0 0 0;background-color:#F3F3F3;border-bottom:1px solid #00AAFF;border-top:1px solid #00AAFF;padding:6px 20px;color:#333333;">
+			  <div style="width:200px;float:left;">文件</div><div style="width:400px;float:left;">备注</div><div style="float:left;">上传时间</div>
+		  </div>
 		  <?php 
 			$dir_path = "../../data/users/".$_SESSION["user"];
 			if(is_dir($dir_path)){
