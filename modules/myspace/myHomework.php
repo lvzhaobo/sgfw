@@ -134,15 +134,16 @@
 				while(($file = $dir->read()) !== false){
 					if($file!="." && $file!=".."){
 						list($file_name,$file_ext) = explode(".",$file);
-						$file = base64_decode($file_name).".".$file_ext;
+						$file_real_name = base64_decode($file_name).".".$file_ext;
 					
 		  ?>
 		    <div style="width:100%;height:28px;border-bottom:1px solid #00AAFF;padding:6px 20px;color:#333333;">
-			  <div style="width:200px;"><?php echo $file;?></div><div style="width:400px;float:left;"></div>
+			  <div style="width:200px;"><?php echo $file_real_name;?></div><div style="width:400px;float:left;"><?php //filetime($dir_path."/".$file);?></div>
 			</div>
 		  <?php }}}
 		  else{
 			  exec("mkdir -p ".$dir_path);
+			  exec("chmod 0777 ".$dir_path);
 		  }?>
 	    </div>
 	<div style="clear:float;clear:both;"></div>
