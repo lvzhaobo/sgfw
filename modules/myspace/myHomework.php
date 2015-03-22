@@ -125,22 +125,32 @@
 		  </div>
 		  <div style="clear:float;clear:both;"></div>
 		  <div style="width:100%;height:28px;margin:60px 0 0 0;background-color:#F3F3F3;border-bottom:1px solid #00AAFF;border-top:1px solid #00AAFF;padding:6px 20px;color:#333333;">
-			  <div style="width:200px;float:left;">文件</div><div style="width:400px;float:left;">备注</div><div style="float:left;">上传时间</div>
+			  <div style="width:200px;float:left;">文件</div><div style="width:280px;float:left;">备注</div><div style="float:left;">上传时间</div>
 		  </div>
 		  <?php 
 			$dir_path = "../../data/users/".$_SESSION["user"];
 			if(is_dir($dir_path)){
 				$dir = dir($dir_path);
-				while(($file = $dir->read()) !== false){
-					if($file!="." && $file!=".."){
-						list($file_name,$file_ext) = explode(".",$file);
+				$result = mysql_query("select * from sgfw_user where username='".base64_encode($_SESSION["user"])."'");
+				//var_dump(mysql_error());
+				$data = mysql_fetch_array($result);
+				
+				$result = mysql_query("select * from sgfw_homework where user_id='".$data["id"]."'");
+				//var_dump(mysql_error());
+				while($homework = mysql_fetch_array($result)){
+				//var_dump($homework);//die;
+				//continue;
+				//while(($file = $dir->read()) !== false){
+					//if($file!="." && $file!=".."){
+						list($file_name,$file_ext) = explode(".",$homework["file"]);
 						$file_real_name = base64_decode($file_name).".".$file_ext;
-					
+						
 		  ?>
-		    <div style="width:100%;height:28px;border-bottom:1px solid #00AAFF;padding:6px 20px;color:#333333;">
-			  <div style="width:200px;"><?php echo $file_real_name;?></div><div style="width:400px;float:left;"><?php //filetime($dir_path."/".$file);?></div>
+		    <div style="width:100%;height:28px;border-bottom:1px solid #00AAFF;padding:6px 20px;color:#333333;line-height:28px;color:#333333;">
+			  <div style="width:200px;float:left;"><?php echo $file_real_name;?></div><div style="width:280px;float:left;"><?php echo $homework["comment"]?></div><div style="width:200px;float:left;"><?php echo $homework["create_time"]?></div><div style="float:left;"><a href="viewfile.php?id={$homework['id']}">查看</a></div>
 			</div>
-		  <?php }}}
+		  <?php //}
+		  }}
 		  else{
 			  exec("mkdir -p ".$dir_path);
 			  exec("chmod 0777 ".$dir_path);
