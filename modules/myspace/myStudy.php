@@ -32,35 +32,7 @@
 	<div>
 	  <div class="main index" style="padding-top:32px;min-width:960px;margin:0 auto;font-size:14px;min-height:400px;">
 	    
-	    <div style="width:200px;height:100%;z-index:0;float:left;position:fixed;font-weight:bold;font-size:16px;background-color:#F3F3F3;padding:10px 0;line-height:40px;border-right:2px solid #CCCCCC;">
-		<div style="margin:10px 0;text-align:center;border-bottom:2px solid #FFFFFF;">
-		  <div><img src="<?php echo $workspace."/data/upload/".str_replace("upload","",$data["img"])?>" style="width:80px;height:80px;border-radius:3em;" /></div>
-		  <div style="line-height:28px;color:#666666;margin:5px 0;"><?php echo base64_decode($data["username"]);?></div>
-		  <div style="color:#999999;font-size:13px;"><?php $time = $data["create_time"];$date = $time==0?"2014-10-24":date("Y-m-d H:i:s",$time);echo "注册时间：".$date?></div>
-		</div>
-		<div style="text-align:center;">
-		  <a href="index.php">
-		  <div style="color:#000000;">
-		    <span>基本信息</span>
-		  </div>
-		  </a>
-		  <a href="myStudy.php">
-		  <div style="color:#FF9900;">
-		    <span>我的课程</span>
-		  </div>
-		  </a>
-		  <a href="#">
-		  <div style="color:#CCCCCC;">
-		    <span>我的作业</span>
-		  </div>
-		  </a>
-		  <a href="myResource.php">
-		  <div style="color:#000000;">
-		    <span>学习资源</span>
-		  </div>
-		  </a>
-		</div>
-		</div>
+	    <?php include '../../src/myspace_index.php'?>
 		<div class="content" style="width:600px;float:left;margin:0 0 40px 200px;padding:20px;min-height:320px;">
 		  <fieldset style="border:2px solid #FF9900;padding:0 10px;line-height:28px;">
 		  <legend><div style="font-weight:bold;font-size:16px;color:#0099FF;float:left;">
