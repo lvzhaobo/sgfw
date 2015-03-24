@@ -32,7 +32,7 @@
 			</div>
 			<div style="font-size:14px;">
 			  <ul>
-				<li>使用Notepad++编写代码，也可以使用文本编辑器或其他的编辑器。Notepad++下载地址：<a href="http://www.baidu.com/s?wd=notepad%2B%2B&rsv_spt=1&issp=1&f=8&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&inputT=2395" style="color:#FF9900;font-size:14px;" target="_blank">NotePad++下载</a></li>
+				<li>使用Notepad++编写代码，也可以使用文本编辑器或其他的编辑器。<a href="http://www.baidu.com/s?wd=notepad%2B%2B&rsv_spt=1&issp=1&f=8&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&inputT=2395" style="color:#FF9900;font-size:14px;" target="_blank">NotePad++下载</a></li>
 				<li>使用火狐（Firefox）浏览器或谷歌（Chrome）浏览器，不要使用IE、360等浏览器</li>
 				<li>在E盘的dreamcollege文件夹中新建立一个文件，命名为“my.html”（要求后缀名为html）</li>
 				<li>使用Notepad++打开my.html可以编辑代码，输入"&lt;h1&gt;My First Web Page.&lt;/h1&gt;"</li>
