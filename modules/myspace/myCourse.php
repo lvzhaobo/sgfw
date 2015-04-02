@@ -34,7 +34,7 @@
 	  <div class="main index" style="padding-top:32px;min-width:960px;margin:0 auto;font-size:14px;min-height:400px;">
 	    
 	    <?php include '../../src/myspace_index.php'?>
-		<div class="content" style="width:800px;float:left;margin:0 0 40px 200px;min-height:320px;">
+		<div class="content" style="width:800px;float:left;margin:0 0 0px 200px;min-height:320px;">
 		  <iframe src="../../course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/<?php echo empty($_GET["process"])?"week1":$_GET["process"]?>.php" style="border:0px;width:100%;height:800px;"></iframe>
 		</div>
 		<div class="project_item" style="width:300px;float:right;padding:10px 20px 10px 20px;border-left:2px solid #CCCCCC;">

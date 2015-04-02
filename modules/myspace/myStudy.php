@@ -28,6 +28,16 @@
 			if(!isset($data["id"]) or empty($data["id"])){
 				echo "<script>alert('请先登录');window.location.href='../login.php'</script>";
 			}
+			
+			$result = mysql_query("select * from sgfw_homework where user_id='".$data["id"]."'");
+			//var_dump(mysql_error());
+			$data = mysql_fetch_array($result);
+			if(!isset($data["id"]) or empty($data["id"])){
+				$week = 1;
+			}
+			else{
+				$week = 2;
+			}
 		  ?>
 	<div>
 	  <div class="main index" style="padding-top:32px;min-width:960px;margin:0 auto;font-size:14px;min-height:400px;">
@@ -46,11 +56,15 @@
 					?>
 			</div></legend>
 			
-			<?php if($data["project"]=="website"){?>
-			<a href="myCourse.php?course=website">
+			<?php if($data["project"]=="website"){
+				$week_str = "";
+				if($week == 2)
+					$week_str = "&process=week2";
+			?>
+			<a href="myCourse.php?course=website<?php echo $week_str?>">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
-			<div style="border:2px solid #CCCCCC;font-size:20px;font-weight:bold;color:#00AAFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="border:2px solid #CCCCCC;font-size:20px;font-weight:bold;color:#00AAFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;"><?php echo ($week==1)?"第一周":"第二周"?></div>
 			<div style="clear:float;clear:both;"></div>
 			  <table style="font-size:14px;line-height:22px;">
 			    <tr>
