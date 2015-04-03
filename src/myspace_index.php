@@ -20,6 +20,8 @@ if(!isset($data["id"]) or empty($data["id"])){
 }
 
 $img_path = $workspace."/data/upload/".str_replace("upload","",$data["img"]);
+if(!file_exists($img_path))
+	$img_path = $workspace."/src/images/dream.jpg";
 $name = base64_decode($data["username"]);
 $time = $data["create_time"];
 $date = $time==0?"2014-10-24":date("Y-m-d H:i:s",$time);
