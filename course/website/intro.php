@@ -12,6 +12,7 @@
 	  .intro_title {color:#666666;font-weight:bold;margin:5px 0 0 0;}
 	  .intro_content {color:#999999;}
 	  .current {color:#FF9900;}
+	  .course_intro {display: none;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
@@ -26,6 +27,7 @@
 		  <div class="intro_content">
 		    吕昭波&nbsp;&nbsp;lvzhaobopku@163.com
 		  </div>
+		  <div class="course_intro">
 		  <div class="intro_title">
 		    学习目标：
 		  </div>
@@ -49,6 +51,7 @@
 		  </div>
 		  <div class="intro_content">
 		    ①开发个人博客网站；②为学校社团开发网站；③为学校周边商店、书店等开发网站
+		  </div>
 		  </div>
 		  </div>
 		  <div>
