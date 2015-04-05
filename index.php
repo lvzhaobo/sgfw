@@ -19,9 +19,9 @@
   <div class="wrap">
    <div id="slide-holder">
 		<div id="slide-runner">
+			<a target="_blank"><img id="slide-img-0" src="src/images/bg6.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
 			<a target="_blank"><img id="slide-img-1" src="src/images/bg.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
 			<a target="_blank"><img id="slide-img-2" src="src/images/bg4.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-100px 0 0 0;"/></a>
-			<a target="_blank"><img id="slide-img-3" src="src/images/1st.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-20px 0 0 0;"/></a>
 			<div id="slide-controls">
 			 <p id="slide-client" class="text"><strong></strong><span></span></p>
 			 <p id="slide-desc" class="text"></p>
@@ -35,6 +35,11 @@
 	}
 
 	slider.data= [
+	{
+        "id":"slide-img-0",
+        "client":"",
+        "desc":""
+    },
     {
         "id":"slide-img-1", // 与slide-runner中的img标签id对应
         "client":"基础课程",
@@ -44,11 +49,6 @@
         "id":"slide-img-2",
         "client":"项目实践",
         "desc":"在迷茫的大学生活中，我想获得更多的能力和舞台，我在梦想学院中和同学们使用PHP+MySQL一起开发学校的论坛。"
-    },
-	{
-        "id":"slide-img-3",
-        "client":"开放注册",
-        "desc":"我们在各高校校区招募负责人，有兴趣请联系我们。"
     }
 	];
    </script>
@@ -214,6 +214,15 @@
 			</div>
 			-->
 		  </div>
+		  <!--<div style="background-image:url('src/images/bg1-1.jpg');background-size:100%;height:630px;margin:-240px 0 0px 0;">
+		    <div style="width:280px;position:fixed;font-weight:bold;margin:-40px 0 0 800px;">
+			  <div style="font-size:22px;color:#FF00AA;margin:0 0 40px 0;">“静态网站”课程</div>
+			  <div style="color:#0099FF;margin:0 0 10px 0;">面向零基础，超过10个网站方向选择</div>
+			  <div style="color:#AA00FF;margin:0 0 10px 0;">6周之后你就可以做自己的网站</div>
+			  <div style="color:#FF00AA;">免费二级域名，免费阿里云服务器</div>
+			  <a href="course/website.php" target="_blank"><div style="border:2px solid #FF00AA;width:100px;height:28px;padding:10px 60px;text-align:center;margin:60px 0 0 0;color:#FF00AA;border-radius:0.5em;">查看详情</div></a>
+			</div>
+		  </div>-->
 		  <div>
 			<div style="min-height:465px;padding:0 0 0 280px;background-color:#F3F3F3;">
 			  <div style="padding:10px 0;">

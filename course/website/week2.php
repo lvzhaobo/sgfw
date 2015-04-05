@@ -6,7 +6,7 @@
 	  a {color:#FFFFFF;text-decoration:none;}
 	  .team a {color:#FF9900;text-decoration:none;margin:10px;}
 	  table {font-size:13px;}
-	  ul {margin:0 0 0 -20px;}
+	  ul {margin:0 0 0 -20px;list-style: url;}
 	  .project_item {background-color:#F2F2F2;padding:0 10px 10px 10px;;line-height:20px;font-size:13px;}
 	  .project_item:hover{background-color:#EEEEEE;}
 	  .intro_title {color:#666666;font-weight:bold;margin:5px 0 0 0;}
