@@ -12,12 +12,12 @@
 	  .intro_title {color:#666666;font-weight:bold;margin:5px 0 0 0;}
 	  .intro_content {color:#999999;}
 	  .current {color:#FF9900;}
-	  .item {padding:10px 20px;border-top:2px solid #00AAFF;margin:20px 0px;background-color:#FFFFFF;}
+	  .item {padding:10px 20px;border-left:2px solid #00AAFF;margin:20px 0px;background-color:#FFFFFF;}
 	  .item_title {font-weight:bold;font-size:18px;line-height:28px;margin:0 0 5px 0;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
-  <body style="padding:0 10px 0px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#F3F3F3;">
+  <body style="padding:0 10px 0px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#EEEEEE;">
 	<div style="" class="item">
 	  <div style="" class="item_title">
 	    第二周学习目标
@@ -29,7 +29,7 @@
 		<li>学习网站设计报告</li>
 	  </ul>
 	</div>
-	<div style="border-top:2px solid #FF9900;" class="item">
+	<div style="border-left:2px solid #FF9900;" class="item">
 	  <div style="" class="item_title">
 		查找主流网站、分析主流网站布局
 	  </div>
@@ -43,7 +43,7 @@
 		<p>上图为清华大学主页上点击学校概况后显示页面中间部分的截图。Header、footer等略去，对应信工院主页的新闻列表，清华大学网站上使用了另一种方式，几大项内容使用图片加文字解释，作用就是把校长致辞、学校沿革、历任领导等内容展示出来（最简单的方式是在左边加个列表，每行显示一项），这种方式就比较美观、直观。在实现难度上，由于有了第一周的基础，不会有太多麻烦。</p>
 	  </div>
 	</div>
-	<div style="border-top:2px solid #FF0099;" class="item">
+	<div style="border-left:2px solid #FF0099;" class="item">
 	  <div style="" class="item_title">
 	    作业及要求
 	  </div>
@@ -68,7 +68,7 @@
 		</p>
 	  </div>
 	</div>
-	<div style="border-top:2px solid #9900FF;" class="item">
+	<div style="border-left:2px solid #9900FF;" class="item">
 	  <div style="" class="item_title">
 		附加学习
 	  </div>
@@ -86,7 +86,7 @@
 	    <p>点击左边的图标，然后移动到页面的最新消息中（或任意地方），可在firebug面板中查看此处的代码，方便查看任意位置的代码。如想知道苹果官网的效果或腾讯、新浪网站的内容，可以用此方法查看，可以从中学到东西的。</p>
 	  </div>
 	</div>
-	<div style="border-top:2px solid #99FF00;" class="item">
+	<div style="border-left:2px solid #99FF00;" class="item">
 	  <div style="" class="item_title">
 		文档
 	  </div>

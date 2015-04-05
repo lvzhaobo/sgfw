@@ -16,9 +16,10 @@
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
-  <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;font-size:14px;">
-	<div style="border-bottom:2px solid #FFFFFF;padding:0 0 10px 0;">
-		  <div style="font-size:18px;margin:10px 0px;color:#333333;font-weight:bold;">
+  <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;font-size:14px;background-color:#EEEEEE;">
+	<div style="padding:0px 0 10px 0;">
+	  <div style="background-color:#FFFFFF;padding:10px;border-top:2px solid #0099FF;">
+		  <div style="font-size:18px;margin:0px 0px;color:#333333;font-weight:bold;">
 		    网站设计
 		  </div>
 		  <div class="intro_title">
@@ -27,7 +28,8 @@
 		  <div class="intro_content">
 		    吕昭波&nbsp;&nbsp;lvzhaobopku@163.com
 		  </div>
-		  <div class="course_intro">
+	  </div>
+		  <div class="course_intro" style="background-color:#FFFFFF;border-top:2px solid #FFAA00;">
 		  <div class="intro_title">
 		    学习目标：
 		  </div>
@@ -55,7 +57,8 @@
 		  </div>
 		  </div>
 		  <div>
-		  <div style="font-size:18px;margin:10px 0px;color:#333333;font-weight:bold;">
+		  <div style="background-color:#FFFFFF;border-top:2px solid #FFAA00;padding:10px;line-height:22px;margin:10px 0;">
+		  <div style="font-size:18px;margin:0px 0px;color:#333333;font-weight:bold;line-height:28px;">
 		    学习周期<span style="color:#999999;">（共6周）</span>
 		  </div>
 		  <?php 
@@ -81,6 +84,7 @@
 		  </div>
 		  <div class="intro_content">
 		    学习文档，分析网站基本结构，完成个人网站（自己感兴趣的网站）原型初步设计。
+		  </div>
 		  </div>
 		  </div>
   </body>
