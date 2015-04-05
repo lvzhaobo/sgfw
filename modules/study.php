@@ -18,6 +18,45 @@
 	<div>
 	  <div class="main_index" style="width:960px;margin:0 auto;font-size:14px;">
 	    <div style="width:100%;margin:60px 0 40px 0;min-height:814px;">
+		  <div style="margin:0 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
+			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
+			      <span style="font-size:22px;font-weight:bold;margin:0 5px;">学习计划</span>
+				  <span></span>
+				  <span style="font-weight:bold;font-size:16px;color:#00AAFF;"></span>
+				</div>
+			  </div>
+			  <div style="clear:float;clear:both;"></div>
+			  <div style="width:48px;height:168px;float:left;border:1px solid #CCCCCC;text-align:center;">
+			    测试
+			  </div>
+			  <div style="height:280px;width:280px;text-align:center;line-height:40px;float:left;">
+			    <div style="width:100%;height:40px;border:1px solid #CCCCCC;">
+				  HTML+CSS[+JavaScript?]
+				</div>
+				<div style="width:100%;height:40px;">
+				  <div style="width:40px;float:left;border:1px solid #CCCCCC;">PHP</div>
+				  <div style="width:40px;float:left;border:1px solid #CCCCCC;">JSP</div>
+				  <div style="width:40px;float:left;border:1px solid #CCCCCC;">.Net</div>
+				  <div style="width:40px;float:left;border:1px solid #CCCCCC;">C</div>
+				  <div style="width:40px;float:left;border:1px solid #CCCCCC;">......</div>
+				  <div style="clear:float;clear:both;"></div>
+				</div>
+				<div style="clear:float;clear:both;"></div>
+				<div style="width:100%;height:40px;border:1px solid #CCCCCC;">
+				  <div style="width:138px;float:left;border:1px solid #CCCCCC;">业务领域</div>
+				  <div style="width:138px;float:left;border:1px solid #CCCCCC;">第三方API?</div>
+				</div>
+				<div style="clear:float;clear:both;"></div>
+				<div style="width:100%;height:40px;">
+				  <div style="width:138px;float:left;border:1px solid #CCCCCC;">操作系统</div>
+				  <div style="width:138px;float:left;border:1px solid #CCCCCC;">数据库</div>
+				</div>
+				<div style="clear:float;clear:both;"></div>
+			  </div>
+			  <div style="width:48px;height:168px;float:left;border:1px solid #CCCCCC;text-align:center;">
+			      软件工程（团队、迭代、执行等）
+			    </div>
+			  <div style="clear:float;clear:both;"></div>
 			  <div style="margin:0 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
 			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
 			      <span style="font-size:22px;font-weight:bold;margin:0 5px;">学习课程</span>
