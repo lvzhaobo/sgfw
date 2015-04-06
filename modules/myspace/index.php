@@ -137,7 +137,7 @@
 		  </div>
 		  </div>
 		  <div style="clear:float;clear:both;"></div>
-		  <div style="height:400px;border-top:2px solid #CCCCCC;font-size:22px;text-align:center;padding:20px 10px;">
+		  <!--<div style="height:400px;border-top:2px solid #CCCCCC;font-size:22px;text-align:center;padding:20px 10px;">
 		    <div style="width:132px;height:60px;margin:10px;border:1px solid #0099FF;float:left;padding:20px;">
 			  <span>①注册账号，完善信息</span>
 			</div>
@@ -150,7 +150,7 @@
 			<div style="width:132px;height:60px;margin:10px;border:1px solid #0099FF;float:left;padding:20px;">
 			  <span>④开始第一周任务</span>
 			</div>
-		  </div>
+		  </div>-->
 		  </div>
 		
 		<div class="project_item" style="width:300px;height:100%;float:right;padding:10px 20px 10px 20px;border-left:2px solid #CCCCCC;">

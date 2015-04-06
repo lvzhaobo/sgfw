@@ -3,8 +3,9 @@
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;}
-	  a {text-decoration:none;}
-	  .team a {color:#FF9900;text-decoration:none;margin:10px;}
+	  a {text-decoration:none;color:#333333;}
+	  a:hover {}
+	  .team a {color:#FF9900;margin:10px;}
 	  table {font-size:13px;}
 	  ul {margin:0 0 0 -20px;}
 	  .project_item {background-color:#F2F2F2;padding:0 10px 10px 10px;;line-height:20px;font-size:13px;}
@@ -12,22 +13,33 @@
 	  .intro_title {color:#666666;font-weight:bold;margin:5px 0 0 0;}
 	  .intro_content {color:#999999;}
 	  .current {color:#FF9900;}
+	  .item {padding:10px 20px;border-left:2px solid #00AAFF;margin:20px 0px;background-color:#FFFFFF;}
+	  .item_title {font-weight:bold;font-size:18px;line-height:28px;margin:0 0 5px 0;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
-  <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;font-size:14px;">
-	<div style="padding:20px 0px;line-height:24px;border-bottom:1px dashed #FF9900;margin:0 20px;font-size:14px;">
-		    <div style="min-height:32px;font-weight:bold;font-size:18px;color:#333333;">
-			  第一周学习目标
-			</div>
+  <body style="padding:0 10px 0px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#EEEEEE;">
+	<div style="border-left:2px solid #99FF00;" class="item">
+	  <div style="" class="item_title">
+		学习视频
+	  </div>
+			<div>
+		    <span>第一周（1）</span><a href="../../website-1.htm" target="_blank" style="margin:0 20px;">在线观看</a><a href="../../3.swf" target="_blank">下载</a><br />
+			<span>第一周（2）</span><a href="../../website-2.htm" target="_blank" style="margin:0 20px;">在线观看</a><a href="../../4.swf" target="_blank">下载</a>
+		  </div>
+		  </div>
+	<div style="border-left:2px solid #FF9900;" class="item">
+	  <div style="" class="item_title">
+		第一周学习目标
+	  </div>
 		    <ul>
 			  <li>Notepad++使用</li>
 			  <li>HTML元素（h1、table、a、hr、br、div等标签）</li>
 			  <li>CSS样式（font-size、font-weight、color、background-color、width、height等）</li>
 			</ul>
 		  </div>
-	  <div style="line-height:24px;padding:20px 0;border-bottom:1px dashed #FF9900;margin:0px 20px;">
-		    <div style="font-size:18px;font-weight:bold;color:#333333;margin:10px 0;">
+	  <div style="border-left:2px solid #00AAFF;" class="item">
+	    <div style="" class="item_title">
 			  工具准备
 			</div>
 			<div style="font-size:14px;">
@@ -40,8 +52,8 @@
 			  </ul>
 			</div>
 		  </div>
-		  <div style="line-height:24px;padding:20px 0;margin:0 20px;border-bottom:1px dashed #FF9900;">
-		    <div style="font-size:18px;font-weight:bold;color:#333333;margin:10px 0;">
+	<div style="border-left:2px solid #FF0099;" class="item">
+	  <div style="" class="item_title">
 			任务要求
 			</div>
 			<div style="">
@@ -56,8 +68,8 @@
 			  </ul>
 			</div>
 		  </div>
-		  <div style="line-height:24px;padding:20px 0;margin:0 20px;">
-		    <div style="font-size:18px;font-weight:bold;color:#333333;margin:10px 0;">
+	<div style="border-left:2px solid #9900FF;" class="item">
+	  <div style="" class="item_title">
 			  技巧
 			</div>
 			<div style="">
