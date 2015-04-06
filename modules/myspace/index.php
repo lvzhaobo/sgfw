@@ -4,7 +4,8 @@
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
 	<script src="../../src/js/account.js" type="text/javascript"></script>
 	<style>
-	  #basic_info input {height:32px;border:2px solid #0099FF;font-weight:bold;font-size:14px;background-color:#F2F2F2;padding:4px;margin:2px;}
+	  #basic_info input {height:32px;border:2px solid #CCCCCC;font-weight:bold;font-size:14px;background-color:#F2F2F2;padding:4px 8px;margin:2px;border-radius:0.5em;}
+	  #basic_info input:hover {border:2px solid #FFAA00;color:#0099FF;}
 	  .team {font-size:13px;}
 	  .btn,button{font-weight: bold; text-align:center;line-height: 26px; box-shadow: 0px 0px 2px rgb(220, 220, 220); min-width: 60px;padding:0 10px;margin:0 10px; font-size: 16px; border-radius: 0.5em; border: 2px solid #FF9900; color:#0099FF; background-color: rgb(255, 255, 255);}
 	  .btn:hover,button:hover{border:2px solid #0099FF;color:#FF9900;}
@@ -105,6 +106,19 @@
 					}
 					else{
 						echo $data["college"];
+					}?>
+				</td>
+			  </tr>
+			  <tr>
+			    <th>自我介绍</th>
+				<td><?php 
+					if($edit){
+					?>
+					<textarea type="text" name="account[config]" style="width:280px;min-height:80px;" placeholder="填写自我介绍、联系方式等，方便仰慕我的人能联系到我（会公开此部分内容）"><?php echo $data['config'];?></textarea>
+					<?php
+					}
+					else{
+						echo $data["config"];
 					}?>
 				</td>
 			  </tr>

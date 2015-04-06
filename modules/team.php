@@ -13,6 +13,8 @@
 	  .college_item:hover {box-shadow:0 0 5px #0099FF;}
 	  .zan a{color:#999999;}
 	  .zan a:hover {color:#FF9900;}
+	  .team_item_title {font-weight:normal;color:#0099FF;font-size:16px;line-height:40px;}
+	  .team_item_title:hover {font-weight:normal;color:#FFAA00;font-size:16px;line-height:40px;}
 	</style>
 	<script src="../src/js/account.js" type="text/javascript"></script>
   <head>
@@ -21,12 +23,54 @@
 	  <div class="main index">
 		  <div class="content" style="width:960px;margin:0 auto;font-size:14px;">
 		    <div style="width:100%;margin:60px 0;min-height:480px;">
-			  <div style="margin:0 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
-			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
-			      <span style="font-size:20px;font-weight:bold;margin:0 5px;">参与学校</span>
-				  <!--<span>已经参与的学校/校区，如果没找到你的学校，请第一个注册并让你的学校/校区显示在这里吧。</span>-->
+			  <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:18px;line-height:32px;color:#333333;width:100%;height:32px;background-color:#F5F5F5;border-left:2px solid #00A2C9;">新同学</div>
+			  <?php
+				include '../lib/db.php';
+				$result = mysql_query("select * from sgfw_user order by id desc");
+				$i = 0;
+				while($item = mysql_fetch_array($result)){
+					if(++$i>12)
+						break;
+			  ?>
+			  <div style="width:200px;height:140px;text-align:center;border:0px solid #0099FF;padding:10px;margin:10px;font-size:14px;line-height:22px;border-radius:0.5em;float:left;">
+			    <div style="">
+				  <?php $img_path = $workspace."data/upload/".str_replace("upload","",$item["img"]);?>
+				  <img src="<?php echo empty($item["img"])?"../src/images/dream.jpg":($img_path)?>" style="width:80px;height:80px;border-radius:5em;border:2px solid #CCCCCC;" />
+				</div>
+			    <div class="team_item_title">
+				  <?php echo base64_decode($item["username"])?>
+				</div>
+				<div>
+				  <?php //echo $item["college"]?>
+				</div>
+				<!--<div style="">
+				  <span>小组成员：<?php echo base64_decode($item["username"])?><span>
+				</div>
+				<div style="">
+				  （小组口号、小组简介、小组项目介绍等任何信息。）
+				</div>-->
+				<div>
+				  <?php 
+					if(!empty($item["config"])){
+				  ?>
+				  <div style="overflow:hidden;height:40px;">  
+				  <span title="<?php echo $item["config"]?>"><?php echo $item["config"];?></span>
+				  </div>
+				  <?php
+				    }
+					else{
+				  ?>
+				    <div style="color:#BBBBBB;">
+					  <?php echo "我是传奇，没人知道我";?>
+					</div>
+				  <?php
+				    }
+				  ?>
 				</div>
 			  </div>
+			  <?php }?>
+			  <div style="clear:float;clear:both;"></div>
+			  <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:18px;line-height:32px;color:#333333;width:100%;height:32px;background-color:#F5F5F5;border-left:2px solid #00A2C9;">大学</div>
 			  <div>
 			  <div style="width:100%;float:left;">
 			  <?php 
@@ -126,40 +170,7 @@
 			  
 			  <?php }?>
 			  <div style="clear:float;clear:both;"></div>
-			  <div style="margin:20px 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
-			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
-			      <span style="font-size:20px;font-weight:bold;margin:0 5px;">注册用户</span>
-				  <span></span>
-				</div>
-			  </div>
-			  <?php
-				//include 'db.php';
-				$result = mysql_query("select * from sgfw_user order by id desc");
-				$i = 0;
-				while($item = mysql_fetch_array($result)){
-					if(++$i>12)
-						break;
-			  ?>
-			  <div style="width:200px;height:140px;text-align:center;border:0px solid #0099FF;padding:10px;margin:10px;font-size:14px;line-height:22px;border-radius:0.5em;float:left;">
-			    <div style="">
-				  <?php $img_path = $workspace."data/upload/".str_replace("upload","",$item["img"]);?>
-				  <img src="<?php echo empty($item["img"])?"../src/images/dream.jpg":($img_path)?>" style="width:80px;height:80px;border-radius:5em;border:2px solid #CCCCCC;" />
-				</div>
-			    <div class="team_item_title" style="font-weight:bold;color:#FF9900;font-size:18px;line-height:40px;">
-				  <?php echo base64_decode($item["username"])?>
-				</div>
-				<div>
-				  <?php //echo $item["college"]?>
-				</div>
-				<!--<div style="">
-				  <span>小组成员：<?php echo base64_decode($item["username"])?><span>
-				</div>
-				<div style="">
-				  （小组口号、小组简介、小组项目介绍等任何信息。）
-				</div>-->
-			  </div>
-			  <?php }?>
-			  <div style="clear:float;clear:both;"></div>
+			  
 			</div>
 		  </div>
 		</div>

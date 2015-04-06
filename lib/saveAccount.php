@@ -71,7 +71,7 @@
 		}
 		else{
 			$username = $_SESSION["user"];
-			$sql = "UPDATE sgfw_user SET qq='".$data["qq"]."' , email='".$data["email"]."' , college='".$data["college"]."' WHERE username = '".base64_encode($username)."'";
+			$sql = "UPDATE sgfw_user SET qq='".$data["qq"]."' , email='".$data["email"]."' , college='".$data["college"]."' , config='".$data["config"]."' WHERE username = '".base64_encode($username)."'";
 			$result = mysql_query($sql);
 			if(!$result){
 				$info = "更新失败";
