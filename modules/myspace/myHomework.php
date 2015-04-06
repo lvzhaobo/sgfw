@@ -90,7 +90,7 @@
 				<img src="../../src/images/upload.jpg" style="width:80px;"/>
 				<input type="file" name="file" id="">
 			  </a>
-			  <span></span><textarea name="content">备注</textarea><br />
+			  <span></span><textarea name="content" placeholder="备注信息"></textarea><br />
 			  <button type="submit" style="margin:0 0 0 280px;">确定</button>
 			</form>
 		  </fieldset>

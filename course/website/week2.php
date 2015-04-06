@@ -94,7 +94,7 @@
 		<p>
 		  对于网站开发、软件开发，良好的文档时少不了的，可以方便团队成员很好的交流。考虑到大家时间有限，我们整理了一份设计文档，希望大家能认真阅读并掌握其内容和思路。
 		</p>
-		<a href="../../src/doc/website_design_document.doc" style="color:#333333;margin:0 0 0 50px;">点击下载网站设计文档</a>
+		<a href="../../src/doc/website_design_document.docx" target="_blank" style="color:#333333;margin:0 0 0 50px;">点击下载网站设计文档</a>
 	  </div>
 	</div>
   </body>
