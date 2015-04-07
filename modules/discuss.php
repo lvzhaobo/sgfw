@@ -52,7 +52,12 @@
 			    <div>
 				  <span style="color:#0099FF;"><?php echo base64_decode($item["username"])?></span>&nbsp;&nbsp;<span style="color:333333;"><?php echo date("Y-m-d H:i:s",$item["create_time"]-8*3600)?></span>
 				  <div>
-				    <?php echo $item["content"]?>
+				    <?php 
+						if($item["id"]<=41)
+							echo $item["content"];
+						else
+							echo htmlentities(base64_decode($item["content"]),ENT_QUOTES);
+					?>
 				  </div>
 				</div>
 			  </div>
@@ -73,7 +78,7 @@ $(document).ready(function(){
     //用户名
 	var user 	 = $('#discuss_content');
 	var msg_user = $('#msg_content');
-	var mode_user = /.{10,2000}$/;
+	var mode_user = /.{10,500}$/;
 	
 	//触发验证函数
 	user.change(function(){
@@ -106,7 +111,7 @@ $(document).ready(function(){
 	//提交验证
 	form.submit(function(){
 		if( !fields( user , mode_user ) ){
-			msg( msg_user , "<font color='red'>&times;a请输入至少10个字符</font>");
+			msg( msg_user , "<font color='red'>请输入最少10个字符，最多500个字符</font>");
 		}else{
 			return true;
 		}

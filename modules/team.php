@@ -26,11 +26,22 @@
 			  <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:18px;line-height:32px;color:#333333;width:100%;height:32px;background-color:#F5F5F5;border-left:2px solid #00A2C9;">新同学</div>
 			  <?php
 				include '../lib/db.php';
-				$result = mysql_query("select * from sgfw_user order by id desc");
-				$i = 0;
-				while($item = mysql_fetch_array($result)){
-					if(++$i>12)
-						break;
+				$result = mysql_query("select * from sgfw_user where id > 4 order by id desc");
+				//$i = 0;
+				$data = array();
+				while($item_tmp = mysql_fetch_array($result)){
+					$data[] = $item_tmp;
+				}
+				shuffle($data);
+				
+				/*$count = count($data);
+				for($i=$count;$i>0;$i--){
+					$key = rand(0,$i);
+					$item = $data[$key];
+					unset($data[$key]);*/
+				foreach($data as $item){
+					//if(++$i>12)
+						//break;
 			  ?>
 			  <div style="width:200px;height:140px;text-align:center;border:0px solid #0099FF;padding:10px;margin:10px;font-size:14px;line-height:22px;border-radius:0.5em;float:left;">
 			    <div style="">
@@ -61,7 +72,7 @@
 					else{
 				  ?>
 				    <div style="color:#BBBBBB;">
-					  <?php echo "我是传奇，没人知道我";?>
+					  <?php echo "我是传说，没人知道我";?>
 					</div>
 				  <?php
 				    }

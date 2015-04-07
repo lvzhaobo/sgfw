@@ -139,7 +139,7 @@
 		  </div>
 		  <div style="width:280px;float:left;">
 		    <?php if(file_exists("../../data/upload/".$data["img"])){?>
-		    <img src="<?php echo $workspace."data/upload/".$data["img"]?>" style="width:100px;"/>
+		    <img src="<?php echo $workspace."/data/upload/".$data["img"]?>" style="width:100px;"/>
 			<?php }
 			else{?>
 			<div style="width:100px;height:100px;border:1px solid #CCCCCC;">请上传头像</div>

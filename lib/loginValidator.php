@@ -19,6 +19,9 @@
 		$result = mysql_query($sql,$conn);
 		@$row = mysql_fetch_array($result);
 		
+		$sql = "insert into sgfw_login_log (user_id,remote_address,create_at) values('".$row["id"]."','".$_SERVER["REMOTE_ADDR"]."','".(time()+3600*8)."')";
+		$result = mysql_query($sql,$conn);
+		
 		$_SESSION["user"] = "";
 		$_SESSION["code"] = "";
 		
