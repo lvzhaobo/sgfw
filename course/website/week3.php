@@ -23,66 +23,46 @@
 	    第三周学习目标
 	  </div>
 	  <ul>
+	    <li>根据网站规划详细设计网站，构思设计好网站布局、颜色搭配、图片使用等</li>
 	    <li>实现网站基本布局</li>
-	    <li>编写代码并解决遇到的问题</li>
+	    <li>编写代码并掌握解决未知问题的能力</li>
+		<li>了解软件开发模式</li>
+		<li>了解服务器、域名、及如何部署网站、访问请求流程</li>
 	  </ul>
 	</div>
-	<div style="border-left:2px solid #FF9900;" class="item">
+	<div style="border-left:2px solid #FFAA00;" class="item">
 	  <div style="" class="item_title">
-		查找主流网站、分析主流网站布局
+	    首页页面
 	  </div>
-	  <img src="../../src/images/courses/website-week2-1.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
 	  <div style="">
-		<p>上图为郑州大学信息工程学院网站首页截图，主要分为页面的①header②菜单（menu）③正文（包括N行，第一行左边为图片右边为带有标题的新闻列表，第二行为校内连接、学院公告、教研通知）④footer（页脚，没有显示出来）。Header为100%宽度，正文为900多px，且居中显示，和第一周任务中的说明一致。
-其实每一小部分在第一周任务中基本都已经做过了。复杂的网站也是通过基础知识堆积起来的。先分清层次有助于看清本质。</p>
-	  </div>
-	  <img src="../../src/images/courses/website-week2-2.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
-	  <div style="">
-		<p>上图为清华大学主页上点击学校概况后显示页面中间部分的截图。Header、footer等略去，对应信工院主页的新闻列表，清华大学网站上使用了另一种方式，几大项内容使用图片加文字解释，作用就是把校长致辞、学校沿革、历任领导等内容展示出来（最简单的方式是在左边加个列表，每行显示一项），这种方式就比较美观、直观。在实现难度上，由于有了第一周的基础，不会有太多麻烦。</p>
+		<ul>
+		  <li>header、菜单部分</li>
+		  <li>内容区域（图片列表、新闻列表）</li>
+		  <li>footer部分</li>
+		</ul>
+		<p>相信实现这些内容，仅靠第一周学到的东西还不够，我们也无法把所有的标签、样式讲解一边，但我们也相信你已经掌握了大致思路，通过网上查找具体标签、样式的使用，能够顺利解决这些问题。有任何问题，欢迎随时在QQ群里讨论、交流。不管什么方式，我学到了就赚到了。</p>
 	  </div>
 	</div>
 	<div style="border-left:2px solid #FF0099;" class="item">
 	  <div style="" class="item_title">
-	    作业及要求
+	    内容页页面
 	  </div>
 	  <div style="">
-		<ul style="font-size:14px;">
-		  <li>1.游戏网站，英雄联盟、愤怒的小鸟或消消乐等等游戏的介绍、玩法</li>
-		  <li>2.电影/电视剧/动漫，做一个主题网站吧</li>
-		  <li>3.美食网站  ，名字可以叫做“谢天谢地饭来了”</li>
-		  <li>4.学院篮球队、足球队等兴趣小组网站</li>
-		  <li>5.社团网站</li>
-		  <li>6.学校门口的书店、小吃店网站</li>
-		  <li>7.个人网站，或者情侣空间</li>
-		  <li>8.微商等产品宣传网站</li>
-		  <li>9.学校失物招领网站</li>
-		  <li>10.学校活动、各学院班级课程表网站，方便了解学校动态</li>
+		<ul>
+		  <li>header、菜单部分</li>
+		  <li>内容区域（左侧菜单、右侧内容）</li>
+		  <li>footer部分</li>
 		</ul>
-		<p>
-		  和前面分析的步骤类似，参考这10项（可以不限于以上）选择自己喜欢的、认为布局合理的网站（主流风格网站、太复杂的不建议考虑），分析有那几部分组成。需要找1-4个网站（建议2-4个，根据学校课程压力自行调节，也可第一个主要说明，其他简要说明），需要分析首页、以及项目详细页（如在信工院网站上点击新闻后的页面）。不需要太多格式，但是要条理清晰，可以用数字标明多项。
-		</p>
-		<p>
-		  作业提交内容为：word文档，需包括①选择的网站类型说明及网址（如团购网站，美团：www.meituan.com，糯米团购：www.nuomi.com）；②对网站进行布局分析的图片；③对网站布局分析的简单理由（建议不超过500字）
-		</p>
+		<p>在所有页面中header和footer都是一样的，有什么办法不需要重复Copy呢？<p>
 	  </div>
 	</div>
 	<div style="border-left:2px solid #9900FF;" class="item">
 	  <div style="" class="item_title">
-		附加学习
+		附加学习之软件开发模式
 	  </div>
-	  梦想之星英语社网址为：http://i.my-dreamstar.com
-	  <img src="../../src/images/courses/website-week2-3.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
-	  <div style="">
-	    <p>下载安装火狐浏览器firebug插件，安装好之后需要重启火狐浏览器以便生效。</p>
-	  </div>
-	  <img src="../../src/images/courses/website-week2-4.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
-	  <div style="">
-	    <p>在键盘中按F12或在浏览器的工具->开发者工具中打开firebug，如上图所示。下方会显示出页面代码结构和内容，方便查看。</p>
-	  </div>
-	  <img src="../../src/images/courses/website-week2-5.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
-	  <div style="">
-	    <p>点击左边的图标，然后移动到页面的最新消息中（或任意地方），可在firebug面板中查看此处的代码，方便查看任意位置的代码。如想知道苹果官网的效果或腾讯、新浪网站的内容，可以用此方法查看，可以从中学到东西的。</p>
-	  </div>
+	  <p>开发模式是用于组织团队一起写作进行软件开发的，包括多种，有敏捷模式、极限编程、瀑布模式等。具体角色包括产品负责人、开发人员、专职测试人员。简单介绍下敏捷模式，有兴趣可以在网上查找敏捷开发或SCRUM。</p>
+	  <p>在敏捷模式中软件不是一次性完成的，把任务进行划分为小任务，然后再细分到几个小时的小任务，每3-5周完成一个迭代（包括几十个小任务），每个迭代有明确的目标，下一个迭代会完成新的目标（任务进行时划分为几十个小任务）。</p>
+	  <p>对于第三周任务，网站是不可能一周做完做好的。先用一周时间完成网站主框架（这一周的所有活动都围绕这个目标进行），下一周逐步完成网站的各个菜单模块并完善页面样式。这两周的时间也不可能做好，如果想做到真正好用的网站，还需要再有几周这样的循环。每一次都是在以前的基础上有所更新和完善。</p>
 	</div>
 	<div style="border-left:2px solid #99FF00;" class="item">
 	  <div style="" class="item_title">

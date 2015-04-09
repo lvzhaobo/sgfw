@@ -79,11 +79,19 @@
 		  </div>
 		  <div onclick='top.location="<?php echo "http://".$host.$uri."modules/myspace/myCourse.php?course=website"."&process=week2"?>"'>
 		    <div class="intro_title<?php echo preg_match("/week2/",$_SERVER["REQUEST_URI"])?" current":""?>">
-		      第二周：网站原形分析设计
+		      第二周：网站原型分析设计
 		    </div>
 		  </div>
 		  <div class="intro_content">
-		    学习文档，分析网站基本结构，完成个人网站（自己感兴趣的网站）原型初步设计。
+		    学习设计文档，分析网站基本结构，完成个人网站（自己感兴趣的网站）原型初步设计。
+		  </div>
+		  <div onclick='top.location="<?php echo "http://".$host.$uri."modules/myspace/myCourse.php?course=website"."&process=week3"?>"'>
+		    <div class="intro_title<?php echo preg_match("/week3/",$_SERVER["REQUEST_URI"])?" current":""?>">
+		      第三周：编写代码，实现网站框架
+		    </div>
+		  </div>
+		  <div class="intro_content">
+		    实现网站基本框架，掌握解决未知问题的能力，了解软件开发模式及网站部署等。
 		  </div>
 		  </div>
 		  </div>
