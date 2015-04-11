@@ -3,7 +3,7 @@ session_start();
 //var_dump($_SESSION);
 $workspace = "http://".$_SERVER["HTTP_HOST"]."/";
 
-if((time()-$_SESSION["login_start"])>=1800){
+if(isset($_SESSION["login_start"]) && (time()-$_SESSION["login_start"])>=1800){
 	unset($_SESSION["user"]);
 	unset($_SESSION["login_start"]);
 }

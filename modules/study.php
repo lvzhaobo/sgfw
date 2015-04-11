@@ -5,11 +5,11 @@
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;font-size:14px;color:#000000;}
 	  a {color:#FFFFFF;text-decoration:none;}
-	  .project_item {width:206px;height:240px;margin:20px 0px 0px 20px;float:left;color:#333333;border:2px solid #FFFFFF;box-shadow:0 0 0px #DCDCDC;}
-	  .project_item:hover {border:2px solid #FF9900;background-color:#F3F3F3;#color:#FF6600;}
-	  .project_item_title {margin:10px 0;font-size:14px;font-weight:weight;text-align:center;}
+	  .project_item {width:100%;height:128px;margin:10px;float:left;color:#333333;border:2px solid #F3F3F3;box-shadow:0 0 0px #DCDCDC;background-color:#F3F3F3;}
+	  .project_item:hover {border:0px solid #FF9900;background-color:#F3F3F3;#color:#FF6600;}
+	  .project_item_title {padding:10px 20px;font-size:14px;font-weight:normal;text-align:left;width:560px;height:100%;}
 	  .project_item hr {color:#FFFFFF;height:1px;display:none;}
-	  .text {margin:5px;font-size:12px;font-weight:normal;}
+	  .text {margin:5px;padding:20px 10px;font-size:12px;font-weight:normal;float:left;width:100px;text-align:middle;}
 	</style>
 	<script src="src/js/account.js" type="text/javascript"></script>
   <head>
@@ -91,20 +91,25 @@
 			  <?php foreach($data as $item){?>
 			    <a href="<?php echo $item['url']?>">
 			    <div class="project_item">
-			      <img src="<?php echo $item['img']?>" style="width:204px;height:128px;border:1px solid #DCDCDC;box-shadow:0 0 5px #DCDCDC;" />
-			      <div class="project_item_title" style="">
-				    <?php echo $item["name"]?>
+			      <img src="<?php echo $item['img']?>" style="width:204px;height:128px;float:left;" />
+			      <div class="project_item_title" style="float:left;">
 				    <?php if($item["type"]=="basic"){?>
-					<span style="color:#FF9900;">（基本课程）</span>
+					<span style="color:#FF9900;line-height:28px;">基本课程</span>
 					<?php }
 						  else if($item["type"]=="project"){?>
-					<span style="color:#0099FF;">（综合项目）</span>
+					<span style="color:#0099FF;line-height:28px;">综合项目</span>
 					<?php }
 						  else if($item["type"]=="advanced"){?>
-					<span style="color:#FF0099;">（进阶）</span>
+					<span style="color:#FF0099;line-height:28px;">进阶</span>
 					<?php }?>
+					<div style="font-size:16px;font-weight:bold;color:#333333;line-height:32px;"><?php echo $item["name"]?></div>
+					<div style="">
+					  <?php echo $item['text']?>
+					</div>
 				  </div>
-				  <div class="text"><?php echo $item['text']?></div>
+				  <div class="text">
+				    已开课
+				  </div>
 			    </div>
 			  </a>
 			  <?php }?>
