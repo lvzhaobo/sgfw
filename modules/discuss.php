@@ -35,7 +35,7 @@
 				  <span id="msg_content" class="message"></span>
 				  <?php }
 				  else{?>
-				  <textarea name="content" style="" disabled="disabled">请先登录</textarea>
+				  <textarea name="content" style="text-align:center;" disabled="disabled">请先登录</textarea>
 				  <?php }?>
 				  <br />
 				  <button type="submit" style="margin:10px 0 0 0;">发表</button>
