@@ -64,7 +64,7 @@
 			  <div style="margin:0 0 0 0px;height:48px;border-bottom:2px solid #F3F3F3;">
 			    <div style="float:left;text-align:middle;padding:10px 20px;color:#333333;">
 			      <span style="font-size:22px;font-weight:bold;margin:0 5px;">学习课程</span>
-				  <span>每个项目都有指导老师按照计划安排学习。所有项目均为公益性质（完全免费）。</span>
+				  <span>每个项目都有指导老师按照计划安排学习。</span>
 				  <span style="font-weight:bold;font-size:16px;color:#00AAFF;">QQ群：376265741</span>
 				</div>
 			  </div>
@@ -80,11 +80,11 @@
 								
 								array("name"=>"WordPress建站","url"=>$workspace."course/wordpress.php","img"=>$workspace."src/images/wordpress.jpg","text"=>"最流行的内容管理系统软件，不需要编写代码即可建设网站","type"=>"project","started"=>true,"required"=>"对代码完全零基础，也不需要写代码"),
 								
-								array("name"=>"ACM","url"=>"","img"=>$workspace."src/images/acm.jpg","text"=>"（敬请期待）不必羡慕ACMer，你也可以成为他们，从这里开始。","type"=>"advanced","started"=>true,"面向需要整体了解ACM并进行入门的同学，要求了解过C、C++、Java等语言"),
+								array("name"=>"ACM入门","url"=>$workspace."course/acm.php","img"=>$workspace."src/images/acm.jpg","text"=>"不必羡慕ACMer，你也可以成为他们，从这里开始。","type"=>"advanced","started"=>true,"required"=>"面向需要整体了解ACM并进行入门的同学，要求了解过C、C++、Java等语言"),
 								
-								array("name"=>"云存储","url"=>$workspace."course/cloudstorage.php","img"=>$workspace."src/images/cloudstorage1.jpg","type"=>"advanced","text"=>"百度云、Dropbox、Google Drive等云存储服务商提供了丰富的API、SDK，赶紧加入云存储吧。","started"=>true,"要求掌握PHP、HTML基础知识"),
+								array("name"=>"云存储","url"=>$workspace."course/cloudstorage.php","img"=>$workspace."src/images/cloudstorage1.jpg","type"=>"advanced","text"=>"百度云、Dropbox、Google Drive等云存储服务商提供了丰富的API、SDK，赶紧加入云存储吧。","started"=>true,"required"=>"要求掌握PHP、HTML基础知识"),
 								
-								array("name"=>"Linux服务器","url"=>$workspace."course/linux_config.php","img"=>$workspace."src/images/ubuntu.jpg","text"=>"（敬请期待）在Linux系统中搭建各种服务，包括FTP服务器、Samba服务器、WEB服务器等。","type"=>"advanced","started"=>false,"对Linux系统有基本了解或有决心去学习Linux的同学"),
+								array("name"=>"Linux服务器","url"=>$workspace."course/linux_config.php","img"=>$workspace."src/images/ubuntu.jpg","text"=>"在Linux系统中搭建各种服务，包括FTP服务器、Samba服务器、WEB服务器等。","type"=>"advanced","started"=>false,"required"=>"对Linux系统有基本了解或有决心去学习Linux的同学"),
 								
 								array("name"=>"JavaScript","url"=>"","img"=>$workspace."src/images/jquery.jpg","text"=>"（敬请期待）在前端页面处理中的王者语言。","type"=>"project","startd"=>false),
 								
@@ -115,10 +115,10 @@
 						  else if($item["type"]=="advanced"){?>
 					<span style="color:#FF0099;line-height:28px;">进阶</span>
 					<?php }?>
-					<div style="color:#333333;font-size:13px;">
+					<div style="color:#333333;font-size:13px;line-height:22px;">
 					  <span style="color:#999999">课程简介：</span><?php echo $item['text']?>
 					</div>
-					<div style="font-size:13px;">
+					<div style="color:#333333;font-size:13px;line-height:22px;">
 					  <span style="color:#999999;">知识要求：</span><?php echo isset($item['required'])?$item['required']:""?>
 					</div>
 				  </div>
