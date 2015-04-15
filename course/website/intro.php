@@ -16,7 +16,7 @@
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
-  <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;font-size:14px;background-color:#EEEEEE;">
+  <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;font-size:14px;background-color:#F7F6F2;">
 	<div style="padding:0px 0 10px 0;">
 	  <div style="background-color:#FFFFFF;padding:10px;border-top:2px solid #0099FF;">
 		  <div style="font-size:18px;margin:0px 0px;color:#333333;font-weight:bold;">

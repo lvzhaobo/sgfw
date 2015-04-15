@@ -12,10 +12,12 @@
 	  .btn:hover,button:hover{border:2px solid #0099FF;color:#FF9900;}
 	  .btn a {color:#0099FF;}
 	  .btn a:hover {color:#FF9900;}
+	  textarea {width:280px;height:60px;border:1px solid #FF9900;box-shadow:0 0 3px #FF9900;color:#0099FF;padding:2px 5px;border-radius:0.5em;margin:0 10px -22px 0;}
+	  textarea:hover {border:1px solid #0099FF;box-shadow:0 0 3px #0099FF;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
-  <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
+  <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;background-color:#F7F6F2;">
     <?php include '../../src/header.php'?>
 	<?php
 			include '../../lib/db.php';
@@ -40,12 +42,12 @@
 			}
 		  ?>
 	<div>
-	  <div class="main index" style="padding-top:32px;min-width:960px;margin:0 auto;font-size:14px;min-height:400px;">
-	    
+	  <div class="main index" style="padding-top:32px;min-width:960px;margin:0 auto;font-size:14px;min-height:400px;background-color:#F7F6F2;">
 	    <?php include '../../src/myspace_index.php'?>
-		<div class="content" style="width:600px;float:left;margin:0 0 40px 200px;padding:20px;min-height:320px;">
-		  <fieldset style="border:2px solid #FF9900;padding:0 10px;line-height:28px;">
-		  <legend><div style="font-weight:bold;font-size:16px;color:#0099FF;float:left;">
+		<div class="content" style="width:678px;float:left;margin:0 0 40px 200px;padding:20px;min-height:320px;">
+		  <fieldset style="border:2px solid #FF9900;padding:0 10px;line-height:28px;background-color:#FFFFFF;">
+		  <legend>
+		    <div style="font-weight:bold;font-size:16px;color:#0099FF;float:left;">
 			  <?php $project = array("website"=>"网站设计",
 										"database"=>"数据库",
 										"php"=>"PHP",
@@ -54,8 +56,8 @@
 										""=>"无课程");
 							echo $project[$data["project"]];
 					?>
-			</div></legend>
-			
+			</div>
+			</legend>
 			<?php if($data["project"]=="website"){
 				$week_str = "";
 				if($week == 2)
@@ -66,7 +68,7 @@
 			</a>
 			<div style="border:2px solid #CCCCCC;font-size:20px;font-weight:bold;color:#00AAFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;"><?php echo ($week==1)?"第一周":"第二周"?></div>
 			<div style="clear:float;clear:both;"></div>
-			  <table style="font-size:14px;line-height:22px;">
+			  <table style="font-size:13px;line-height:22px;">
 			    <tr>
 				  <th style="width:80px;">学习目标：</th>
 				  <td>完成自己的静态网站设计和开发，在第六周进行DEMO。</td>
@@ -182,12 +184,62 @@
 				</div>
 			  <?php }
 			  }?>
-			  </div>
-			</div>
 		  </fieldset>
 		</div>
-		<div class="project_item" style="width:300px;float:right;padding:10px 20px 10px 20px;border-left:2px solid #CCCCCC;">
-		
+		<div class="project_item" style="width:400px;float:right;padding:0px 20px 20px 20px;position:absolute;right:0px;background-color:#F7F6F2;">
+		  <div style="margin:0px 0 22px 0;text-align:center;">
+			    <form action="../../lib/saveDiscuss.php?referer=mystudy" method="post" id="discuss">
+				  <?php 
+				  if(array_key_exists("user",$_SESSION) && isset($_SESSION["user"]) && $_SESSION["user"]!=""){?>
+				  <textarea name="content" style="" id="discuss_content"></textarea>
+				  <span id="msg_content" class="message"></span>
+				  <?php }
+				  else{?>
+				  <textarea name="content" style="text-align:center;" disabled="disabled">请先登录</textarea>
+				  <?php }?>
+				  <button type="submit" style="margin:5px 0 10px 0;">发表</button>
+				</form>
+			  </div>
+		  <?php
+			$color = array("#FFAA00","#0099FF","#AAFF00","#FF00AA","#AA00FF","#00FFAA");
+			
+		    //include '../../lib/db.php';
+			$data = array();
+			if(isset($_SESSION["user"])){
+				$result = mysql_query("select * from sgfw_user where username='".base64_encode($_SESSION["user"])."'");
+				//var_dump(mysql_error());
+				$data = mysql_fetch_array($result);
+			}
+			if(!isset($data["id"]) or empty($data["id"])){
+				echo "<script>alert('请先登录');window.location.href='../login.php'</script>";
+			}
+			
+			include '../../lib/db.php';
+			$sql = "SELECT * FROM sgfw_discuss ORDER BY create_time DESC;";
+			$result = mysql_query($sql,$conn);
+			$i = 0;
+			while($item = @mysql_fetch_array($result)){
+				$user_result = mysql_query("select * from sgfw_user where username='".$item["username"]."'");
+				$user = mysql_fetch_array($user_result);
+				
+				$img_path = $workspace."/data/upload/".str_replace("upload","",$user["img"]);
+				if(!file_exists("../../data/upload/".str_replace("upload","",$user["img"])))
+					$img_path = $workspace."/src/images/dream.jpg";
+		  ?>
+		  <div style="width:60px;float:left;">
+		    <img src="<?php echo $img_path?>" style="width:40px;height:40px;border-radius:3em;border:1px solid #EEEEEE;" title=""/>
+		  </div>
+		  <div style="min-height:40px;background-color:#FFFFFF;border-left:2px solid <?php echo $color[$i++%6]?>;margin:0px 0 10px 60px;padding:8px;font-size:12px;">
+		    <div style="font-size:12px;border-bottom:1px solid #F3F3F3;padding-bottom:4px;"><?php echo base64_decode($item["username"])?>&nbsp;&nbsp;<?php echo date("Y-m-d H:i:s",$item["create_time"])?></div>
+			<div style="margin-top:2px;"><?php 
+				if($item["id"]<=41)
+					echo $item["content"];
+				else
+					echo htmlentities(base64_decode($item["content"]),ENT_QUOTES);
+			?>
+			</div>
+		  </div>
+		  <?php }?>
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>

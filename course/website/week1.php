@@ -18,7 +18,7 @@
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
-  <body style="padding:0 10px 0px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#EEEEEE;">
+  <body style="padding:0 10px 0px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#F7F6F2;">
 	<div style="border-left:2px solid #99FF00;" class="item">
 	  <div style="" class="item_title">
 		学习视频

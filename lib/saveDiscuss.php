@@ -33,6 +33,17 @@ window.location.href="../modules/login.php";
 	}
 	noticeObject::setNotice($info);
 ?>
+<?php
+	if(isset($_GET["referer"]) && ($_GET["referer"]=="mystudy")){
+?>
+<script>
+window.location.href="../modules/myspace/myStudy.php";
+</script>
+<?php
+	}
+	else{
+?>
 <script>
 window.location.href="../modules/discuss.php";
 </script>
+<?php }?>

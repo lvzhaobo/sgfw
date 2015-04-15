@@ -17,7 +17,7 @@
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
-  <body style="padding:0 10px 0px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#EEEEEE;">
+  <body style="padding:0 10px 0px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#F7F6F2;">
 	<div style="" class="item">
 	  <div style="" class="item_title">
 	    第二周学习目标
@@ -33,12 +33,12 @@
 	  <div style="" class="item_title">
 		查找主流网站、分析主流网站布局
 	  </div>
-	  <img src="../../src/images/courses/website-week2-1.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
+	  <img src="../../src/images/courses/website-week2-1.jpg" style="width:700px;border:2px solid #CCCCCC;border-radius:0.5em;" />
 	  <div style="">
 		<p>上图为郑州大学信息工程学院网站首页截图，主要分为页面的①header②菜单（menu）③正文（包括N行，第一行左边为图片右边为带有标题的新闻列表，第二行为校内连接、学院公告、教研通知）④footer（页脚，没有显示出来）。Header为100%宽度，正文为900多px，且居中显示，和第一周任务中的说明一致。
 其实每一小部分在第一周任务中基本都已经做过了。复杂的网站也是通过基础知识堆积起来的。先分清层次有助于看清本质。</p>
 	  </div>
-	  <img src="../../src/images/courses/website-week2-2.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
+	  <img src="../../src/images/courses/website-week2-2.jpg" style="width:700px;border:2px solid #CCCCCC;border-radius:0.5em;" />
 	  <div style="">
 		<p>上图为清华大学主页上点击学校概况后显示页面中间部分的截图。Header、footer等略去，对应信工院主页的新闻列表，清华大学网站上使用了另一种方式，几大项内容使用图片加文字解释，作用就是把校长致辞、学校沿革、历任领导等内容展示出来（最简单的方式是在左边加个列表，每行显示一项），这种方式就比较美观、直观。在实现难度上，由于有了第一周的基础，不会有太多麻烦。</p>
 	  </div>
