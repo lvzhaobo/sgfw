@@ -58,9 +58,29 @@
 			    </div>
 			  </a>
 			  <?php }?>
+			  <?php
+				include '../lib/db.php';
+				$result = mysql_query("select * from sgfw_project order by id desc");
+				$data = array();
+				while($item_tmp = mysql_fetch_array($result)){
+					$data[] = $item_tmp;
+				}
+				shuffle($data);
+				foreach($data as $item){
+			  ?>
+			  <div class="project_item">
+			    <span class="project_item_title" style=""><?php echo base64_decode($item["name"])?></span>
+				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;"><?php echo $item["team"]?></span>&nbsp;&nbsp;
+				<!--<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：6" style="margin-left:10px;font-size:20px;color:#FF0000;">6</span>-->
+				</div>
+				<span style="font-size:12px;"><?php echo $item["label"]?></span>
+				<div style="font-size:12px;color:#333333;">创建时间：<?php echo date("Y-m-d H:i:s",$item["create_time"])?></div>
+				<p><?php echo $item["introduction"]?></p>
+			  </div>
+			  <?php }?>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">校园周边服务网</span>
-				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想科技</span>&nbsp;&nbsp;
+				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想学院</span>&nbsp;&nbsp;
 				<!--<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：28" style="margin-left:10px;font-size:20px;color:#FF0000;">28</span>-->
 				</div>
 				<span style="font-size:12px;">HTML、PHP、MySQL、JQuery、GitHub</span>
@@ -69,7 +89,7 @@
 			  <a href="#">
 			  <div class="project_item">
 			    <span class="project_item_title" style="">音乐播放器</span>
-				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想科技</span>&nbsp;&nbsp;
+				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想学院</span>&nbsp;&nbsp;
 				<!--<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：12" style="margin-left:10px;font-size:20px;color:#FF0000;">12</span>-->
 				</div>
 				<span style="font-size:12px;">HTML、PHP、MySQL、JQuery、GitHub</span>
@@ -78,29 +98,33 @@
 			  </a>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">情侣空间</span>
-				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想科技</span>&nbsp;&nbsp;
-				<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：14" style="margin-left:10px;font-size:20px;color:#FF0000;">14</span></div>
+				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想学院</span>&nbsp;&nbsp;
+				<!--<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：14" style="margin-left:10px;font-size:20px;color:#FF0000;">14</span>-->
+				</div>
 				<span style="font-size:12px;">HTML、PHP、MySQL、JQuery、GitHub</span>
 				<p>现在已经有一些情侣空间的网站，但做好一个和学校紧密结合的情侣空间，还没有哦。</p>
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">社团官方网站</span>
-				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想科技</span>&nbsp;&nbsp;
-				<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：8" style="margin-left:10px;font-size:20px;color:#FF0000;">8</span></div>
+				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想学院</span>&nbsp;&nbsp;
+				<!--<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：8" style="margin-left:10px;font-size:20px;color:#FF0000;">8</span>-->
+				</div>
 				<span style="font-size:12px;">HTML、CSS</span>
 				<p>学校有那么多社团，为社团做个网站是个不错的主意。</p>
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">校园云网盘</span>
-				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想科技</span>&nbsp;&nbsp;
-				<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：6" style="margin-left:10px;font-size:20px;color:#FF0000;">6</span></div>
+				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想学院</span>&nbsp;&nbsp;
+				<!--<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：6" style="margin-left:10px;font-size:20px;color:#FF0000;">6</span>-->
+				</div>
 				<span style="font-size:12px;">HTML、PHP、MySQL、JQuery、GitHub</span>
 				<p>打造属于自己学校的网盘及云存储。</p>
 			  </div>
 			  <div class="project_item">
 			    <span class="project_item_title" style="">学校课程在线</span>
-				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想科技</span>&nbsp;&nbsp;
-				<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：6" style="margin-left:10px;font-size:20px;color:#FF0000;">6</span></div>
+				<div style="margin-top:5px;">开发者：<span style="font-weight:bold;">梦想学院</span>&nbsp;&nbsp;
+				<!--<br /><span style="font-size:12px;">DS-0001</span>&nbsp;<span style="color:#0099FF;">第一周</span>&nbsp;&nbsp;<span title="喜欢：6" style="margin-left:10px;font-size:20px;color:#FF0000;">6</span>-->
+				</div>
 				<span style="font-size:12px;">HTML、PHP、MySQL、JQuery、GitHub</span>
 				<p>利用学校的一些资源，制作一些学习视频，放在网上，供有需要的同学使用。</p>
 			  </div>

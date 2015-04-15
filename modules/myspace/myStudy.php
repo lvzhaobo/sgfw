@@ -187,7 +187,7 @@
 			  <?php }
 			  }?>
 		  </fieldset>
-		  <div style="" class="item">
+		  <!--<div style="" class="item">
 		  <div style="" class="item_title">
 			第二周学习目标
 		  </div>
@@ -197,7 +197,7 @@
 			<li>学习界面调试工具</li>
 			<li>学习网站设计报告</li>
 		  </ul>
-		</div>
+		</div>-->
 		</div>
 		<div class="project_item" style="width:400px;float:right;padding:0px 20px 20px 20px;position:absolute;right:0px;background-color:#F7F6F2;">
 		  <div style="margin:0px 0 22px 0;text-align:center;">
