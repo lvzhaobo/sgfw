@@ -49,7 +49,7 @@
 		$result = mysql_query($sql,$conn);
 		if(!$result)
 			$info = "创建项目失败";
-		var_dump(mysql_error());
+		var_dump($sql,mysql_error(),$result);die;
 		//session_start();
 		//$_SESSION["user"] = $data["username"];
 		//$_SESSION["code"] = md5($data["password"]);
@@ -59,7 +59,7 @@
 ?>
 <script>
 <?php if(empty($info)){?>
-window.location.href="mySpace.php";
+window.location.href="../modules/myspace/index.php";
 <?php }
 else{
 ?>

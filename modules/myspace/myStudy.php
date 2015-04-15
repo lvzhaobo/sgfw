@@ -14,6 +14,8 @@
 	  .btn a:hover {color:#FF9900;}
 	  textarea {width:280px;height:60px;border:1px solid #FF9900;box-shadow:0 0 3px #FF9900;color:#0099FF;padding:2px 5px;border-radius:0.5em;margin:0 10px -22px 0;}
 	  textarea:hover {border:1px solid #0099FF;box-shadow:0 0 3px #0099FF;}
+	  .item {padding:10px 20px;border-left:2px solid #00AAFF;margin:20px 0px;background-color:#FFFFFF;}
+	  .item_title {font-weight:bold;font-size:18px;line-height:28px;margin:0 0 5px 0;}
 	</style>
 	<script src="account.js" type="text/javascript"></script>
   <head>
@@ -185,6 +187,17 @@
 			  <?php }
 			  }?>
 		  </fieldset>
+		  <div style="" class="item">
+		  <div style="" class="item_title">
+			第二周学习目标
+		  </div>
+		  <ul>
+			<li>学习网站基本布局</li>
+			<li>选择自己感兴趣的网站类型并能进行分析</li>
+			<li>学习界面调试工具</li>
+			<li>学习网站设计报告</li>
+		  </ul>
+		</div>
 		</div>
 		<div class="project_item" style="width:400px;float:right;padding:0px 20px 20px 20px;position:absolute;right:0px;background-color:#F7F6F2;">
 		  <div style="margin:0px 0 22px 0;text-align:center;">
