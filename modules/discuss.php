@@ -42,11 +42,32 @@
 				</form>
 			  </div>
 			  <div style="width:600px;margin:0 auto;">
+			  <?php 
+				include '../lib/db.php';
+			    $perpage = 10;
+				$typeQuery = "";
+				if(isset($_GET["type"])&&!empty($_GET["type"]))
+					$typeQuery = " WHERE category = '".$_GET["type"]."'";
+			    $query_1 = mysql_query("select count(*) as NUM from sgfw_discuss");
+				$result_1 = mysql_fetch_array($query_1);
+				$total = $result_1["NUM"];
+				$pages = (int)($total/$perpage);
+				$pages = $total%$perpage==0 ? $pages : $pages+1;
+				
+			    $page = isset($_GET["page"])&&!empty($_GET["page"]) ? $_GET["page"] : 1;
+				$pre = $page<2?"":$page-1;
+				$max = $pages;
+				
+				$params = (isset($_GET["type"])&&!empty($_GET["type"])) ? ("&type=".$_GET["type"]) : "";
+			  ?>
+			  
 			  <?php
-			    include '../lib/db.php';
-				$sql = "SELECT * FROM sgfw_discuss ORDER BY create_time DESC;";
-				$result = mysql_query($sql,$conn);
-				while($item = @mysql_fetch_array($result)){
+				$db = new dream_mysql();
+				$data = $db->getDiscuss($perpage,$_GET["page"]);
+				//$sql = "SELECT * FROM sgfw_discuss ORDER BY create_time DESC;";
+				//$result = mysql_query($sql,$conn);
+				//while($item = @mysql_fetch_array($result)){
+				foreach($data as $item){
 			  ?>
 			  <div class="discuss_item">
 			    <div>
@@ -62,6 +83,41 @@
 				</div>
 			  </div>
 			<?php }?>
+			
+			  
+			  <div style="height:40px;text-align:center;line-height:32px;">
+			    <?php if($total>=1){?>
+			    <a href="<?php echo "discuss.php?page=1".$params?>">
+			    <div style="width:40px;height:32px;border:1px solid #CCCCCC;margin:2px;float:left;<?php if($page==1)echo 'background-color:#0099FF;color:#F3F3F3;'?>">1</div>
+				</a>
+				<?php }?>
+				<?php if($page>3){?>
+				<div style="width:40px;height:32px;border:1px solid #CCCCCC;margin:2px;float:left;">...</div>
+				<?php }?>
+				<?php if($page>=3){?>
+				<a href="<?php echo "discuss.php?page=".($page-1).$params?>">
+				<div style="width:40px;height:32px;border:1px solid #CCCCCC;margin:2px;float:left;"><?php echo $page-1?></div>
+				</a>
+				<?php }?>
+				<?php if(($page!=1)&&($page!=$max)){?>
+				<a href="<?php echo "discuss.php?page=".$page.$params?>">
+				<div style="width:40px;height:32px;border:1px solid #CCCCCC;margin:2px;float:left;background-color:#0099FF;color:#F3F3F3;"><?php echo $page?></div>
+				</a>
+				<?php }?>
+				<?php if($max-$page>=2){?>
+				<a href="<?php echo "discuss.php?page=".($page+1).$params?>">
+				<div style="width:40px;height:32px;border:1px solid #CCCCCC;margin:2px;float:left;"><?php echo $page+1?></div>
+				</a>
+				<?php }?>
+				<?php if($max-$page>=3){?>
+				<div style="width:40px;height:32px;border:1px solid #CCCCCC;margin:2px;float:left;">...</div>
+				<?php }?>
+				<?php if($max>1){?>
+				<a href="<?php echo "discuss.php?page=".$max.$params?>">
+				<div style="width:40px;height:32px;border:1px solid #CCCCCC;margin:2px;float:left;<?php if($page==$max)echo 'background-color:#0099FF;color:#F3F3F3;'?>"><?php echo $max?></div>
+				</a>
+				<?php }?>
+			  </div>
 			</div>
 		  </div>
 		</div>

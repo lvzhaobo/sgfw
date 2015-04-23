@@ -37,7 +37,7 @@
 		<div class="content" style="width:800px;float:left;margin:0 0 40px 200px;min-height:320px;">
 		<div>
 		  <?php
-			include '../../lib/db.php';
+			//include '../../lib/db.php';
 			$data = array();
 			if(isset($_SESSION["user"])){
 				$result = mysql_query("select * from sgfw_user where username='".base64_encode($_SESSION["user"])."'");
