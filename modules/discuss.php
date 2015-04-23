@@ -63,7 +63,7 @@
 			  
 			  <?php
 				$db = new dream_mysql();
-				$data = $db->getDiscuss($perpage,$_GET["page"]);
+				$data = $db->getDiscuss($perpage,$page);
 				//$sql = "SELECT * FROM sgfw_discuss ORDER BY create_time DESC;";
 				//$result = mysql_query($sql,$conn);
 				//while($item = @mysql_fetch_array($result)){
