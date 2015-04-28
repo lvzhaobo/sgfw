@@ -31,17 +31,17 @@ $img = $workspace."/data/upload/".$data["img"];
 
 $current_page = preg_replace("/.*\//","",$current_page);
 
-$nav = array(
+$nav_intro = array(
 			array('href'=>$workspace.'/modules/myspace/index.php','label'=>'基本信息','links'=>array('index.php')),
 			array('href'=>$workspace.'/modules/myspace/myStudy.php','label'=>'我的课程','links'=>array('myStudy.php','myCourse.php')),
 			array('href'=>$workspace.'/modules/myspace/myHomework.php','label'=>'我的作业','links'=>array('myHomework.php')),
 			array('href'=>$workspace.'/modules/myspace/myResource.php','label'=>'学习资源','links'=>array('myResource.php'))
 		);
 
-$nav_str = "";
-foreach($nav as $key=>$item){
+$nav_intro_str = "";
+foreach($nav_intro as $key=>$item){
 	$selected = in_array($current_page,$item['links'])?" class='myspace_selected'":"";
-	$nav_str .= '
+	$nav_intro_str .= '
 		<a href="'.$item['href'].'" style="color:#737373;">
 		  <div'.$selected.' style="border-top:1px solid #EEEEEE;">
 		    <span>'.$item['label'].'</span>
@@ -60,7 +60,7 @@ $index = <<<EOF
 		  <div style="color:#999999;font-size:12px;font-weight:normal;">$date</div>
 		</div>
 		<div style="text-align:center;font-weight:normal;font-size:14px;">
-		  $nav_str
+		  $nav_intro_str
 		</div>
 		</div>
 EOF;

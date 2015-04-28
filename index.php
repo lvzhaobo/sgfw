@@ -19,7 +19,8 @@
   <div class="wrap">
    <div id="slide-holder">
 		<div id="slide-runner">
-			<a target="_blank"><img id="slide-img-0" src="src/images/bg6.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
+			<a target="_blank" href="modules/project/zzulove.php"><img id="slide-img-3" src="src/images/zzulove1.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:10px 0 0 0;"/></a>
+			<a target="_blank" href="course/website.php"><img id="slide-img-0" src="src/images/bg6.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
 			<a target="_blank"><img id="slide-img-1" src="src/images/bg.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
 			<a target="_blank"><img id="slide-img-2" src="src/images/bg4.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-100px 0 0 0;"/></a>
 			<div id="slide-controls">
@@ -35,6 +36,11 @@
 	}
 
 	slider.data= [
+	{
+        "id":"slide-img-3",
+        "client":"",
+        "desc":""
+    },
 	{
         "id":"slide-img-0",
         "client":"",
@@ -54,6 +60,20 @@
    </script>
   </div>
 </div>
+<!--<div style="width:100%;height:420px;background-image:url('bg-.jpg');background-repeat:no-repeat;background-color:#FFFFFF;">
+<img src="src/images/bg-love.jpg" style="margin:60px 100px 0 280px;width:200px;float:left;">
+<div style="margin:40px 0 0 100px;">
+  <div style="font-size:22px;font-weight:bold;padding:28px 0 20px 0;">郑州大学“表白墙”项目实战</div>
+  <div style="font-size:18px;font-weight:bold;line-height:32px;">
+    <div><span style="color:#333333;">名额</span> <span style="color:#FF9900;">每校区限10位同学</span></div>
+	<div><span style="color:#333333;">时间</span> <span style="color:#FF9900;">2015年5月1日-2015年5月31日</span></div>
+	<div><span style="color:#333333;">使用技术</span> <span style="color:#FF9900;">PHP+MySQL+HTML（擅长其他亦可）</span></div>
+	<div><span style="color:#333333;">费用</span> <span style="color:#FF9900;">不收费、无现金报酬、共同维护不盈利</span></div>
+	<div><span style="color:#333333;">意义</span> <span style="color:#FF9900;">认识更多同学、获取项目证书、开发人员署名</span></div>
+	<div><span style="color:#333333;">联系方式</span> <span style="color:#FF9900;">lvzhaobo@dreamcollege.cn</span></div>
+  </div>
+</div>
+</div>-->
 <!--<div style="width:100%;height:420px;background-image:url('bg-.jpg');background-repeat:no-repeat;background-color:#FFFFFF;">
 <img src="image/dream.jpg" style="margin:40px 100px 0 220px;width:420px;float:left;">
 <div style="margin:40px 0 0 100px;">
