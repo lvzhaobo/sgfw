@@ -3,7 +3,7 @@
     <title>让梦想在时光中飞舞·推动高校学生梦想实践的平台</title>
     <style type="text/css">
 	  p {text-indent:2em;line-height:1.6em;}
-	  a {color:#FFFFFF;text-decoration:none;}
+	  a {color:#FF9900;text-decoration:none;}
 	  .team a {color:#FF9900;text-decoration:none;margin:10px;}
 	  table {font-size:13px;}
 	  ul {margin:0 0 0 -20px;list-style: url;}
@@ -65,6 +65,9 @@
 		</p>
 		<p>
 		  作业提交内容为：word文档，需包括①选择的网站类型说明及网址（如团购网站，美团：www.meituan.com，糯米团购：www.nuomi.com）；②对网站进行布局分析的图片；③对网站布局分析的简单理由（建议不超过500字）
+		</p>
+		<p>
+		  第二周作业提交示例，<a href="../../src/doc/website_design_document.doc">点击查看</a>
 		</p>
 	  </div>
 	</div>
